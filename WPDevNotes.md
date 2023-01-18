@@ -262,8 +262,64 @@ echo $food[1];
 // output: hamburger
 ```
 
+--- 
+
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
 
-# [Loops]()
+# [Loops](https://www.tutorialspoint.com/php/php_loop_types.htm#)    
+Loops in PHP are used to execute the same block of code a specified number of times.    
+
+## [While loop](https://www.w3schools.com/php/php_looping_while.asp)
+Loops through a block of code as long as the specified condition is true.
+The basic form:
+
+```
+while (condition)
+    statement  
+```
+
+*Loop through each item in the array.*   
+*After the loop has gone through every value, it should stop running first.*    
+*We need to keep track of how many times the loop has executed the block of code. → above the loop we create a variable `$count = 0`*  
+*Inside the condition we use a `count()` function*    
+```
+<?php 
+  
+$food = array(
+  'pizza', 'hamburger', 'spaghetti'
+);
+
+$count = 0;
+
+while($count < count($food)) {
+  // $food start at 0
+  echo $food[$count];
+  //update +1
+  $count = $count + 1; // $count++
+}
+
+// output: pizza hamburger spaghetti
+```
+
+
+## [Comparison operators](https://www.php.net/manual/en/language.operators.comparison.php)
+comparison operators compare two values.
+
+- **$a == $b**	Equal	true if $a is equal to $b after type juggling. 
+- **$a === $b**	Identical	true if $a is equal to $b, and they are of the same type. 
+-**$a != $b**	Not equal	true if $a is not equal to $b after type juggling.
+- **$a <> $b**	Not equal	true if $a is not equal to $b after type juggling.
+- **$a !== $b**	Not identical	true if $a is not equal to $b, or they are not of the same type.
+- **$a < $b**	Less than	true if $a is strictly less than $b.
+- **$a > $b**	Greater than	true if $a is strictly greater than $b.
+- **$a <= $b**	Less than or equal to	true if $a is less than or equal to $b.
+- **$a >= $b**	Greater than or equal to	true if $a is greater than or equal to $b.
+- **$a <=> $b**	Spaceship	An int less than, equal to, or greater than zero when $a is less than, equal to, or greater than $b, respectively.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
