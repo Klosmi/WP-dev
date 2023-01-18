@@ -196,6 +196,7 @@ __function's name__ + __()__
 
 __Parameter__      
 is a variable in the declaration of the function.     
+A parameter refers to the name of the variable.
 
 Adding parameters to the function: in the parentheses of the function name we can store values passed on to the function.      
 
