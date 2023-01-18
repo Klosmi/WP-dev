@@ -245,7 +245,7 @@ The value returned by the function will be used as the variables value.
 - Values must be comma separated.
 
 - A shorthand for array's is only using `[]`, no need to write the word array.    
-$var = [1, 2, 3];`
+`$var = [1, 2, 3];`
 
 ```
 <?php 
