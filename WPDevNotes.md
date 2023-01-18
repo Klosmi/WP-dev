@@ -1,4 +1,4 @@
-[⬅️ back to the table of contents]()
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
 
@@ -13,6 +13,11 @@ WordPress needs additional programs to be fully functional.
 2. __development environment__: they are only accessible for us, they are private (it can run in our machine).    
 It is an environment that allows us to make as many breaking changes as possible.
 
+---
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
 
 # [PHP](https://www.php.net/manual/en/intro-whatis.php)
 PHP: Hypertext Preprocessor   
@@ -53,6 +58,10 @@ __Network Panel__
   This panel allows us to view files received by the server: images, videos, CSS and HTML files are some examples of files that can be sent by a server.     
 
   Network Panel display a table of files.
+
+---
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
 
@@ -112,3 +121,9 @@ __Network Panel__
     $age = 18; 
     echo $age;
   ```  
+
+---
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
