@@ -324,4 +324,36 @@ comparison operators compare two values.
 
 <br>
 
-# [Constants]()
+# [Constants](https://www.php.net/manual/en/language.constants.php)
+Constants can be reliable for storing data that never needs to change.    
+By using a constant, we are always guaranteed the value of a variable never changes.
+
+
+- Constants are declared with the defined function.
+
+- The defined function has 2 arguments:    
+  `define('NAME', 'John');`
+  1. name of the variable:
+    - all caps (common practice)
+    - space not allowed
+    - string
+  2. value for the variable
+
+
+After deining a a constant the value never changes
+We can read the value of the Constant (we don't need to use the `$` sign)   
+```
+<?php 
+  
+define('NAME', 'John');
+
+echo NAME;
+
+// output: John
+```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
