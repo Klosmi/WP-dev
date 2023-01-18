@@ -6,3 +6,4 @@
 4. [Strings and Booleans](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#strings-and-booleans)     
 5. [Functions](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#functions)     
 6. [Arrays](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#arrays)     
+7. [Loops](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loops)     
