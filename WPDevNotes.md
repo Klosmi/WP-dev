@@ -357,3 +357,25 @@ echo NAME;
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+# [Comments](https://www.php.net/manual/en/language.basic-syntax.comments.php)    
+They are a feature for providing notes and documentation in our code.
+
+1. Syntax: single line commnets 
+```
+// This is a single line comment
+```
+
+2. Syntax: block comment: multiple lines of comment
+```
+/*
+This is a multi 
+line comment
+*/
+```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
