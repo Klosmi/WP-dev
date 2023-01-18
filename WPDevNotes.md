@@ -225,3 +225,6 @@ the value of the variable that gets passed to the funtion.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+# [Arrays]()
+
