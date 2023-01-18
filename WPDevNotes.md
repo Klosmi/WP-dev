@@ -323,3 +323,5 @@ comparison operators compare two values.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+# [Constants]()
