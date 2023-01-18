@@ -5,4 +5,4 @@
 3. [PHP variables](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#php-variables)     
 4. [Strings and Booleans](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#strings-and-booleans)     
 5. [Functions](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#functions)     
-6. [Arrays]()
+6. [Arrays](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#arrays)     
