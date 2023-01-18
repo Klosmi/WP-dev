@@ -127,3 +127,43 @@ __Network Panel__
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+# [Strings](https://www.php.net/manual/en/language.types.string.php) and [Booleans](https://www.php.net/manual/en/language.types.boolean.php)
+
+  PHP has a category system for variables. __[data types](https://www.javatpoint.com/php-data-types)__: 
+
+  A data type describes the type of data stored in a variable. Every variable has a data type. (In PHP assigning a data type to a variable is automated by the language.)
+  These are:   
+  - __intiger__
+  - __float__
+  - __string__ 
+  - __boolean__
+  - __array__
+  - __object__
+  - __null__ *(if a variable doesn't have a value)*
+
+
+## Strings   
+data type for raw text.
+
+- __' ';__ inside single quotes, or __" ";__ inside double quotes we can write text.  
+  ```
+  $name = 'John Doe';
+
+  // output the variable
+  echo $name;
+
+## Boolean
+ is a data type where the value is either true or false.
+ ```
+  $isLoggedIn = true;
+  echo $isLoggedIn;
+
+  // output is 1
+  ```
+
+---
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
