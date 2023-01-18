@@ -168,4 +168,60 @@ data type for raw text.
 
 <br>
 
-# [Functions]()
+# [Functions](https://www.simplilearn.com/tutorials/php-tutorial/php-functions)   
+
+A function is a block of code that can perform a specific task to better understand.    
+
+__`function`__ keyword: we use it to define a function
+
+Defining a function:
+__function__ + __space__ + __function name__ + __(argument)__ + __{body of the function}__
+
+Invoking a function (calling a function)
+__function's name__ + __()__  
+
+```
+<?php 
+  
+  function greeting() {
+    echo 'Welcome user!';
+  }
+
+  greeting();
+
+// output: Welcome user!
+```
+
+<br>
+
+__Parameter__      
+is a variable in the declaration of the function.     
+
+Adding parameters to the function: in the parentheses of the function name we can store values passed on to the function.      
+
+These variables can be configured during the functions execution inside the parentheses of the function.   
+
+We can configure the value of a variable (as a parameter) by updating our function calls inside the parentheses.  
+
+```
+<?php 
+  
+  function greeting($message) {
+    echo $message;
+  }
+
+  greeting('Hello!');
+  greeting('Bonjour !');
+
+// output: Hello!Bonjour !
+```
+
+__Argument__   
+the value of the variable that gets passed to the funtion.
+
+
+---
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
