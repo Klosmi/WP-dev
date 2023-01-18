@@ -8,3 +8,4 @@
 6. [Arrays](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#arrays)     
 7. [Loops](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loops)     
 8. [Constants](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#constants)     
+9. [Comments](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#comments)   
