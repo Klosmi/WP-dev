@@ -167,3 +167,5 @@ data type for raw text.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+# [Functions]()
