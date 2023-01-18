@@ -226,5 +226,41 @@ the value of the variable that gets passed to the funtion.
 
 <br>
 
-# [Arrays]()
 
+# [Arrays](https://www.php.net/manual/en/language.types.array.php#:~:text=An%20array%20in%20PHP%20is,%2C%20queue%2C%20and%20probably%20more.)
+
+What if we need to store multiple pieces of data?   
+That's what an array is for.   
+Arrays can store an unlimited amount of values.
+
+
+The array function will return an array.    
+__`$var = array('value01', true, 1.25);`__   
+Here, `var` variable stores an array, not a copy of the array function.
+
+The value returned by the function will be used as the variables value.
+
+- We're allowed to store as many values and as many type as we'd like.
+
+- Values must be comma separated.
+
+```
+<?php 
+  
+$food = array(
+  'pizza', 'hamburger', 'spaghetti'
+);
+
+//We can input the index of the item we'd like to grab.
+
+echo $food[1];
+
+
+// output: hamburger
+```
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
+
+# [Loops]()
