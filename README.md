@@ -15,4 +15,4 @@
 # WP Theme development with PHP
 
 1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)      
-2. [Files and Folders]()  
+2. [Files and Folders](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#files-and-folders-of-wordpress)  
