@@ -474,3 +474,61 @@ Not recommended to edit files outside of this directory (because WP may override
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [File Headers](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/)   
+File headers are pieces of additional information for describing your theme. (Has information like who is the author of the theme, etc.)
+
+When createing a Theme for WP, first we have to register it with WP.   
+
+WordPress is ultimately frontend agnostic.   
+We're not required to use a specific framework.   
+We have complete freedom over which libraries are incorporated into our theme.
+
+WordPress has three requirements for registering a new theme. The file names are very important.
+1. index.php
+2. style.css
+3. File Header
+
+
+First, in the `themes` in `wp-content` we create a folder, to separate our custom theme(s) from the rest of WP's own themes.
+
+__File Header__ must be defined in the `style.css` file. This block comment is the file header, in our `style.css` file.     
+So, a file header can be created by adding a block comment in CSS (it has to be on the top of the css file).   
+
+*It's a block comments or information about our theme.*   
+*Every piece of information follows a key value format.*   
+*The format is the name of the property, followed by the value.*  
+*They're separated with a colon.*
+```
+/*
+Theme Name: Twenty Twenty
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+```
+The most important property is the name of the theme.
+```
+/*Theme Name: My 1st theme */
+```
+
+Now, we can login to our admin Dahboard, and under *Appearance/Themes* we can see our new theme's name  `My 1st theme`
+
+When we visit the site it's empty, because we haven't created a template yet.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
