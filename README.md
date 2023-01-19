@@ -14,4 +14,5 @@
 
 # WP Theme in the perspective of PHP
 
-1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)     
+1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)      
+2. [Files and Folders]()  
