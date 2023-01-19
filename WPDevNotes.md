@@ -384,7 +384,7 @@ line comment
 <br>
 
 ---
-# [WP Theme in the perspective of PHP](https://www.toptal.com/wordpress/modern-wordpress-development-pt-1)
+# WP Theme in the perspective of PHP
 ---
 
 # [Configuration file](https://developer.wordpress.org/apis/wp-config-php/)
