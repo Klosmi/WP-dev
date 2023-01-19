@@ -380,3 +380,55 @@ line comment
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
 
 <br>
+
+<br>
+
+---
+# [WP Theme in the perspective of PHP](https://www.toptal.com/wordpress/modern-wordpress-development-pt-1)
+---
+
+# [Configuration file](https://developer.wordpress.org/apis/wp-config-php/)
+it is the `wp-config.php`
+
+- it contains the core settings of WordPress.
+
+- We can find info such as the database, login credentials, security keys, etc.
+
+- Updates not affects the configuration file.
+
+- The default settings are optimized for most WordPress apps.
+
+- Word presses configuration settings are defined with __[constants]()__.
+
+- WordPress disables debugging mode. (It's considered good practice to hide errors in a __production environment__.)
+
+Configure the [WP_DEBUG](https://developer.wordpress.org/apis/wp-config-php/#wp-debug) option to enable debugging while we developing WP.
+- in the [documentation](https://developer.wordpress.org/apis/wp-config-php/#wp-debug):
+```
+define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );   
+define( 'WP_DEBUG', true ); // in production environment it is false
+```
+In the `wp-config` file we will hav e to add our line to enable deubbing. 
+*Lets go to the comment part where it says:*
+```
+ * For information on other constants that can be used for debugging,
+ * visit the documentation.
+ *
+ * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ */
+
+  if ( ! defined( 'WP_DEBUG' ) ) {
+    define( 'WP_DEBUG', false );
+  }
+ ```
+ *By setting WP_DEBUG constant to "true", this code is enabling the display of error messages, which can be useful for troubleshooting issues on the site.*
+ ```
+  if ( ! defined( 'WP_DEBUG' ) ) {
+    define( 'WP_DEBUG', true );
+  }
+ ```
+ *Lets deine another error handler for PHP's special type of error called a fatal error. Fatal errors will cause the server to produce a blank page. WordPress has implemented a feature to produce a __friendlier page__ if we have a fatal error.*
+```
+define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
+```
+
