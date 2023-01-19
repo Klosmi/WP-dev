@@ -12,7 +12,7 @@
 
 <br>
 
-# WP Theme in the perspective of PHP
+# WP Theme development with PHP
 
 1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)      
 2. [Files and Folders]()  
