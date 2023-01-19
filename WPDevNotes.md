@@ -388,6 +388,9 @@ line comment
 ---
 # WP Theme in the perspective of PHP
 
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
+
+<br>
 
 # [Configuration file](https://developer.wordpress.org/apis/wp-config-php/)
 it is the `wp-config.php`
@@ -436,7 +439,7 @@ define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
 
 <br>
 
