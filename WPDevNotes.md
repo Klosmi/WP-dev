@@ -443,3 +443,34 @@ define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 
 <br>
 
+# [Files and Folders of Wordpress](https://www.wpbeginner.com/beginners-guide/beginners-guide-to-wordpress-file-and-directory-structure/)
+
+The files in the root directory contain code for preparing WordPress.     
+These files are responsible for delivering the pages on the front side of WordPress.
+
+The files in the root directory are __responsible for loading a page on the browser__.
+
+We have also 3 directories (folders): 
+- wp-admin
+- wp-content
+- wp-includes
+
+## [wp-includes](https://qodeinteractive.com/magazine/wordpress-file-structure/#:~:text=The%20wp%2Dincludes%20folder%20is,your%20website%20to%20function%20properly.)
+WordPress defines tons of functions. We can find most of them inside this folder.
+
+The files inside the `wp-includes` folder contains function definitions that WordPress uses to process data.
+
+Many of the files inside this folder can't do anything by themselves (They do not render pages.)
+
+## [wp-admin](https://kinsta.com/knowledgebase/wordpress-admin/#:~:text=The%20WordPress%20admin%20dashboard%2C%20often,%2C%20and%20lots%2C%20lots%20more.)   
+This folder contains code for the WordPress admin dashboard. WordPress will separate the code for loading a landing page and the admin dashboard.   
+
+## [wp-content](https://www.elegantthemes.com/blog/tips-tricks/wp-content-a-beginners-guide-to-wordpress-most-important-directory)   
+In this direcotory we can find: plugins, themes, and media files.
+Not recommended to edit files outside of this directory (because WP may override our changes - except the `wp-config` file).
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
+
+<br>
