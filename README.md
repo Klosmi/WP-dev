@@ -1,4 +1,4 @@
-# WP-dev
+# PHP Basics to get started with WP
 
 1. [Environment](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#environment)  
 2. [PHP basics for WP](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#php)     
@@ -9,3 +9,9 @@
 7. [Loops](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loops)     
 8. [Constants](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#constants)     
 9. [Comments](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#comments)   
+
+<br>
+
+# WP Theme in the perspective of PHP
+
+1. [Configuration file - `wp-config.php`]()
