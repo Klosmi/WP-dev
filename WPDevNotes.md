@@ -388,7 +388,7 @@ line comment
 ---
 # WP Theme in the perspective of PHP
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
 
@@ -439,7 +439,7 @@ define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
 
@@ -471,6 +471,6 @@ Not recommended to edit files outside of this directory (because WP may override
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-in-the-perspective-of-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
