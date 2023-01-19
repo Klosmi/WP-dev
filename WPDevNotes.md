@@ -381,11 +381,13 @@ line comment
 
 <br>
 
+---
+
 <br>
 
 ---
 # WP Theme in the perspective of PHP
----
+
 
 # [Configuration file](https://developer.wordpress.org/apis/wp-config-php/)
 it is the `wp-config.php`
@@ -431,4 +433,10 @@ In the `wp-config` file we will hav e to add our line to enable deubbing.
 ```
 define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 ```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
 
