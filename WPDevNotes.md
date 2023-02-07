@@ -532,3 +532,45 @@ When we visit the site it's empty, because we haven't created a template yet.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+
+# [Additional File Headers](https://developer.wordpress.org/themes/functionality/custom-headers/)
+
+in our `style.css` which is in the the *theme* folder, we add the following:    
+ - the Name of our theme   
+ - the URL of our theme where developers can see or buy it
+ - author of the theme
+ - Author URI: author's own site
+ - Description: desription of the theme
+ - Tags: we have the option of uploading our theme to the official repository of themes on WordPress. Tags are words or phrases we can associate with our theme. (Safe to exclude this property)
+ - Version: This option should be regularly updated whenever our theme receives updates.
+ - Requires: we may want to set this option if our theme requires newer features of WordPress.
+ - Tested up to: it lets the user know which version of WordPress the theme was tested on. (Recommended to use the latest WP version) 
+ - Reuires PHP: this property should be set to the minimum PHP version required for a theme to be functional.
+ - License, License URI: developers use the GNU license, which is the same license used by WordPress.
+ - Text domain: it is very important in regards to translations. W e can think of the text domain as a unique ID for our translations. (It's common practice to set the text domain to the same name as our folder.)
+ - last, we can add any notes, WP wont check it
+```
+/*
+Theme Name: My 1st theme
+Theme UTI: https://example.com
+Author: Me
+Author URI: https://mysite.com
+Description: A simple WP theme.
+Tags: example, cool, WP
+Version: 1.0
+Requires at least: 5.9
+Tested up to: 6.0
+Reuires PHP: 8.0
+License:
+License URI:
+Text domain: mytheme
+*/ 
+```
+Also, we can se an __image of our theme__, WP search for `screenshot.png` in our theme directory (recommended 1200 x 900 px).
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
