@@ -16,4 +16,5 @@
 
 1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)      
 2. [Files and Folders](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#files-and-folders-of-wordpress)  
-3. [File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#file-headers)
+3. [File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#file-headers)      
+4. [Additional File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-file-headers)     
