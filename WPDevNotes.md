@@ -574,3 +574,47 @@ Also, we can se an __image of our theme__, WP search for `screenshot.png` in our
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+
+# [Index Template](https://developer.wordpress.org/themes/getting-started/your-first-theme/#step-3-create-an-index-php-file)
+The purpose of the index template is to display content.
+Whatever we add on this `index.php` file is displayed on the site.    
+   
+There are two steps for enabling full site editing.
+- 1st step is to create a directory called `templates` in our theme folder.
+- 2nd step is to create an `index.html` file inside the `templates` directory
+
+After added the `index.html` WP admin bar at the page appears.    
+The `index.php` file is ignored.  
+
+Writing plain HTML into the `index.html` __can break a theme.__ ❗️
+
+FSE does not support plain HTML and it supports blocks.   
+__Templates may contain only blocks.___   
+
+<br>
+
+*(If it doesn't work when we click on the `edit` button - we see a blank plage - to solve this, we can add a plain `theme.json` file to our theme folder and then it will work.)*
+
+<br> 
+
+__Blocks are written with HTML comments__ inside a comment we must write the name of the block.  
+*Let's add an HTML comment with the following code in to our `index.html` file*    
+
+index.html
+```
+<!-- wp:site-title /-->
+```
+The __`/`__ indicates the block is self closing. 
+
+Now we can see, that the FSE has detected that we're using a block called site `title`.    
+This block renders the name of our site as a clickable link.   
+
+Building a site involves converting a regular HTML file into blocks.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
