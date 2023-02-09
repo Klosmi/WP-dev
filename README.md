@@ -17,5 +17,6 @@
 1. [Configuration file - `wp-config.php`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#configuration-file)      
 2. [Files and Folders](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#files-and-folders-of-wordpress)  
 3. [File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#file-headers)      
-4. [Additional File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-file-headers)     
-5. [Index Template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#index-template)     
+4. [Additional File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-file-headers)   
+5. [Full-site Editing]()      
+6. [Index Template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#index-template)     
