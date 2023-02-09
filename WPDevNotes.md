@@ -575,7 +575,7 @@ Also, we can se an __image of our theme__, WP search for `screenshot.png` in our
 
 <br>
 
-[Full-site Editing](https://developer.wordpress.org/block-editor/getting-started/full-site-editing/) (FSE)
+# [Full-site Editing](https://developer.wordpress.org/block-editor/getting-started/full-site-editing/) (FSE)
 
 It's difficult to design an interface that allows users to modify elements on a page. So, __page builders__ were introduced into the WordPress ecosystem to solve that problem.   
 Such as:     
