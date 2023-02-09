@@ -575,6 +575,30 @@ Also, we can se an __image of our theme__, WP search for `screenshot.png` in our
 
 <br>
 
+[Full-site Editing](https://developer.wordpress.org/block-editor/getting-started/full-site-editing/) (FSE)
+
+It's difficult to design an interface that allows users to modify elements on a page. So, __page builders__ were introduced into the WordPress ecosystem to solve that problem.   
+Such as:     
+- [Elementor](https://elementor.com/)
+- [Beaver Builder](https://www.wpbeaverbuilder.com/)
+- [Oxygen](https://oxygenbuilder.com/)
+- [Divi](https://www.elegantthemes.com/gallery/divi/)
+- [Visual Composer](https://visualcomposer.com/)   
+ 
+
+There are downsides of page builders, price, licencig, no standardisation and other limits.
+
+ - __[Gutemberg](https://wordpress.org/gutenberg/)__    
+it is WP's own FSE    
+Gutenberg development requires knowledge of JavaScript and react.
+
+The main drawback of full site editing is the development experience.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
 
 # [Index Template](https://developer.wordpress.org/themes/getting-started/your-first-theme/#step-3-create-an-index-php-file)
 The purpose of the index template is to display content.
