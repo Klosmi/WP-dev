@@ -70,7 +70,7 @@ __Network Panel__
 
 ## The `<?php p>` tag     
 
-`<?php ?>` : When PHP parses a file, it looks for opening and closing tags `<?php and ?>` which tell PHP to start and stop interpreting the code between them.
+`<?php ?>` : When PHP parses a file, it looks for opening and closing tags `<?php and ?>` which tell PHP to start and stop interpreting the code between.
 
 ```
 <?php ?>
