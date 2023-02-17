@@ -614,7 +614,7 @@ The `index.php` file is ignored.
 Writing plain HTML into the `index.html` __can break a theme.__ ❗️
 
 FSE does not support plain HTML and it supports blocks.   
-__Templates may contain only blocks.___   
+__Templates may contain only blocks.__   
 
 <br>
 
