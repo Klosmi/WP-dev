@@ -590,7 +590,7 @@ There are downsides of page builders, price, licencig, no standardisation and ot
 
  - __[Gutemberg](https://wordpress.org/gutenberg/)__    
 it is WP's own FSE    
-Gutenberg development requires knowledge of JavaScript and react.
+Gutenberg development requires knowledge of JavaScript and React.
 
 The main drawback of full site editing is the development experience.
 
