@@ -622,7 +622,8 @@ __Templates may contain only blocks.__
 
 <br> 
 
-__Blocks are written with HTML comments__ inside a comment we must write the name of the block.  
+__Blocks are written with HTML comments__    
+inside a comment we must write the name of the block.  
 *Let's add an HTML comment with the following code in to our `index.html` file*    
 
 index.html
