@@ -93,7 +93,7 @@ __Network Panel__
 
 - they allow us to store data
 
-- starts with __`$`__" instruction for telling PHP to define a variable.
+- starts with __`$`__ instruction for telling PHP to define a variable.
 
 - The rules for a programming language are called its syntax (like grammer).
 
