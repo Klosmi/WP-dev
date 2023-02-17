@@ -99,7 +99,7 @@ __Network Panel__
 
 - The process of creating a variable is called a variable __declaration__.
 
-- rule of nameing: it can only start with letter (no number or other signs). We're allowed to use alphanumeric characters, this includes the underscore character.
+- rule of naming: it can only start with letter (no number or other signs). We're allowed to use alphanumeric characters, this includes the underscore character.
 
 - variables are case sensitive.
   `$age` ang `$AGE` are 2 different variables.
