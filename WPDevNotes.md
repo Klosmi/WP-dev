@@ -618,7 +618,7 @@ __Templates may contain only blocks.__
 
 <br>
 
-*(If it doesn't work when we click on the `edit` button - we see a blank plage - to solve this, we can add a `theme.json` file to our theme folder. Note that JSON has to contain something, like the name of our theme `{ name: "theme" }` or something like that.*
+*(If it doesn't work when we click on the `edit` button - we see a blank plage - to solve this, we can add a `theme.json` file to our theme folder. Note that JSON has to contain something, like the name of our theme `{ name: "theme" }` or something like that, because we can not leave it empty (it may give us an error).*
 
 <br> 
 
