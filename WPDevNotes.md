@@ -930,8 +930,8 @@ The `index.php` file however, for our themes should always be empty.
 - [Codex](https://codex.wordpress.org/Main_Page), old dev. docs, it's not updated 
 - [automattic](https://automattic.com/): they run wordpress.org, contribution to WP
 
-## [Best coding practices](https://developer.wordpress.org/coding-standards/)
-To develop is recommended to follow the WP coding guidelines.
+## [Best practices coding standards](https://developer.wordpress.org/coding-standards/)
+To develop WP is recommended to follow the WP coding guidelines and standards.
 
 --- 
 
