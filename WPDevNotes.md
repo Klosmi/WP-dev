@@ -791,8 +791,6 @@ In the [documentation](https://developer.wordpress.org/reference/functions/blogi
 
 <br>
 
-# [Additional tags]()
-
 # [Additional tags](https://developer.wordpress.org/themes/basics/template-tags/#what-is-a-template-tag)
 
 The WP core and third party plugins may want to add meta tags, load style sheets and load scripts.
