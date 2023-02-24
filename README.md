@@ -25,4 +25,4 @@
 9. [Character Set](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#character-set)     
 10. [Additional tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-tags)    
 11. [Body tag](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#body-tag)     
-12. [Documentation and sources]()
+12. [Documentation and sources](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#documentation-and-sources)    
