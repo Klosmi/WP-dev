@@ -702,10 +702,65 @@ If WordPress can't find an indexed HTML file, it'll fall back to the indexed PHP
 
 <br>
 
-# [Language Attribute]()
+# [Language Attribute]()(https://developer.wordpress.org/reference/functions/language_attributes/)   
+
+The purpose of the language attribute is to help the browser identify the language.   
+Also, search engines can correctly index the website and screen readers will be able to pick the correct language profile for reading a site.
+```
+ <!DOCTYPE html>
+<html lang="en">
+...
+```
+- eg.:   
+ *Let's change our site to arabic, so it will be read from left to right.*     
+ *In the `style` attribute we can add the [languge code](https://www.sitepoint.com/iso-2-letter-language-codes/) and the direction of the text.*    
+ *Text will appear on the right side of the sxcreen.*  
+ ```
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :lang(ar) {
+      direction: rtl;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem ipsum dolor</h1>
+</body>
+</html>
+ ```
+    
+In WP As a function grabs the language of the current WordPress installation:      
+`language_attributes( string $doctype = 'html' )` 
+
+- eg.:    
+*If a site is using French, it will set the language attribute to French.*  
+*Replace the `<html lang="ar">` with a PHP function `language_attributes()`.*   
+```
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+...
+```
+💡 We don't need to define this function, because by registering and activating a theme, WP automatically defines this function for us.
+
 
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Character Set](https://developer.wordpress.org/reference/functions/bloginfo/)
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
