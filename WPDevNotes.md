@@ -928,7 +928,7 @@ The `index.php` file however, for our themes should always be empty.
 - The [official WP site](https://wordpress.org/) (.org)
 - The [WP hosting platform](https://wordpress.com/) (.com)
 - [Codex](https://codex.wordpress.org/Main_Page), old dev. docs, it's not updated 
-- [automattic](https://automattic.com/), they run wordpress.org, they have lots of things for WP
+- [automattic](https://automattic.com/): they run wordpress.org, contribution to WP
 
 --- 
 
