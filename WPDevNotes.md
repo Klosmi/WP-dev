@@ -702,7 +702,7 @@ If WordPress can't find an indexed HTML file, it'll fall back to the indexed PHP
 
 <br>
 
-# [Language Attribute]()(https://developer.wordpress.org/reference/functions/language_attributes/)   
+# [Language Attribute](https://developer.wordpress.org/reference/functions/language_attributes/)   
 
 The purpose of the language attribute is to help the browser identify the language.   
 Also, search engines can correctly index the website and screen readers will be able to pick the correct language profile for reading a site.
