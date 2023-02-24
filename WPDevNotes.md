@@ -758,9 +758,44 @@ In WP As a function grabs the language of the current WordPress installation:
 
 # [Character Set](https://developer.wordpress.org/reference/functions/bloginfo/)
 
+WP stores the character set for a site in its database.
+The character set should be dynamic.   
+
+WP's function `bloginfo()` can retrieve data from the database.
+
+<br>
+ 
+In the [documentation](https://developer.wordpress.org/reference/functions/bloginfo/) the [parameters section](https://developer.wordpress.org/reference/functions/bloginfo/#parameters) provides a __list of values we can pass into a function__.   
+ 
+- The `show` : parameter allows us to specify the type of value to display on the page.
+
+- [Values](https://developer.wordpress.org/reference/functions/bloginfo/#possible-values-for-show) for the `show` parameter:
+
+  - `charset` :displays the “Encoding for pages and feeds” set in Settings > Reading. This data is retrieved from the “blog_charset” record in the wp_options table. 
+
+  eg.:  
+  *We write the `bloginfo()` function inside the character set attributes, in the meta tag (`<meta charset="UTF-8">`).
+).*   
+  ```
+  !DOCTYPE html>
+  <html lang="ar">
+  <head>
+    <meta charset= <?php bloginfo('charset'); ?>>
+  ```
+  We can check in the developer tool: the character set has been correctly configured (`<meta charset="UTF-8">`).
+
+
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
 
+# [Additional tags]()
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
