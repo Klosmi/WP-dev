@@ -921,3 +921,17 @@ The `index.php` file however, for our themes should always be empty.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Documentation and sources](https://developer.wordpress.org/)
+
+- The [developer docs of wordpress](https://developer.wordpress.org/)
+- The [official WP site](https://wordpress.org/) (.org)
+- The [WP hosting platform](https://wordpress.com/) (.com)
+- [Codex](https://codex.wordpress.org/Main_Page), old dev. docs, it's not updated 
+- [automattic](https://automattic.com/), they run wordpress.org, they have lots of things for WP
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
