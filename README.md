@@ -20,3 +20,5 @@
 4. [Additional File Headers](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-file-headers)   
 5. [Full-Site Editing](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#full-site-editing-fse)      
 6. [Index Template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#index-template)     
+7. [Recreating the index template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#recreating-the-index-template).  
+8. [Language attribute]()
