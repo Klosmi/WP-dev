@@ -23,4 +23,5 @@
 7. [Recreating the index template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#recreating-the-index-template)     
 8. [Language attribute](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#language-attribute)   
 9. [Character Set](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#character-set)     
-10. [Additional tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-tags)
+10. [Additional tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-tags)    
+11. []()
