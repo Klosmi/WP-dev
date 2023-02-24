@@ -643,3 +643,69 @@ Building a site involves converting a regular HTML file into blocks.
 
 <br>
 
+# [Recreating the Index Template](https://developer.wordpress.org/themes/template-files-section/page-template-files/)
+Continuing the previous chapter, if we check the source of the page (right click and click on View Page Source) we can see that WordPress has returned dozens of tags and classes by using full site editing.
+     
+This is how WordPress help us with some basic starter content that is required for a fully functioning theme.
+    
+How is WordPress generating those extra HTML tags?    
+This is how WP generate our page:
+```
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+  <meta charset="<?php bloginfo( 'charset' ); ?>" />
+  <?php wp_head(); ?>
+</head> 
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+(template)
+
+<?php wp_footer(); ?>
+</body>
+</html>
+```    
+
+<br>
+
+__Let's recreate the base template that surrounds the indexed HTML file.__  
+
+If WordPress can't find an indexed HTML file, it'll fall back to the indexed PHP file. We can verify that by renaming our `index.html` file to smoething else.
+
+<br>
+
+ ### Classic site editing  
+
+<br>
+
+ Let's open the `index.php` file and place this code inside to that file:
+ ```
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+# [Language Attribute]()
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
