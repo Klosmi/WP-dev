@@ -24,4 +24,4 @@
 8. [Language attribute](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#language-attribute)   
 9. [Character Set](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#character-set)     
 10. [Additional tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-tags)    
-11. []()
+11. [Body tag](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#body-tag)
