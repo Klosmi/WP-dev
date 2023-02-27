@@ -979,7 +979,7 @@ It helps us specify the objects and what values are valid inside the object’s 
 
 Apply a schema into our JSON. It can double check our file to avoid mistakes.   
 [WP docs give us an example](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/#developing-with-theme-json) by using `"https://schemas.wp.org/trunk/theme.json"`    
-If this doesn't wokr, we can use the original source:   
+If this doesn't work, we can use the original source:   
 `"https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json"`
 ```
 {
