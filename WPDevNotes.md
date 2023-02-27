@@ -950,7 +950,7 @@ A side bar appears. In the side bar we can modify things of our site's appearanc
 
 - eg.:     
 Change the background color to blue. The changes apply in a global level, meaning that every page in our website will have blue background.   
-We can also fine tune our changes to specific blocks: eg paragraph block background are all change to pink (selecting on the side bar we click on blocks/background/color/pink). 
+We can also fine tune our changes to specific blocks: eg. all paragraph blocks' background will change to pink (selecting on the side bar we click on blocks/background/color/pink). 
 
 <br>
 
