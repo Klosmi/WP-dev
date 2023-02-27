@@ -413,7 +413,7 @@ Configure the [WP_DEBUG](https://developer.wordpress.org/apis/wp-config-php/#wp-
 define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );   
 define( 'WP_DEBUG', true ); // in production environment it is false
 ```
-In the `wp-config` file we will hav e to add our line to enable deubbing. 
+In the `wp-config` file we will have to add our line to enable debugging. 
 *Lets go to the comment part where it says:*
 ```
  * For information on other constants that can be used for debugging,
