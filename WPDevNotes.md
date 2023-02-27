@@ -938,3 +938,108 @@ To develop WP is recommended to follow the WP coding guidelines and standards.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+
+
+# [Global Styles](https://make.wordpress.org/design/handbook/focuses/global-styles/)
+It allows users to modify a site styles on a global level.
+
+Go to dashboard/themes/editor   
+Our site appears in editor mode. On the up right corner click on the "Styles" button.    
+A side bar appears. In the side bar we can modify things of our site's appearance.   
+
+- eg.:     
+Change the background color to blue. The changes apply in a global level, meaning that every page in our website will have blue background.   
+We can also fine tune our changes to specific blocks: eg paragraph block background are all change to pink (selecting on the side bar we click on blocks/background/color/pink). 
+
+<br>
+
+### The [`theme.json`](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/)   
+
+We can extend the global styles with a single file, to configure the editor that enables a finer-grained control and managing styles.
+
+In our editor, inside our themes folder, we are create a file called __`theme.json`.__    
+We can configure the editor by adding colors, fonts, spacing rules, etc.   
+(*The name of our file is very important, because WP is looks at the specific file name in our `themes` root directory. When WP finds this file, the settings from this file will be applied to the full site editor.*)    
+
+If we change our templates in the Editor (so not in the `theme.json`), the copy in the database will have priority over the original).    
+If we don't like the change, we can revert: in the middle of our site (in editor mode), we can click on the name of our page (eg. index)click to "Clear Customization".
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+# [JSON Schema](https://make.wordpress.org/themes/2021/11/30/theme-json-schema/)   
+JSON Schema is a content specification language used for validating the structure of a JSON data.       
+It helps you specify the objects and what values are valid inside the object’s properties. [JSON schema](https://www.geeksforgeeks.org/json-schema/) is useful in offering __clear, human-readable, and machine-readable documentation__.
+
+<br> 
+
+Apply a schema into our JSON. It can double check our file to avoid mistakes.   
+[WP docs give us an example](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/#developing-with-theme-json) by using `"https://schemas.wp.org/trunk/theme.json"`    
+If this doesn't wokr, we can use the original source:   
+`"https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json"`
+```
+{
+"$schema" : "https://schemas.wp.org/trunk/theme.json"
+}
+```
+
+<br>
+
+In our editor, inside our themes folder, open the __`theme.json`.__ 
+The first property in your themed JSON file should always be version, so lets add it (backward compatibility reasons).
+*(We are using double quotes, single quotes in json causes error)*   
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2
+}
+```
+
+Mistakes go unnoticed(eg. using capital letter), that is why we use schemas. 
+A schema is available to help us address these issues, and it is not specific for WP.  
+Here is [the docs for the schema](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/#developing-with-theme-json).
+
+<br>   
+
+### [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the olor palette
+
+<br>
+
+Resources to check out for the `theme.json`'s settings:
+- [beginners guide to the `theme.json`](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/)
+- [less beginner friendly (list of all availabel options)](https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/theme-json-living/)
+
+So, with the `theme.json` file we can modify, change WP default color palette.
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : true
+    }
+  }
+}
+```
+
+By default, "defauletPalette" property is set to true. Setting this property to true will allow WordPress to recommend colors. Lets chang it to false.
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : false
+    }
+  }
+}
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
