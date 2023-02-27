@@ -736,7 +736,7 @@ Also, search engines can correctly index the website and screen readers will be 
 </html>
  ```
     
-In WP As a function grabs the language of the current WordPress installation:      
+In WP the following a function grabs the language of the current WordPress installation:      
 `language_attributes( string $doctype = 'html' )` 
 
 - eg.:    
