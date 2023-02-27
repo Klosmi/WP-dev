@@ -432,7 +432,8 @@ In the `wp-config` file we will have to add our line to enable debugging.
     define( 'WP_DEBUG', true );
   }
  ```
- *Lets define another error handler for PHP's special type of error called a fatal error. Fatal errors will cause the server to produce a blank page. WordPress has implemented a feature to produce a __friendlier page__ if we have a fatal error.*
+ *Lets define another error handler for PHP's special type of error called a __fatal error__* ❗️    
+ *Fatal errors will cause the server to produce a blank page. WordPress has implemented a feature to produce a __friendlier page__ if we have a fatal error.*
 ```
 define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 ```
