@@ -537,7 +537,7 @@ When we visit the site it's empty, because we haven't created a template yet.
 
 # [Additional File Headers](https://developer.wordpress.org/themes/functionality/custom-headers/)
 
-in our `style.css` which is in the the *theme* folder, we add the following:    
+in our `style.css` which is in the *theme* folder, we add the following:    
  - the Name of our theme   
  - the URL of our theme where developers can see or buy it
  - author of the theme
