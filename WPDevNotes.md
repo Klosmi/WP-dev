@@ -547,7 +547,7 @@ in our `style.css` which is in the *theme* folder, we add the following:
  - Version: This option should be regularly updated whenever our theme receives updates.
  - Requires: we may want to set this option if our theme requires newer features of WordPress.
  - Tested up to: it lets the user know which version of WordPress the theme was tested on. (Recommended to use the latest WP version) 
- - Reuires PHP: this property should be set to the minimum PHP version required for a theme to be functional.
+ - Requires PHP: this property should be set to the minimum PHP version required for a theme to be functional.
  - License, License URI: developers use the GNU license, which is the same license used by WordPress.
  - Text domain: it is very important in regards to translations. W e can think of the text domain as a unique ID for our translations. (It's common practice to set the text domain to the same name as our folder.)
  - last, we can add any notes, WP wont check it
