@@ -713,7 +713,7 @@ Also, search engines can correctly index the website and screen readers will be 
 ...
 ```
 - eg.:   
- *Let's change our site to arabic, so it will be read from left to right.*     
+ *Let's change our site to arabic, so it will be read from right to left.*     
  *In the `style` attribute we can add the [languge code](https://www.sitepoint.com/iso-2-letter-language-codes/) and the direction of the text.*    
  *Text will appear on the right side of the sxcreen.*  
  ```
