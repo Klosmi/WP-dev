@@ -477,9 +477,9 @@ Not recommended to edit files outside of this directory (because WP may override
 <br>
 
 # [File Headers](https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/)   
-File headers are pieces of additional information for describing your theme. (Has information like who is the author of the theme, etc.)
+File headers are pieces of additional information for describing your theme. (It has information like who is the author of the theme, etc.)
 
-When createing a Theme for WP, first we have to register it with WP.   
+When creating a Theme for WP, first we have to register it with WP.   
 
 WordPress is ultimately frontend agnostic.   
 We're not required to use a specific framework.   
