@@ -26,5 +26,5 @@
 10. [Additional tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#additional-tags)    
 11. [Body tag](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#body-tag)     
 12. [Documentation and sources](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#documentation-and-sources)    
-13. []()    
+13. [Global Styles]()    
 14. [JSON Schema](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#json-schema)    
