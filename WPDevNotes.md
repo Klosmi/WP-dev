@@ -524,7 +524,7 @@ The most important property is the name of the theme.
 /*Theme Name: My 1st theme */
 ```
 
-Now, we can login to our admin Dahboard, and under *Appearance/Themes* we can see our new theme's name  `My 1st theme`
+Now, we can login to our admin dashboard, and under *Appearance/Themes* we can see our new theme's name  `My 1st theme`
 
 When we visit the site it's empty, because we haven't created a template yet.
 
