@@ -1006,7 +1006,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 
 <br>   
 
-### [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
+# [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
 
 <br>
 
