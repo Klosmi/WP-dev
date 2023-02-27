@@ -973,7 +973,7 @@ If we don't like the change, we can revert: in the middle of our site (in editor
 
 # [JSON Schema](https://make.wordpress.org/themes/2021/11/30/theme-json-schema/)   
 JSON Schema is a content specification language used for validating the structure of a JSON data.       
-It helps you specify the objects and what values are valid inside the object’s properties. [JSON schema](https://www.geeksforgeeks.org/json-schema/) is useful in offering __clear, human-readable, and machine-readable documentation__.
+It helps us specify the objects and what values are valid inside the object’s properties. [JSON schema](https://www.geeksforgeeks.org/json-schema/) is useful in offering __clear, human-readable, and machine-readable documentation__.
 
 <br> 
 
