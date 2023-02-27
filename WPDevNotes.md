@@ -1004,7 +1004,11 @@ Mistakes go unnoticed(eg. using capital letter), that is why we use schemas.
 A schema is available to help us address these issues, and it is not specific for WP.  
 Here is [the docs for the schema](https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-json/#developing-with-theme-json).
 
-<br>   
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>  
 
 # [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
 
