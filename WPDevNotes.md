@@ -1006,7 +1006,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 
 <br>   
 
-### [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the olor palette
+### [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
 
 <br>
 
@@ -1039,6 +1039,258 @@ By default, "defauletPalette" property is set to true. Setting this property to 
   }
 }
 ```
+
+<br>
+
+Let's try __enabling the default palette for the site's title block__ in the `theme.json` file. So when we click on the color palette when the `<h1>Site title</h1>` is selected, we can see the default color palette.    
+We use a prtoperty `"blocks"` which value is an object, and it can apply settings to specific blocks.   
+
+List of names for the `blocks` property are [here](https://www.udemy.com/course/wordpress-development-create-wordpress-themes-and-plugins/learn/lecture/32593150#notes).
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : false
+    },
+    "blocks": {
+      "core/site-title" : {
+        "color" : {
+          "defaultPalette" : true
+        }
+      }
+    }
+  }
+}
+```
+
+<br>
+
+### [Adding color to the defalult palette](https://developer.wordpress.org/themes/advanced-topics/theme-json/)   
+
+Lets add a pinkish color.   
+We add a property called `palette` with an initial value of an empty array `[]`. Inside that array we can insert objects for the colors we want.    
+Each obejct has 3 properties:    
+ - "slug" : is an ID for our theme    
+ - "color" :  can Hex, RGB, RGBA, Color Names (red, blue, etc.), Keywords (transparent, currentColor), HSL, HSLA
+ - name: this property is a human readable name of our colour (what the user can read)
+
+
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : false,
+      "palette": [
+        {
+          "slug": "a-pink",
+          "color": "#FFC0CB",
+          "name": "Pinkish"
+      }, 
+      {
+          "slug": "m-gray-100",
+          "color": "rgb(243 244 246)",
+          "name": "Grayish 100"
+        },  
+      ]
+    },
+    "blocks": {
+      "core/site-title" : {
+        "color" : {
+          "defaultPalette" : true
+        }
+      }
+    }
+  }
+}
+```
+
+We can add custom __colors to a specific block__.   
+Inside the `"block"` we add the `"palette"` property.
+
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : false,
+      "palette": [
+        {
+          "slug": "a-pink",
+          "color": "#FFC0CB",
+          "name": "Pinkish"
+      }, 
+      {
+          "slug": "m-gray-100",
+          "color": "rgb(243 244 246)",
+          "name": "Grayish 100"
+        },  
+      ]
+    },
+    "blocks": {
+      "core/site-title" : {
+        "color" : {
+          "defaultPalette" : true,
+          "palette" : [
+            {
+              "slug" : "m-primary", "color": "#ef4444", "name" : "My-Primary"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+<br>
+
+### Color palette or CSS properties
+
+WP allows us to toggle the palette for backgrounds, text and links, these settings can be modified on a global level or block level.   
+
+We can modify the colour of the background, text, links, by adding 
+```
+"color" : {
+      "background" : true,
+      "text" : true,
+      "link" : true
+}
+```
+The background and text properties are enabled, lets disable the link for the global setting.   
+For the block setting make the link property available by setting it true in the `"block"` section:
+
+```
+{
+  "$schema" : "https://schemas.wp.org/trunk/theme.json",
+  "version" : 2,
+  "settings" : {
+    "color" : {
+      "defaultPalette" : false,
+      "palette": [
+        {
+          "slug": "a-pink",
+          "color": "#FFC0CB",
+          "name": "Pinkish"
+      }, 
+      {
+          "slug": "m-gray-100",
+          "color": "rgb(243 244 246)",
+          "name": "Grayish 100"
+        },  
+      ],
+ ►    "background" : true,
+ ►    "text" : true,
+ ►    "link" : false
+    },
+    "blocks": {
+      "core/site-title" : {
+        "color" : {
+          "defaultPalette" : true,
+          "palette" : [
+            {
+              "slug" : "m-primary", "color": "#ef4444", "name" : "My-Primary"
+            }
+          ],
+ ▶︎        "link" : true
+        }
+      }
+    }
+  }
+}
+```   
+Setting the background and text properties to true is overkill for our theme.
+
+<br>
+
+### Custom colors
+
+Users are not forced to use our recommended colors if they would like, so they can select a custom color.       
+__We can disable the color picker on a global level or block level__.
+
+Adding the  `"custom" : false` to the `"color"` object can disable the color picker.
+
+```
+...
+  "palette": [
+      {
+        "slug": "a-pink",
+        "color": "#FFC0CB",
+        "name": "Pinkish"
+    }, 
+    {
+        "slug": "m-gray-100",
+        "color": "rgb(243 244 246)",
+        "name": "Grayish 100"
+      },  
+    ],
+    "background" : true,
+    "text" : true,
+    "link" : false,
+  ▶︎ "custom": false
+  },
+...
+```
+
+
+### [Dutone colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-how-to-add-duotone-colors)   
+
+A duotone is a filter that can be applied to images or videos, the filter applies 2 colors.    
+A duotone filter will completely override the colors of an image.
+
+Inside the color object, we add a property called `"duotone" : [ ]`. Its value will be an array.   
+This format for adding a duotone is similar to registering a colour (slug, __color__, name).
+
+The "color" property has an array, because duotones are created with 2 colors: shadow and highlight (the order is important).
+
+● shadow:   
+represents the dark color and the    
+● highlight: represents the lighter color
+
+Only Hex and RGB values are accepted.
+```
+...
+ "background" : true,
+      "text" : true,
+      "link" : false,
+      "custom" : true,
+ ►    "doutone" : 
+      [ { "slug" : "my-pink-moonrise",  "colors" : [#11245e", "#dc4379"], "name" : "My Pink Moonrise"
+        }
+      ]
+    },
+...
+```
+Add duotone for a single block
+```
+...
+"blocks": {
+      "core/site-title": {
+        "color": {
+          "defaultPalette": true,
+          "palette" : [
+            {
+              "slug" : "m-primary", "color": "#ef4444", "name" : "My-Primary"
+            }
+          ],
+          "link" : true,
+ ►        "core/cover" : {
+            "color" : {
+              "duotone":[],
+              "customDuotone": false
+            }
+          }
+        }
+      }
+    }
+  }
+...
+```
+
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
