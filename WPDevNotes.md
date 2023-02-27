@@ -775,7 +775,7 @@ In the [documentation](https://developer.wordpress.org/reference/functions/blogi
   - `charset` : displays the “Encoding for pages and feeds” set in Settings > Reading. This data is retrieved from the “blog_charset” record in the wp_options table. 
 
   eg.:  
-  *We write the `bloginfo()` function inside the character set attributes, in the meta tag (`<meta charset="UTF-8">`).
+  *We write the `bloginfo()` function inside the character set attribute, in the meta tag (`<meta charset="UTF-8">`).
 ).*   
   ```
   !DOCTYPE html>
