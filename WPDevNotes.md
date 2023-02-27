@@ -568,7 +568,7 @@ License URI:
 Text domain: mytheme
 */ 
 ```
-Also, we can se an __image of our theme__, WP search for `screenshot.png` in our theme directory (recommended 1200 x 900 px).
+Also, we can set an __image of our theme__, WP search for `screenshot.png` in our theme directory (recommended 1200 x 900 px).
 
 --- 
 
