@@ -1037,7 +1037,7 @@ By default, "defauletPalette" property is set to true. Setting this property to 
     }
   }
 }
-
+```
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
