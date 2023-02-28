@@ -1411,46 +1411,46 @@ We have to enable borders through the `"settings"` object. Inside this object, w
 A border has a style, width, colour, radius.   
 
 - If we want to enable border settings for a specific block, we must do it from the `"settings"` object.    
-theme.json
-```
-"version": 2,
-	"settings": {
-		"border": {
-      "color" : true,
-      "radius" : true,
-      "style" :  true,
-      "width" : true
-     }
-  },
-```
+	theme.json
+	```
+	"version": 2,
+		"settings": {
+			"border": {
+	      "color" : true,
+	      "radius" : true,
+	      "style" :  true,
+	      "width" : true
+	     }
+	  },
+	```
 The value for these properties is booleans, by default, they're all false.
 
 - let's modify the border settings for the pull quote block.   
 We add our object to the `"blocks"` object with the name `" core/pullquote"`. Here we can add the styling.
- theme.json
- ```
- "version": 2,
-	"settings": {
-		"border": {
-			"customColor": true,
-			"customRadius": true,
-			"customStyle": true,
-			"customWidth": true
-		}
-	},
-	"styles": {
-		"blocks": {
-      "core/pullquote":{
-				"border": {
-					"width": "4px",
-					"radius": "10px",
-					"style": "dotted",
-					"color": "var(--wp--preset--color--vivid-purple)"
-				}
-      }
-    }
-  }
- ```
+	 theme.json
+	 ```
+	 "version": 2,
+		"settings": {
+			"border": {
+				"customColor": true,
+				"customRadius": true,
+				"customStyle": true,
+				"customWidth": true
+			}
+		},
+		"styles": {
+			"blocks": {
+	      "core/pullquote":{
+					"border": {
+						"width": "4px",
+						"radius": "10px",
+						"style": "dotted",
+						"color": "var(--wp--preset--color--vivid-purple)"
+					}
+	      }
+	    }
+	  }
+	 ```
  The border settings are freely modifiable from the sidebar in the editor by enabling all border settings. Users can modify the width, color, style and radius of a border.
 
 
