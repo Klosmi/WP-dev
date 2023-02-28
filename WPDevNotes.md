@@ -1011,6 +1011,12 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 <br>  
 
 # [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
+[adding color to the defalult palette](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-color-to-the-defalult-palette)   
+[color palette or css properties](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#color-palette-or-css-properties)        
+[custom colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#custom-colors)      
+[duotone colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dutone-colors)      
+[gradient colors]()     
+[applying colors]()    
 
 <br>
 
@@ -1258,15 +1264,13 @@ represents the dark color and the
 Only Hex and RGB values are accepted.
 ```
 ...
- "background" : true,
-      "text" : true,
-      "link" : false,
-      "custom" : true,
- ►    "doutone" : 
-      [ { "slug" : "my-pink-moonrise",  "colors" : [#11245e", "#dc4379"], "name" : "My Pink Moonrise"
-        }
-      ]
-    },
+ "duotone": [
+				{
+					"colors": [ "#cc1871", "#f9449e" ],
+					"slug": "pink-and-light-pink",
+					"name": "Pink and light pink"
+				}
+			]
 ...
 ```
 Add duotone for a single block
@@ -1294,6 +1298,106 @@ Add duotone for a single block
   }
 ...
 ```
+
+<br>
+
+### [Gradient colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-gradients) 
+
+If a user has gradients and switches themes, the original gradients will survive from older themes.   
+
+- hide default gradients      
+  theme.json
+  ```
+  ...
+  "color" : {
+    "defaultGradients": false
+  }
+  ```   
+- adding cutom set of gradients (here in global level)
+  theme.json
+  ```
+    "color" : {
+       "gradients": [
+        {
+          "slug" : "winter",
+          "name" : "Winter",
+          "gradient" : "linear-gradient(#a8ff78, #78ffd6)" 
+        }
+      ]
+    }
+  ```
+  - disabling gradients completely for the block.   
+  By adding an empty array WP doesn't present the user with a set of gradients to select from.  
+  ```
+      "blocks": {
+      "core/site-title": {
+        "color": {
+          "gradients": []
+        }
+      }
+    }
+  ```
+  - diabling the custom colour picker by adding the custom gradient property with a value of false.
+  ```
+        "blocks": {
+      "core/site-title": {
+        "color": {
+          "gradients": [],
+          "customGradient": false
+        }
+      }
+    }
+  ```
+
+  ### [Applying colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-applying-colors-with-theme-json)   
+  Here are some practical examples of applying colors to blocks in the styles section of `theme.json`.
+
+  Add the `styles` property at the root level of the object.   
+  `"syles"` property is an object of styles that we can apply to our theme. This option gives us the opportunity to configure the styles, values for different elements and blocks.   
+  theme.json
+  ```
+  {
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version" : 2,
+    "settings" : {...},
+    "styles" : {
+    }
+  }
+  ```
+
+  - changing the Text color of the theme   
+    theme.json  
+    ```
+    "styles": {
+      "color" : {
+          "text": "rgb(55 65 81)"
+      } 
+    }
+    ```
+    Let's try __using a variable__ since this color already exists as a variable under the `"color" / "palette"`
+
+    In the developer tools by clickong on the `<body class = "...">`
+    we can see all the colors added to WordPress as list of variables.   All variables are prefixed with the WP preset colour keyword.   
+    Let's pick one color from the list, and copy the entire variable name `--wp--preset--color--my-gray-400`   
+    *Replace the hardcoded value for the text color with our variable, the variable should be wrapped with the var function.*   
+    theme.json
+    ```
+    "styles": {
+      "color" : {
+          "text": "var(--wp--preset--color--my-gray-400)"
+      } 
+    }
+    ```
+    Let's change the __background color__      
+    theme.json
+    ```
+    "styles": {
+      "color" : {
+          "text": "var(--wp--preset--color--my-gray-400)",
+          "background" : "var(--wp--preset--color--pale-gray-100)"
+      } 
+    }
+    ```
 
 --- 
 
