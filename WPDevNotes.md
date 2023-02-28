@@ -1017,6 +1017,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 [duotone colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dutone-colors)      
 [gradient colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#gradient-colors)     
 [applying colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#applying-colors)    
+[border colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#border-colors)
 
 <br>
 
