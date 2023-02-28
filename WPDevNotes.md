@@ -1399,6 +1399,61 @@ If a user has gradients and switches themes, the original gradients will survive
     }
     ```
 
+<br>
+
+### [Border colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-border-color)
+
+Most blocs support borders by default.   
+
+Configuring borders is slightly different from other settings.
+
+We have to enable borders through the `"settings"` object. Inside this object, we can add an object called `"border"`.   
+A border has a style, width, colour, radius.   
+
+- If we want to enable border settings for a specific block, we must do it from the `"settings"` object.    
+theme.json
+```
+"version": 2,
+	"settings": {
+		"border": {
+      "color" : true,
+      "radius" : true,
+      "style" :  true,
+      "width" : true
+     }
+  },
+```
+The value for these properties is booleans, by default, they're all false.
+
+- let's modify the border settings for the pull quote block.   
+We add our object to the `"blocks"` object with the name `" core/pullquote"`. Here we can add the styling.
+ theme.json
+ ```
+ "version": 2,
+	"settings": {
+		"border": {
+			"customColor": true,
+			"customRadius": true,
+			"customStyle": true,
+			"customWidth": true
+		}
+	},
+	"styles": {
+		"blocks": {
+      "core/pullquote":{
+				"border": {
+					"width": "4px",
+					"radius": "10px",
+					"style": "dotted",
+					"color": "var(--wp--preset--color--vivid-purple)"
+				}
+      }
+    }
+  }
+ ```
+ The border settings are freely modifiable from the sidebar in the editor by enabling all border settings. Users can modify the width, color, style and radius of a border.
+
+
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
