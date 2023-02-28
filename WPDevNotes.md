@@ -1350,7 +1350,7 @@ If a user has gradients and switches themes, the original gradients will survive
   ```
 
   ### [Applying colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-applying-colors-with-theme-json)   
-  Here are some practical examples of applying colors to blocks in the styles section of `theme.json`.
+  Here are some practical examples of applying colors in the styles section of `theme.json`.
 
   Add the `styles` property at the root level of the object.   
   `"syles"` property is an object of styles that we can apply to our theme. This option gives us the opportunity to configure the styles, values for different elements and blocks.   
