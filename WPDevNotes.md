@@ -1326,7 +1326,7 @@ If a user has gradients and switches themes, the original gradients will survive
       ]
     }
   ```
-  - disabling gradients completely for the block.   
+  - disabeling gradients completely for the block.   
   By adding an empty array WP doesn't present the user with a set of gradients to select from.  
   ```
       "blocks": {
@@ -1337,7 +1337,7 @@ If a user has gradients and switches themes, the original gradients will survive
       }
     }
   ```
-  - diabling the custom colour picker by adding the custom gradient property with a value of false.
+  - disabeling the custom colour picker by adding the custom gradient property with a value of false.
   ```
         "blocks": {
       "core/site-title": {
