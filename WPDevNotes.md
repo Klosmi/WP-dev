@@ -1467,39 +1467,39 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
 
  Let's add font family in the global level. First, we add `"typography"` object inside the `"settings"` object. Inside the `"typography"` object we add `"fonFamilies"` which has an array, where can add our custom fonts.    
 	theme.json
-	```
-	 ...
-	    "settings": {
-	      "typography": {
-		"fontFamilies": [
-		{ 
-		  "fontFamily" : "Rubik, sans-serif", 
-		  "slug": "my-rubik",
-		  "name": "My Rubik" 
-		}
-		]
-	      }
-	    }
-	  ...
-	```
+```
+ ...
+    "settings": {
+      "typography": {
+	"fontFamilies": [
+	{ 
+	  "fontFamily" : "Rubik, sans-serif", 
+	  "slug": "my-rubik",
+	  "name": "My Rubik" 
+	}
+	]
+      }
+    }
+  ...
+```
 Let's add a font family in the object specific level.   
 Inside the `"blocks"` object we place the `"typography"` object.     
-	theme.json
-	```
-	  ...
-	    "blocks": {
-	      "typography": {
-		"fontFamilies": [
-		{ 
-		  "fontFamily" : "Lato, sans-serif", 
-		  "slug": "my-Lato",
-		  "name": "My Lato" 
-		}
-		]
-	      }
-	    }
-	  ...
-	```
+theme.json
+```
+  ...
+    "blocks": {
+      "typography": {
+	"fontFamilies": [
+	{ 
+	  "fontFamily" : "Lato, sans-serif", 
+	  "slug": "my-Lato",
+	  "name": "My Lato" 
+	}
+	]
+      }
+    }
+  ...
+```
   (* We haven't loaded the font into our theme, so it won't change at the moment.*)
   
   --- 
