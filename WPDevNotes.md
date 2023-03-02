@@ -1498,7 +1498,7 @@ Inside the `"blocks"` object we place the `"typography"` object.
       }
     }
   ...
-
+  ```
   (* We haven't loaded the font into our theme, so it won't change at the moment.*)
   
   --- 
