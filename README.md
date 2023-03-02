@@ -29,3 +29,4 @@
 13. [Global Styles](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#global-styles)     
 14. [JSON Schema](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#json-schema)    
 15. [Changing WP Default Settings (eg.: the color palette)](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#changing-wp-default-settings-eg-the-color-palette)
+16. [Typography]()
