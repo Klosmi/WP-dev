@@ -1502,7 +1502,120 @@ theme.json
 ```
   (* We haven't loaded the font into our theme, so it won't change at the moment.*)
   
-  --- 
+<br>
+
+## [Font Size](https://fullsiteediting.com/lessons/theme-json-typography-options/#h-font-size)
+  
+Font sizes can be recommended on a global level or block specific level.
+
+- __global level :__        
+`"settings"` __>__ `"typography"` __>__ `"fontSizes"`    
+  theme.json
+  ```
+  "settings": {
+      "typography": {
+        "fontSizes": [
+          {"slug" : "small", "size" : "0.75rem", "name" : "Small"},
+          {"slug" : "medium", "size" : "1.25rem", "name" : "Medium"},
+          {"slug" : "large", "size" : "2.25rem", "name" : "Large"},
+          {"slug" : "x-large", "size" : "3rem", "name" : "X-Large"},
+          {"slug" : "gigantic", "size" : "3.25rem", "name" : "Gigantic"}
+        ]
+      }
+  ```
+
+  - __block level :__    
+    `"blocks"` __>__ "`core/preformatted"` __>__ `"typography"` __>__ "`fontSizes"`    
+    theme.json
+    ```
+    "blocks" : {
+    "core/preformatted" : {
+            "typography" : {
+              "fontSizes" : [],
+              "customFontSizes"  : false
+            }
+          }
+    }
+    ```
+    By setting the `"customFontSizes"` property to `false` the option to configure a custom font size will be hidden (so users won't be able to configure custom fontsizes).
+
+
+ WordPress community strongly encourages developers to override the font sizes for WordPress existing variables.    
+- --wp--preset--font-size--small:  13px;   
+- --wp--preset--font-size--medium: 20px;   
+- --wp--preset--font-size--large:  36px;   
+- --wp--preset--font-size--x-large: 42px;     
+
+*Useful resource is the: [about the font size topic](https://richtabor.com/standardizing-theme-json-font-sizes/)*
+
+
+## [Line height](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-line-height) , [drop cap](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-drop-cap), [font weight](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-weight), [font style](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-style), [text transformation](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-transform), [text decoration](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-decoration)
+By default customizing the line height is disabled, let's enable it by setting it to true. Under `"typography"` add `"lineHieght"`
+```
+"typography" {
+     "lineHeight": true
+    }
+``` 
+The `"dropCap"` property will enable the option of enlarging the first letter of a paragraph.   
+```
+"typography" {
+     "lineHeight" : true,
+     "dropCap" : true
+    }
+``` 
+We can enable the `"fontWeight"` option by setting it to true.
+```
+"typography" {
+     "lineHeight": true,
+     "dropCap": true,
+     "fontWeight" : true
+    }
+``` 
+The `"fontStyle"` property allows users to add italic text, enable it by setting it to true.
+```
+"typography" {
+     "lineHeight" : true,
+     "dropCap" : true,
+     "fontWeight" : true,
+     "fontStyle" : true
+    }
+```
+The `"textTransform"` property changes text casing such as uppercase, lowercase or capitalization.
+```
+"typography" {
+     "lineHeight" : true,
+     "dropCap" : true,
+     "fontWeight" : true,
+     "fontStyle" : true,
+     "textTransform" : true
+    }
+```
+The spacing between letters can be enabled by setting the `"letterSpacing"` property to true.
+```
+"typography" {
+     "lineHeight" : true,
+     "dropCap" : true,
+     "fontWeight" : true,
+     "fontStyle" : true,
+     "textTransform" : true,
+     "letterSpacing" : true
+    }
+```
+The underlines and strike through can be enabled by adding the `"textDecoration"` property with a value of true.
+```
+"typography" {
+     "lineHeight" : true,
+     "dropCap" : true,
+     "fontWeight" : true,
+     "fontStyle" : true,
+     "textTransform" : true,
+     "letterSpacing" : true,
+     "textDecoration" : true
+    }
+```
+These settings can be modified on a block level too.
+
+--- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
