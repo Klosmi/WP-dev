@@ -1464,6 +1464,10 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
 
  # [WP Typography - font settings](https://fullsiteediting.com/lessons/theme-json-typography-options/)    
  The `theme.JSON` file does not provide an option for loading fonts.
+ 
+[font sizes](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#font-size)
+[line height, drop cap, font weight, font style, text transformation, text decoration]()
+
 
  Let's add font family in the global level. First, we add `"typography"` object inside the `"settings"` object. Inside the `"typography"` object we add `"fonFamilies"` which has an array, where can add our custom fonts.    
 	theme.json
@@ -1548,6 +1552,7 @@ Font sizes can be recommended on a global level or block specific level.
 
 *Useful resource is the: [about the font size topic](https://richtabor.com/standardizing-theme-json-font-sizes/)*
 
+<br>
 
 ## [Line height](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-line-height) , [drop cap](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-drop-cap), [font weight](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-weight), [font style](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-style), [text transformation](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-transform), [text decoration](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-decoration)
 By default customizing the line height is disabled, let's enable it by setting it to true. Under `"typography"` add `"lineHieght"`
