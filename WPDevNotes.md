@@ -1466,7 +1466,8 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
  The `theme.JSON` file does not provide an option for loading fonts.
  
 - [font sizes](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#font-size)    
-- [line height, drop cap, font weight, font style, text transformation, text decoration](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#line-height--drop-cap-font-weight-font-style-text-transformation-text-decoration)    
+- [line height, drop cap, font weight, font style, text transformation, text decoration](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#line-height--drop-cap-font-weight-font-style-text-transformation-text-decoration)  
+- [Applying typography styles]()  
 
 
  Let's add font family in the global level. First, we add `"typography"` object inside the `"settings"` object. Inside the `"typography"` object we add `"fonFamilies"` which has an array, where can add our custom fonts.    
@@ -1620,6 +1621,40 @@ The underlines and strike through can be enabled by adding the `"textDecoration"
 ```
 These settings can be modified on a block level too.
 
+<br>
+
+## [Applying typography styles](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-applying-typography-styles-with-theme-json)  
+
+We can apply styles on a global level or block level.    
+Good practice to establish default values for our theme.
+
+Inside the `"styles"` object we can add the typography style by adding the `"typography"` object.      
+
+We can to modify the font family, size, style, wight, line-height, text decoration, text transformation.
+```
+"styles" : {
+  "typography" : {
+     "fontFamily" : "var(--wp--preset-font-family--u--rubik)",
+     "fontSize" : "16px",
+     "fontStyle" : "normal",
+     "fontWeight" : "normal",
+     "lineHeight" : "inherit",
+     "textDecoration" : "none",
+     "textTransform" : "none"
+  }
+}
+```
+Let's configure the site title block to use our custom font as the default font family.   
+Inside the `"blocks"` section, we update the `"core/site-title"` object and the `"typography"` object to the block.
+```
+"blocks" : {
+  "corse/site-title" : {
+     "typography" : {
+          "fontFamily" : "var(--wp--preset--font--family--u-pacifico)"
+      }
+  }
+}
+```
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
