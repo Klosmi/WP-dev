@@ -1630,7 +1630,7 @@ Good practice to establish default values for our theme.
 
 Inside the `"styles"` object we can add the typography style by adding the `"typography"` object.      
 
-We can to modify the font family, size, style, wight, line-height, text decoration, text transformation.
+We can modify the font family, size, style, wight, line-height, text decoration, text transformation.
 ```
 "styles" : {
   "typography" : {
