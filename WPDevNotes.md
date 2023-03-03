@@ -1467,7 +1467,7 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
  
 - [font sizes](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#font-size)    
 - [line height, drop cap, font weight, font style, text transformation, text decoration](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#line-height--drop-cap-font-weight-font-style-text-transformation-text-decoration)  
-- [Applying typography styles]()  
+- [applying typography styles](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#applying-typography-styles)  
 
 
  Let's add font family in the global level. First, we add `"typography"` object inside the `"settings"` object. Inside the `"typography"` object we add `"fonFamilies"` which has an array, where can add our custom fonts.    
