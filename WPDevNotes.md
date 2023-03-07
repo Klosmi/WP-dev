@@ -1695,3 +1695,51 @@ We can provide layout settings by using the `"layout"` object in the `"settings"
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+
+# [Margin and Padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-margin-and-padding)
+Margin and padding settings are disabled (false) by default.    
+We can enable these settings on a global level and block level.
+
+<br>
+
+Insinde the `"settings"` we add a new property "`spacing"`.   
+By setting the "margin" and "padding" true, u
+sers will be able to configure the margin and padding for all blocks that support spacing.
+```
+"settings" : {
+  "spacing" : {
+      "margin": true,
+      "padding": true
+  }
+}
+```
+
+Let's try adding some default styles to our theme. Let's reset the the "margin" and "padding".    
+In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` properties.   
+```
+"styles" : {
+  "spacing" : {
+    "margin" : {
+      "top" : "0px",
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px"
+    },
+    "padding" : {
+      "top" : "0px",
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px"
+    }
+  }
+}
+```
+💡 If we want to apply padding on the y axis of an element we can omit the "right" and "left" properties.
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
