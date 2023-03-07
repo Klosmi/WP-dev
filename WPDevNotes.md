@@ -1660,3 +1660,38 @@ Inside the `"blocks"` section, we update the `"core/site-title"` object and the 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+
+# [Content width](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-how-to-set-content-width-using-theme-json)  
+
+When we want our post's width to be fixed, we can use 
+WP's options for changing the width of the content.  
+
+WordPress provides theme developers with 2 options for changing the width of the content. These settings apply to posts, but not the full site editor.
+
+But we want the full site editor to have complete control of the editor, not a portion.     
+
+<br>
+
+We can provide layout settings by using the `"layout"` object in the `"settings"`.
+  - `"contentSize"` property configures the __default width for all blocks.__    
+  (Instead of having a block stretch from one side of the page to the other, we can set the maximum width for our theme.)   
+ Btw. most posts should have a max width.     
+ - `"wideSize"` property is optional.    
+ __We can configure how wide a block can stretch.__   
+ If we add it in, WP will allow blocks to extend outside the bounds of the content.
+ 
+    ```
+    "settinngs" : {
+      "layout": {
+          "contentSize": "800px",
+          "wideSize": "1100px"
+        }
+    }
+    ```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
