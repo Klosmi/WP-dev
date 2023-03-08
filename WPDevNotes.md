@@ -1804,7 +1804,7 @@ If we want to give more breathing room to our columns, we can set it in the `"st
 
 <br>
 
-# [Enabling everything: apeearance tools](https://developer.wordpress.org/themes/advanced-topics/theme-json/#enabling-and-disabling-settings)   
+# [Enabling everything: appearance tools](https://developer.wordpress.org/themes/advanced-topics/theme-json/#enabling-and-disabling-settings)   
 
 A quick way of enabling everything, is to add the __`"appearanceTools"`__ in the `"settings"` object, and set it to `true`.
 ```
