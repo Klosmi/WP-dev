@@ -1743,3 +1743,79 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Custom Units for margin and padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/)   
+ 
+ Let's view the padding settings, and let's disable the EM unit, so user can not use it *can use REM, PX, %, etc.). To achieve this, we have to modify the `"spacing"` option in the `"settings"` object.    
+ We add the __`"units"`__ property (which has an array of units) to the `"spacing"`.  
+ ```
+ "settings" : {
+    "spacing" : {
+      "margin" : true,
+      "padding" : true,
+      "units" : [
+        "px", "em", "rem", "vh", "vw", "%"
+      ]
+    }
+ }
+ ```
+ If we exclude the "EM" unit, we disable it.
+  ```
+ "settings" : {
+    "spacing" : {
+      "margin" : true,
+      "padding" : true,
+      "units" : [
+        "px", "rem", "vh", "vw", "%"
+      ]
+    }
+ }
+ ```
+
+ <br>
+
+ # [Block Gaps](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-blockgap)
+ A block gap refers to the space between blocks that are aligned side by side.   
+
+ Eg.: the columns block is a block that implements gaps.
+
+In the `"settings"` object we add the __`"blockGap"`__ property in the `"spacing"` option.    
+```
+"settings" : {
+  "spacing" : {
+    "blockGap" : true
+  }
+}
+```
+By turning this setting on (true), users will be allowed to customize the gap.    
+
+If we want to give more breathing room to our columns, we can set it in the `"styles"` object, we have to modify the `"spacing"` property: we add the `"blockGap"` property with a size, eg. `"4rem"`.    
+```
+"styles" : {
+  "spacing" : {
+    "blockGap" : "4rem"
+  }
+}
+```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+# [Enabling everything: apeearance tools](https://developer.wordpress.org/themes/advanced-topics/theme-json/#enabling-and-disabling-settings)   
+
+A quick way of enabling everything, is to add the __`"appearanceTools"`__ in the `"settings"` object, and set it to `true`.
+```
+"settings" : {
+  "appearanceTools" : true 
+}
+```
+It give complete freedom to the users.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
