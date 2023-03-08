@@ -1672,7 +1672,7 @@ WordPress provides theme developers with 2 options for changing the width of the
 But we want the full site editor to have complete control of the editor, not a portion.     
 
 <br>
-
+__Content width__ refers to the width of the main content area, while __wide width__ refers to the maximum width of wider elements on your website.
 We can provide layout settings by using the `"layout"` object in the `"settings"`.
   - `"contentSize"` property configures the __default width for all blocks.__    
   (Instead of having a block stretch from one side of the page to the other, we can set the maximum width for our theme.)   
@@ -1689,6 +1689,9 @@ We can provide layout settings by using the `"layout"` object in the `"settings"
         }
     }
     ```
+The __content width__ is the maximum width of the main content area, typically the area where our blog posts or pages are displayed. This width is usually narrower than the overall width of our website, in order to make reading easier and more comfortable.    
+On the other hand, the __wide width__ is the maximum width of elements that are wider than the *content width*, such as images or video embeds. This width is often used to create full-width or wide-width sections on our website.    
+    
 So, the __content width__ sets the maximum width of our posts, while the __wide width__ sets the maximum width for stretched content in our posts. We can say that both settings will set the maximum width for our blocks.
 
 --- 
