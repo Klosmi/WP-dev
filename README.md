@@ -32,3 +32,6 @@
 16. [Typography](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#wp-typography---font-settings)     
 17. [Content width](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#content-width)      
 18. [Margin and Padding](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#margin-and-padding)
+19. [Custom Units for margin and padding](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#custom-units-for-margin-and-padding)      
+20. [Block Gaps](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#block-gaps)      
+21. [Enabling everything: appearance tools](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#enabling-everything-appearance-tools)
