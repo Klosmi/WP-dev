@@ -1689,6 +1689,7 @@ We can provide layout settings by using the `"layout"` object in the `"settings"
         }
     }
     ```
+So, the __content width__ sets the maximum width of our posts, while the __wide width__. sets the maximum width for stretched content in our posts.
 
 --- 
 
