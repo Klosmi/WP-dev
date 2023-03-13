@@ -942,7 +942,7 @@ To develop WP is recommended to follow the WP coding guidelines and standards.
 
 
 
-# [Global Styles](https://make.wordpress.org/design/handbook/focuses/global-styles/)
+# [<span style="color: red"> Global Styles </span>](https://make.wordpress.org/design/handbook/focuses/global-styles/)
 It allows users to modify a site styles on a global level.
 
 Go to dashboard/themes/editor   
