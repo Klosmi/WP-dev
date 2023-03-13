@@ -972,7 +972,7 @@ If we don't like the change, we can revert: in the middle of our site (in editor
 
 <br>
 
-# [JSON Schema](https://make.wordpress.org/themes/2021/11/30/theme-json-schema/)   
+## [JSON Schema](https://make.wordpress.org/themes/2021/11/30/theme-json-schema/)   
 JSON Schema is a content specification language used for validating the structure of a JSON data.       
 It helps us specify the objects and what values are valid inside the object’s properties. [JSON schema](https://www.geeksforgeeks.org/json-schema/) is useful in offering __clear, human-readable, and machine-readable documentation__.
 
@@ -1010,7 +1010,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 
 <br>  
 
-# [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
+## [Changing WP default settings](https://fullsiteediting.com/lessons/theme-json-color-options/#h-what-color-values-can-you-use-in-theme-json) eg. the color palette
 [adding color to the defalult palette](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-color-to-the-defalult-palette)   
 [color palette or css properties](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#color-palette-or-css-properties)        
 [custom colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#custom-colors)      
@@ -1462,7 +1462,7 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
 <br>
 
 
- # [WP Typography - font settings](https://fullsiteediting.com/lessons/theme-json-typography-options/)    
+ ## [WP Typography - font settings](https://fullsiteediting.com/lessons/theme-json-typography-options/)    
  The `theme.JSON` file does not provide an option for loading fonts.
  
 - [font sizes](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#font-size)    
@@ -1509,7 +1509,7 @@ theme.json
   
 <br>
 
-## [Font Size](https://fullsiteediting.com/lessons/theme-json-typography-options/#h-font-size)
+### [Font Size](https://fullsiteediting.com/lessons/theme-json-typography-options/#h-font-size)
   
 Font sizes can be recommended on a global level or block specific level.
 
@@ -1555,7 +1555,7 @@ Font sizes can be recommended on a global level or block specific level.
 
 <br>
 
-## [Line height](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-line-height) , [drop cap](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-drop-cap), [font weight](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-weight), [font style](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-style), [text transformation](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-transform), [text decoration](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-decoration)
+### [Line height](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-line-height) , [drop cap](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-drop-cap), [font weight](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-weight), [font style](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-font-style), [text transformation](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-transform), [text decoration](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-text-decoration)
 By default customizing the line height is disabled, let's enable it by setting it to true. Under `"typography"` add `"lineHieght"`
 ```
 "typography" {
@@ -1623,7 +1623,7 @@ These settings can be modified on a block level too.
 
 <br>
 
-## [Applying typography styles](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-applying-typography-styles-with-theme-json)  
+### [Applying typography styles](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-applying-typography-styles-with-theme-json)  
 
 We can apply styles on a global level or block level.    
 Good practice to establish default values for our theme.
@@ -1662,7 +1662,7 @@ Inside the `"blocks"` section, we update the `"core/site-title"` object and the 
 <br>
 
 
-# [Content width](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-how-to-set-content-width-using-theme-json)  
+## [Content width](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-how-to-set-content-width-using-theme-json)  
 
 When we want our post's width to be fixed, we can use 
 WP's options for changing the width of the content.  
@@ -1703,7 +1703,7 @@ So, the __content width__ sets the maximum width of our posts, while the __wide 
 <br>
 
 
-# [Margin and Padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-margin-and-padding)
+## [Margin and Padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-margin-and-padding)
 Margin and padding settings are disabled (false) by default.    
 We can enable these settings on a global level and block level.
 
@@ -1750,7 +1750,7 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
 
 <br>
 
-# [Custom Units for margin and padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/)   
+## [Custom Units for margin and padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/)   
  
  Let's view the padding settings, and let's disable the EM unit, so user can not use it *can use REM, PX, %, etc.). To achieve this, we have to modify the `"spacing"` option in the `"settings"` object.    
  We add the __`"units"`__ property (which has an array of units) to the `"spacing"`.  
@@ -1780,7 +1780,7 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
 
  <br>
 
- # [Block Gaps](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-blockgap)
+ ## [Block Gaps](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-blockgap)
  A block gap refers to the space between blocks that are aligned side by side.   
 
  Eg.: the columns block is a block that implements gaps.
@@ -1810,7 +1810,7 @@ If we want to give more breathing room to our columns, we can set it in the `"st
 
 <br>
 
-# [Enabling everything: appearance tools](https://developer.wordpress.org/themes/advanced-topics/theme-json/#enabling-and-disabling-settings)   
+## [Enabling everything: appearance tools](https://developer.wordpress.org/themes/advanced-topics/theme-json/#enabling-and-disabling-settings)   
 
 A quick way of enabling everything, is to add the __`"appearanceTools"`__ in the `"settings"` object, and set it to `true`.
 ```
