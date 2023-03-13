@@ -35,3 +35,4 @@
 -  6. [Custom Units for margin and padding](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#custom-units-for-margin-and-padding)      
 -  7. [Block Gaps](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#block-gaps)      
 -  8. [Enabling everything: appearance tools](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#enabling-everything-appearance-tools)
+14. [Managing Asset Files](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#managing-asset-files)
