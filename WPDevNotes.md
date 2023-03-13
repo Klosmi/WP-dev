@@ -1825,3 +1825,5 @@ It give complete freedom to the users.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Managing Asset Files](https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/)
