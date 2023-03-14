@@ -1829,10 +1829,11 @@ It give complete freedom to the users.
 <br>
 
 # [Managing Asset Files](https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/)
-[Adding a static template as a theme]()
-[Action Hooks]()
-[Writing hooks - `functions.php`]()
-[Adding a hook]()
+
+[Adding a static template as a theme](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-a-static-template-as-a-theme)   
+[Action Hooks](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#action-hooks)   
+[Writing hooks - functions.php](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#writing-hooks---functionsphp)    
+[Adding a hook](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-a-hook)    
 
 
 ## [Adding a static template as a theme](https://www.cloudways.com/blog/html-to-wordpress/)
