@@ -36,3 +36,8 @@
 -  7. [Block Gaps](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#block-gaps)      
 -  8. [Enabling everything: appearance tools](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#enabling-everything-appearance-tools)
 14. [Managing Asset Files](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#managing-asset-files)
+- 1. [Adding a static template as a theme](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-a-static-template-as-a-theme)   
+- 2. [Action Hooks](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#action-hooks)   
+- 3. [Writing hooks - functions.php](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#writing-hooks---functionsphp)    
+- 4. [Adding a hook](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-a-hook)    
+
