@@ -1825,5 +1825,79 @@ It give complete freedom to the users.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+<br>
+<br>
 
 # [Managing Asset Files](https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/)
+[Adding a static template as a theme]()
+[Action Hooks]()
+[Writing hooks - `functions.php`]()
+[Adding a hook]()
+
+
+## [Adding a static template as a theme](https://www.cloudways.com/blog/html-to-wordpress/)
+process of adding our static template to WordPress as a theme.
+
+In the theme folder we creat a folder `assets`.   
+(The `assets` directory is not required by WP, because WP is very flexible with the structure of a theme, however we're allowed to define additional folders and files.)    
+- Here we create our `index.html` file (and basically everything we would have in our html static website, such as CSS, and JS files).    
+This is ooour __static__ template.   
+In the `index.html` in templates folder, we create the content: 
+it has a `<header>`, `<main>` and a `<footer>` section.         
+
+Now we copy the __static__ index.html contents to the __`template/index.html`__'s body.   
+
+Next step, is to load our CSS file (presumably we already have it).   
+
+To add the CSS, we __avoid__ hard coded paths (because our content file's name can change, the http/https can change, and maybe we don't want to looad every single stylesheet).
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+## [Action Hooks](https://developer.wordpress.org/plugins/hooks/)
+__WordPress hooks are a way to modify or add functionality to WordPress without directly modifying the Core code__.     
+Hooks are actions and filters that we can use to change the behavior of WP in different ways.
+
+❗️A __hook is an event to run a PHP function__.
+
+__Event systems__:    
+an event system allows developers to execute code at specific moments in time.   
+So, when we don't want to execute a code immediately (eg. wait until a specific action has occured).
+
+
+💡 Naturally, PHP does not have an event system, therefore the WP created an event system called the Hooks API.   
+(By using hooks, we can completely overhaul WordPress behavior.)
+
+❗️ We can and should use a WP event for registering CSS and JavaScript files. 
+
+We use the `functions.php` file to store the hooks. (We have to create this file)
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+## [Writing hooks - `functions.php`](https://developer.wordpress.org/themes/basics/theme-functions/#:~:text=The%20functions.,modular%2C%20extensible%2C%20and%20functional.)    
+
+WordPress prioritizes the `templates/index.html` file as the template for the home page.   
+But the  loogic is saved in the `functions.php` file.   
+
+Using different files for different things , separate code into different sections is a programming principle and it is called the separation of concerns.    
+
+Outside the template folder we create a `functions.php` file (not function.php  → not the plural `s`).   
+(This file completely optional, however, WP will automatically load it if defined in our theme.)
+
+__`functions.php`__ : is responsible for the logic of a theme      
+__`index.php`__ : is responsible for displaying the content, __unless__ an `index.html` file is available,
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+## [Adding a hook](https://wpsites.net/genesis-tutorials/add-custom-hooks-to-theme/)
