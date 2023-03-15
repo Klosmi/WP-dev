@@ -9,6 +9,7 @@
 7. [Loops](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loops)     
 8. [Constants](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#constants)     
 9. [Comments](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#comments)   
+10. [Return values from within a function](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#return-values-from-within-a-function)
 
 <br>
 
