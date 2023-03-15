@@ -1933,3 +1933,78 @@ __`index.php`__ : is responsible for displaying the content, __unless__ an `inde
 <br>
 
 ## [Adding a hook](https://wpsites.net/genesis-tutorials/add-custom-hooks-to-theme/)
+
+A *hook* as a way for us to listen to an event, if an event occurs, we can run a function during the event.    
+
+There are 2 types of hooks:   
+__[filter](https://codex.wordpress.org/Plugin_API/Filter_Reference)__ and __[action hook](https://codex.wordpress.org/Plugin_API/Action_Reference)__
+
+Let's check out the action hooks, within that lets focus on the [`wp_enqueue_scripts`](https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/)   
+it is used for enqueing both __scripts__ and __styles__.   
+The word *enque* means to add something to a queue.   
+
+The way it works:    
+- when it's time to render the templates, WP starts processing the queue. If we add our scripts and styles to a queue, it will be loaded in to the document. All this happens before the WP template is rendered.
+
+- In the `functions.php` file we are adding the action hook by adding the [`add_action()`](https://developer.wordpress.org/reference/functions/add_action/) function. 
+(This function tells WP to run a function when a specific hook runs.)    
+*We will want to load CSS and JavaScript files (wp_enqueue_scripts)*   
+It can have 4 arguments, but only the first 2 are required.   
+- 1st argument: the name of the hook that allows us to perform this action is called wp_enqueue_scripts
+- 2nd argument: is the name of the function that will run during the event: `m_enqueue`.    
+The name of our function can be anything we want. It should be unique, because functions cannot be defined twice.
+
+  *functions.php*
+  ```
+  <?php 
+  // 💡 There isn't a reason to close the app tag if we're not going to add HTML.
+
+  // Variable declarations
+
+
+  // Include statements
+
+
+  // Hoooks
+  add_action('wp_enqueue_scripts', 'u_enqueue');
+  ```
+
+To keep things organized, it is recommended dedicating a directory for the logic of our theme. So let's create a separate file where we define our functions. We can use PHP's `include` function to include spearate files.   
+
+- Let's create a folder `includes` inside our WP theme. Best practice to outsource the logic of our theme to this folder.  
+- inside the `includes` folder let's create a folder called `front`. Files related to the front end of a site will be defined within this directory.
+- inside this folder let's create a file `enqueue.php`, where we deine our `m_enqueue()` functions.   
+
+  *enqueue.php*
+  ```
+  <?php
+
+  function m_enqueue() {
+    
+  }
+  ```
+
+- To include our m_enqueue.php, we're going go to the `functions.php` and write the `include()` function.     
+💡It is recommended to use absolute path.  
+ Using the `get_theme_file_path()` function (defined by WP) provides the absolute path to the current activated theme on the site. `include(get_theme_file_path);    
+ This function returns a full system path to a file, the path that returns is based on the name of the file we pass in. (*It has one argument which is the path to the file relative to the theme*)
+
+  *funcitons.php*    
+  ```
+  <?php 
+  // Variable declarations
+
+
+  // Include statements
+  include(get_theme_file_path('includes/front/enqueue.php'));
+
+  // Hoooks
+  add_action('wp_enqueue_scripts', 'm_enqueue');
+  ```
+  In this file, we're telling WP we would like to run a function during the `wp_enqueue_scripts` hook, here WordPress will run the `m_enqueue` function.
+  
+  --- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
