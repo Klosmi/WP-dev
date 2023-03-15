@@ -383,6 +383,37 @@ line comment
 
 ---
 
+# [Return values from within a function](https://www.php.net/manual/en/functions.returning-values.php)   
+Our `test.php` file, which is to experiment with php, we create a function to add 2 values.   
+We're adding the values, but they're not accessible outside the function → therefore we are using the `return` keyword. The value written after it will be returned by the function, thus allowing it to be accessible.
+```
+<?php
+  // add 2 numbers
+  function sum($a, $b) {
+  return $a + $b;
+  }
+```
+We create a variable `$total`. It is the sum of the 2 numbers in our function.
+```
+<?php
+  // add 2 numbers
+  function sum($a, $b) {
+  return $a + $b;
+  }
+
+  $total = sum(5, 5);
+  echo $total;
+```
+If we add something after the `return` it will never going to be executed, because PHP will cease execution after the value has been returned.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-dev)
+
+<br>
+
+<br>
+
 <br>
 
 ---
