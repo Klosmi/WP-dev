@@ -1966,7 +1966,7 @@ The name of our function can be anything we want. It should be unique, because f
 
 
   // Hoooks
-  add_action('wp_enqueue_scripts', 'u_enqueue');
+  add_action('wp_enqueue_scripts', 'm_enqueue');
   ```
 
 To keep things organized, it is recommended dedicating a directory for the logic of our theme. So let's create a separate file where we define our functions. We can use PHP's `include` function to include spearate files.   
