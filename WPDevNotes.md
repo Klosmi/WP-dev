@@ -1946,7 +1946,7 @@ The word *enque* means to add something to a queue.
 The way it works:    
 - when it's time to render the templates, WP starts processing the queue. If we add our scripts and styles to a queue, it will be loaded in to the document. All this happens before the WP template is rendered.
 
-- In the `functions.php` file we are adding the action hook by adding the [`add_action()`](https://developer.wordpress.org/reference/functions/add_action/) function. 
+- In the `functions.php` file we are adding the [action hook](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#action-hooks) by adding the [`add_action()`](https://developer.wordpress.org/reference/functions/add_action/) function. 
 (This function tells WP to run a function when a specific hook runs.)    
 *We will want to load CSS and JavaScript files (wp_enqueue_scripts)*   
 It can have 4 arguments, but only the first 2 are required.   
