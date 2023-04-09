@@ -2018,9 +2018,9 @@ To keep things organized, it is recommended dedicating a directory for the logic
     - we need to __register__ the file:    
     it  means we're telling WP the existence of a file: telling WP where to find the file with other details.
 
-    - after registering the file, we can add it to the queue 
+   - after registering the file, we can add it to the queue 
 
-    2 types of files can be registered: CSS and JS files
+   - 2 types of files can be registered: CSS and JS files
 
 <br> 
 
