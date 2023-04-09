@@ -1870,10 +1870,10 @@ It give complete freedom to the users.
 ## [Adding a static template as a theme](https://www.cloudways.com/blog/html-to-wordpress/)
 process of adding our static template to WordPress as a theme.
 
-In the theme folder we creat a folder `assets`.   
+In the theme folder we create a folder `assets`.   
 (The `assets` directory is not required by WP, because WP is very flexible with the structure of a theme, however we're allowed to define additional folders and files.)    
 - Here we create our `index.html` file (and basically everything we would have in our html static website, such as CSS, and JS files).    
-This is ooour __static__ template.   
+This is our __static__ template.   
 In the `index.html` in templates folder, we create the content: 
 it has a `<header>`, `<main>` and a `<footer>` section.         
 
