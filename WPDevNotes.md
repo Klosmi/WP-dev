@@ -1973,7 +1973,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
 
 - Let's create a folder `includes` inside our WP theme. Best practice to outsource the logic of our theme to this folder.  
 - inside the `includes` folder let's create a folder called `front`. Files related to the front end of a site will be defined within this directory.
-- inside this folder let's create a file `enqueue.php`, where we deine our `m_enqueue()` functions.   
+- inside this folder let's create a file `enqueue.php`, where we deine our `m_enqueue()` functions.     
 
   *enqueue.php*
   ```
@@ -1987,7 +1987,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
 - To include our m_enqueue.php, we're going go to the `functions.php` and write the `include()` function.     
 💡It is recommended to use absolute path.  
  Using the `get_theme_file_path()` function (defined by WP) provides the absolute path to the current activated theme on the site. `include(get_theme_file_path);    
- This function returns a full system path to a file, the path that returns is based on the name of the file we pass in. (*It has one argument which is the path to the file relative to the theme*)
+ This function returns a full system path to a file, the path that returns is based on the name of the file we pass in. (*It has one argument which is the path to the file relative to the theme*)   
 
   *funcitons.php*    
   ```
