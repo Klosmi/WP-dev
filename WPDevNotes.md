@@ -1986,7 +1986,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
 
 - To include our m_enqueue.php, we're going go to the `functions.php` and write the `include()` function.     
 💡It is recommended to use absolute path.  
- Using the `get_theme_file_path()` function (defined by WP) provides the absolute path to the current activated theme on the site. `include(get_theme_file_path);    
+ Using the `get_theme_file_path()` function (defined by WP) provides the absolute path to the current activated theme on the site. `include(get_theme_file_path);`    
  This function returns a full system path to a file, the path that returns is based on the name of the file we pass in. (*It has one argument which is the path to the file relative to the theme*)   
 
   *funcitons.php*    
