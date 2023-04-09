@@ -2152,7 +2152,7 @@ If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
 
   (It is a good practice to register a file before queing it. However it is optional.)
 
-  `wp_enqueue_style()` function has only 1 required parameter if we registered the file before.  This paramter is the: __[]`$handle`](https://developer.wordpress.org/reference/functions/wp_enqueue_style/#parameters)__   
+  `wp_enqueue_style()` function has only 1 required parameter if we registered the file before.  This paramter is the: __[`$handle`](https://developer.wordpress.org/reference/functions/wp_enqueue_style/#parameters)__   
   The `$handle` must correspond with the name stored during registration.
      
   (The other parameters are the same parameters for the WP register style function. If we decide not to register a file, we need to provide this information.)   
