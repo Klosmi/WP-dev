@@ -2139,3 +2139,68 @@ If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Enqueuing Styles](https://webdesign.tutsplus.com/tutorials/loading-css-into-wordpress-the-right-way--cms-20402)    
+ 
+ The []`wp_enqueue_style()`](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) function enques a CSS file.  
+
+ This is the next step to adding our assets to the document.
+
+ The__difference between registering or enqueuing__ a style:
+  - when a file is registered, WP becomes aware of it. It doesn't do anything with the file, it just stores the location of the file in memory.
+  - queuing a file tells WP to load the file in the browser!
+
+  (It is a good practice to register a file before queing it. However it is optional.)
+
+  `wp_enqueue_style()` function has only 1 required parameter if we registered the file before.  This paramter is the: __[]`$handle`](https://developer.wordpress.org/reference/functions/wp_enqueue_style/#parameters)__   
+  The `$handle` must correspond with the name stored during registration.
+     
+  (The other parameters are the same parameters for the WP register style function. If we decide not to register a file, we need to provide this information.)   
+
+  The `wp_enqueue_style` function will search through the list of registered files to get the rest of the information.
+
+   Open the __`enqueue.php`__ file.   
+   We are calling the `wp_enqueue_style` after the `wp_register_style()` function.    
+   We're going to load the files in the same order we registered them.  
+   The value must match the value passed into the 1st argument of the `wp_register_style` function.
+
+   `enqueue.php`
+   ```
+    <?php
+
+    function m_enqueue() {
+      wp_register_style(
+        'm_font_rubik_and_pacifico',
+        `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+      );
+       wp_register_style(
+        'm_bootstrap_icons',
+        get_theme_file_uri('assets/bootstrap-icons/bootstrap-icons.cs')
+       );
+
+       wp_register_style(
+          'm_theme',
+          'get_theme_file_uri('assets/public/index.css')       
+        );
+
+  ►    wp_enqueue_style(
+          'm_font_rubik_and_pcifiko'
+       );
+       wp_enqueue_style(
+          'm_bootstrap_icons'
+       );
+       wp_enqueue_style(
+          'm_theme'
+       );
+    }
+   ```
+Now WP should load our files in the `<head>` section of the document.   
+
+WP creates the base template for our theme.   
+This includes calling the [`wp_head()`](https://developer.wordpress.org/reference/functions/wp_head/) function, which is responsible for creating a location for our theme to load files.
+
+  --- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
