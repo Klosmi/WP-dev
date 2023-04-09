@@ -1973,7 +1973,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
 
 - Let's create a folder `includes` inside our WP theme. Best practice to outsource the logic of our theme to this folder.  
 - inside the `includes` folder let's create a folder called `front`. Files related to the front end of a site will be defined within this directory.
-- inside this folder let's create a file `enqueue.php`, where we deine our `m_enqueue()` functions.     
+- inside this folder let's create a file `enqueue.php`, where we define our `m_enqueue()` functions.     
 
   *enqueue.php*
   ```
