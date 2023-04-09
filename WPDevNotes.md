@@ -2008,3 +2008,134 @@ To keep things organized, it is recommended dedicating a directory for the logic
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+## [Registering styles](https://developer.wordpress.org/reference/functions/wp_register_style/)  
+
+  WP has a queue for a list of files that should be loaded on the site.
+  When add our files to this queue, they will get loaded.   
+
+  There are 2 steps for queuing a file:    
+    - we need to __register__ the file:    
+    it  means we're telling WP the existence of a file: telling WP where to find the file with other details.
+
+    - after registering the file, we can add it to the queue 
+
+    2 types of files can be registered: CSS and JS files
+
+<br> 
+
+  The [`wp_register_style()`](https://developer.wordpress.org/reference/functions/wp_register_style/) function can register a CSS file.   
+  This function has a bunch of [paramters](https://developer.wordpress.org/reference/functions/wp_register_style/#parameters), they describe the values that can be passed into the function.   
+
+<br>
+
+  Let's examin this `wp_register_style()` fuctions:    
+  - WP will document the name of the parameter. (eg. `$src`)
+  - Then it is followed by the data type of a parameter. (eg. `string|bool`)
+  - WP tells us if the parameter is required or not (eg. `$src string|false Required`)
+  - when it's not `required` it's `optional`, it means WP provide optional, default values
+
+  Let's register a CSS file:    
+
+  in the assets/index.html template file: we can see a lot of styles.    
+  We are going to add the the `enqueue.php` file the google fints style.
+  *index.html*
+```
+  <!DOCTYPE html>
+   <html lang="en">
+     <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Udemy Static Template</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      ► <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+        <link href="/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="/public/index.css">
+     </head>
+```
+  Open the __`enqueue.php`__  
+  `wp_register_style()`:    
+    - the 1st parameter of the `wp_register_style()` is the handle name. The handle name can be thought of as a unique ID for reference, good to prefix it.
+    -
+  *enqueue.php*
+```
+  <?php
+
+  function m_enqueue() {
+    wp_register_style(
+      'm_font_rubik_and_pacifico',
+    )
+  }
+```
+
+  Add a 2nd parameter, which is the URL to the file. (Must be a valid `http` url, system paths are not accepted ). Here it's the Gogole Font CDN's URL.
+
+```
+    <?php
+
+    function m_enqueue() {
+      wp_register_style(
+        'm_font_rubik_and_pacifico',
+        `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+      )
+    }
+```  
+
+  The  `wp_register_style()` must be called for each style sheet.      
+  Let's add the Bootstrap: 1st lets set the ID to `m_bootstrap_icons` then add the path to the file. 
+
+  Since our link is not `HTTP` url, we have to generate: using the __`get_theme_file_uri()`__ function  (this function will return a URL to our theme).   
+  After we regaister the `index.css` styleshett.
+```
+    <?php
+
+    function m_enqueue() {
+      wp_register_style(
+        'm_font_rubik_and_pacifico',
+        `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+      );
+       wp_register_style(
+        'm_bootstrap_icons',
+        get_theme_file_uri('assets/bootstrap-icons/bootstrap-icons.cs')
+       );
+
+       wp_register_style(
+          'm_theme',
+          'get_theme_file_uri('assets/public/index.css');
+       );
+    }
+```
+So, 2 paramteres a required, but there are other paramters. Eg. the 3rd paramter is the __dependicies__.    
+eg.:   
+our theme.css file needs the icon file. The icon file can be considered a dependency. In that case, we can pass an array to the 3rd parameter in this array. We need to add a list of handle names to this array. 
+
+
+```
+    <?php
+
+    function m_enqueue() {
+      wp_register_style(
+        'm_font_rubik_and_pacifico',
+        `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+      );
+       wp_register_style(
+        'm_bootstrap_icons',
+        get_theme_file_uri('assets/bootstrap-icons/bootstrap-icons.cs')
+       );
+
+       wp_register_style(
+          'm_theme',
+          'get_theme_file_uri('assets/public/index.css'),
+          '[m_bootstrap_icons]'
+       );
+    }
+```
+If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
+
+  --- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
