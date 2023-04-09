@@ -41,4 +41,5 @@
 - 2. [Action Hooks](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#action-hooks)   
 - 3. [Writing hooks - functions.php](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#writing-hooks---functionsphp)    
 - 4. [Adding a hook](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-a-hook)    
+- 5. [Registering styles]()
 
