@@ -2146,7 +2146,7 @@ If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
 
  This is the next step to adding our assets to the document.
 
- The__difference between registering or enqueuing__ a style:
+ The __difference between registering or enqueuing__ a style:
   - when a file is registered, WP becomes aware of it. It doesn't do anything with the file, it just stores the location of the file in memory.
   - queuing a file tells WP to load the file in the browser!
 
