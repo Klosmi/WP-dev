@@ -2057,8 +2057,8 @@ To keep things organized, it is recommended dedicating a directory for the logic
 ```
   Open the __`enqueue.php`__  
   `wp_register_style()`:    
-    - the 1st parameter of the `wp_register_style()` is the handle name. The handle name can be thought of as a unique ID for reference, good to prefix it.
-    -
+    - the 1st parameter of the `wp_register_style()` is the handle name. The handle name can be thought of as a unique ID for reference, good to prefix it.      
+           
   *enqueue.php*
 ```
   <?php
