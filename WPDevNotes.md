@@ -2140,7 +2140,7 @@ If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
 
 <br>
 
-# [Enqueuing Styles](https://webdesign.tutsplus.com/tutorials/loading-css-into-wordpress-the-right-way--cms-20402)    
+## [Enqueuing Styles](https://webdesign.tutsplus.com/tutorials/loading-css-into-wordpress-the-right-way--cms-20402)    
  
  The []`wp_enqueue_style()`](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) function enques a CSS file.  
 
