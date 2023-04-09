@@ -1950,7 +1950,7 @@ The way it works:
 (This function tells WP to run a function when a specific hook runs.)    
 *We will want to load CSS and JavaScript files (wp_enqueue_scripts)*   
 It can have 4 arguments, but only the first 2 are required.   
-- 1st argument: the name of the hook that allows us to perform this action is called wp_enqueue_scripts
+- 1st argument: the name of the hook that allows us to perform this action is called `wp_enqueue_scripts`
 - 2nd argument: is the name of the function that will run during the event: `m_enqueue`.    
 The name of our function can be anything we want. It should be unique, because functions cannot be defined twice.
 
