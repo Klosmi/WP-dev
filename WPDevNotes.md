@@ -1045,7 +1045,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 [adding color to the defalult palette](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#adding-color-to-the-defalult-palette)   
 [color palette or css properties](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#color-palette-or-css-properties)        
 [custom colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#custom-colors)      
-[duotone colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dutone-colors)      
+[duotone colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#duotone-colors)      
 [gradient colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#gradient-colors)     
 [applying colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#applying-colors)    
 [border colors](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#border-colors)
@@ -1279,7 +1279,7 @@ Adding the  `"custom" : false` to the `"color"` object can disable the color pic
 ```
 
 
-### [Dutone colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-how-to-add-duotone-colors)   
+### [Duotone colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-how-to-add-duotone-colors)   
 
 A duotone is a filter that can be applied to images or videos, the filter applies 2 colors.    
 A duotone filter will completely override the colors of an image.
