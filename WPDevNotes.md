@@ -2070,7 +2070,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
   }
 ```
 
-  Add a 2nd parameter, which is the URL to the file. (Must be a valid `http` url, system paths are not accepted ). Here it's the Gogole Font CDN's URL.
+  Add a 2nd parameter, which is the URL ([$src](https://developer.wordpress.org/reference/functions/wp_register_script/#parameters)) to the file. (Must be a valid `http` url, system paths are not accepted ). Here it's the Gogole Font CDN's URL.
 
 ```
     <?php
