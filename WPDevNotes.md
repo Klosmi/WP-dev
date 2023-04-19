@@ -2319,21 +2319,17 @@ function m_head() {
 
 }
 ```
-Then we include the `head.php` file in the `functions.php` file's `include` sectopn.
+Then we include the `head.php` file in the `functions.php` file's `include` section.    
 __functions.php__
 ```
   <?php 
-
-
     // Variable declarations
-
 
     // Include statements
     include(get_theme_file_path('includes/front/enqueue.php'));
 ►   include(get_theme_file_path('includes/front/head.php'));
 
     // Hoooks
-
     add_action('wp_enqueue_scripts', 'm_enqueue');
     add_action('wp_head', 'u_head');
 ```
