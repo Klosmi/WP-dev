@@ -2351,7 +2351,9 @@ __index.html__
 ```
 
 Then in the `head.php` file we output these tags.   
-💡 instead of the `echo` statement we output the tags with `<?php` and `?>`. It's a better way, more readable.
+💡 instead of the `echo` statement we output the tags: the `<?php` tag at the beginning of the function switches from HTML to PHP mode and indicates the start of a PHP code block. The subsequent `?>` tag at the end of the function switches back to HTML mode and indicates the end of the PHP code block.
+
+
 
 
 __head.php__
