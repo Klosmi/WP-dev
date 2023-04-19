@@ -2311,7 +2311,7 @@ __functions.php__
 ►   add_action('wp_head', 'u_head');
 ```
 
-In the includes/front/ we careate the `head.php` file.   
+In the `assets/includes/front/` we careate the `head.php` file.   
 __head.php__
 ```
 <?php 
