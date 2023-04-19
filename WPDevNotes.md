@@ -2392,3 +2392,9 @@ __function.php__
 ►   add_action('wp_head', 'u_head', 5);
 
 ```
+
+  --- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
