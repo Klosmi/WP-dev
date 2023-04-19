@@ -2263,3 +2263,132 @@ Now can see the URL remained unmodified (the version query paramter is not appli
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+## [Loading Additional Head Tags](https://developer.wordpress.org/reference/hooks/wp_head/)
+
+In the assets/index.html file's header we can see the links tag with the attribute `preconnect`. (they can boost the performance of your site by including them.)
+
+index.html
+```
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Udemy Static Template</title>
+►     <link rel="preconnect" href="https://fonts.googleapis.com">
+►     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+      <link href="/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+      <link rel="stylesheet" href="/public/index.css">
+    </head>
+```
+
+Unfortunately, the browser doesn't know what files are hosted locally or on another server: eg. our google fonts are hosted on the google server, while other things hosted in our server. It can take a while for the browser to figure it out.   
+
+We  can tell the browser to connect to Google servers ahead of time. Let's try adding these tags to the head section of the documents.    
+
+<br>
+
+*Let's add an `action` hook into our `functions.oho` file, with the action hook called [`wp_head`](https://developer.wordpress.org/reference/functions/wp_head/)* 
+
+*During this hook, we can add content to the document: name the function as `m_head`*   
+
+*Tehn, we can define the `m_head` function in a separate file (best practice).*
+__functions.php__
+```
+  <?php 
+    // Variable declarations
+
+
+    // Include statements
+    include(get_theme_file_path('includes/front/enqueue.php'));
+
+    // Hoooks
+
+    add_action('wp_enqueue_scripts', 'm_enqueue');
+►   add_action('wp_head', 'u_head');
+```
+
+In the includes/front/ we careate the `head.php` file.   
+__head.php__
+```
+<?php 
+function m_head() {
+
+}
+```
+Then we include the `head.php` file in the `functions.php` file's `include` sectopn.
+__functions.php__
+```
+  <?php 
+
+
+    // Variable declarations
+
+
+    // Include statements
+    include(get_theme_file_path('includes/front/enqueue.php'));
+►   include(get_theme_file_path('includes/front/head.php'));
+
+    // Hoooks
+
+    add_action('wp_enqueue_scripts', 'm_enqueue');
+    add_action('wp_head', 'u_head');
+```
+
+  --- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
+
+The last step is to output the tags back in the HTML documents.
+We copy the following `<linkt>` tags
+__index.html__
+```
+...
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+...
+```
+
+Then in the `head.php` file we output these tags.   
+💡 instead of the `echo` statement we output the tags with `<?php` and `?>`. It's a better way, more readable.
+
+
+__head.php__
+```
+<?php 
+
+function m_head() {
+  ?>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <?php
+}
+```
+
+The tags are now added to the <head> but they load after the google fonts load. Therefore we have to add a 3rd argument in the `functions.php`'s `add_action('wp_head', 'm_head')`.    
+[Priorities in WP](https://learn.wordpress.org/tutorial/wordpress-action-hooks/#:~:text=Because%20WordPress%20Core%20registers%20any,callback%20functions%20have%20been%20completed.) are numberd behind the sence, up to 10. the lower the number the higher its priority.
+
+*We add 5 as a 3rd argument, to change the `wp_head` action hooks loading it's priority*
+__function.php__  
+```
+  <?php 
+
+
+    // Variable declarations
+
+
+    // Include statements
+    include(get_theme_file_path('includes/front/enqueue.php'));
+    include(get_theme_file_path('includes/front/head.php'));
+
+    // Hoooks
+
+    add_action('wp_enqueue_scripts', 'm_enqueue');
+►   add_action('wp_head', 'u_head', 5);
+
+```
