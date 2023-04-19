@@ -2266,7 +2266,7 @@ Now can see the URL remained unmodified (the version query paramter is not appli
 
 ## [Loading Additional Head Tags](https://developer.wordpress.org/reference/hooks/wp_head/)
 
-In the assets/index.html file's header we can see the links tag with the attribute `preconnect`. (they can boost the performance of your site by including them.)
+In the íassets/index.htmlí file's header we can see the <links> tag with the attribute `preconnect`. (they can boost the performance of our site by including them.)
 
 index.html
 ```
