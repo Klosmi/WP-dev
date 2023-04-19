@@ -2291,7 +2291,7 @@ We  can tell the browser to connect to Google servers ahead of time. Let's try a
 
 <br>
 
-*Let's add an `action` hook into our `functions.oho` file, with the action hook called [`wp_head`](https://developer.wordpress.org/reference/functions/wp_head/)* 
+*Let's add an `action` hook into our `functions.php` file, with the action hook called [`wp_head`](https://developer.wordpress.org/reference/functions/wp_head/)* 
 
 *During this hook, we can add content to the document: name the function as `m_head`*   
 
