@@ -2295,7 +2295,7 @@ We  can tell the browser to connect to Google servers ahead of time. Let's try a
 
 *During this hook, we can add content to the document: name the function as `m_head`*   
 
-*Tehn, we can define the `m_head` function in a separate file (best practice).*
+*Then, we can define the `m_head` function in a separate file (best practice).*      
 __functions.php__
 ```
   <?php 
