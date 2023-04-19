@@ -2199,6 +2199,65 @@ Now WP should load our files in the `<head>` section of the document.
 WP creates the base template for our theme.   
 This includes calling the [`wp_head()`](https://developer.wordpress.org/reference/functions/wp_head/) function, which is responsible for creating a location for our theme to load files.
 
+<br>
+
+When eg. looking for the font, we can find it by the ID which matches the 1st value passed into the `wp_register_style()` function → `'m_font_rubik_and_pcifiko'`. In the `<head>` we can find `<link rel="stylesheet" id="u_font_rubik_and_pacifico-css" href=...>`   
+
+__WP modifies our URL in 2 ways:__   
+1.
+  - We can see in the developer console, that the __URL__ of the font is different compared what we gave in `function m_enqueue()` / `wp_register_style`.   
+  The original URL: `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+
+  - The modified by WP URL: (`ver=6.2` at the end, the version of our WP) 
+  `https://fonts.googleapis.com/css2?family=Rubik%3Awght%40300%3B400%3B500%3B700&display=swap`__`&ver=6.2`__    
+
+2. 
+  - WP removes duplicate parameters. For this reason, both fonts aren't loaded, only 1 font loads.    
+  (Here the `family` has been added twice.)
+  Original URL: `https://fonts.googleapis.com/css2?`__`family=`__ `Pacifico&`__`family=`__ `Rubik:wght@300;400;500;700&display=swap`
+
+*A URL query parameter refers to a value added to a URL. Query parameters allow us to send data in the URL.    
+After the __`?`__ we can add key-value pairs diveded by the __`&`__ symbol. Like: `example.com?key=value&key=value`*
+
+<br>
+
+To fix our site, __we need to prevent the version query parameter from being added to the URL__.
+Navigate to:   
+
+`includes/front/enqueue.php`  
+
+*We need to specifiy the 4th argument: it allows us to specify a version before adding it.*   
+
+*To add a 4th argument we have to give a 3rd argument before. Here we pass an empty array `[]`* 
+
+*For the 4th argument, we can pass in a string to set a custom version. Here we add `null` instead of string - by this we tell WP that nothing should be stored*
+
+`enqueue.php`
+```
+  <?php
+
+    function m_enqueue() {
+      wp_register_style(
+        'm_font_rubik_and_pacifico',
+        `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`,
+  ►     [], 
+  ►     null 
+      );
+       wp_register_style(
+        'm_bootstrap_icons',
+        get_theme_file_uri('assets/bootstrap-icons/bootstrap-icons.cs')
+       );
+
+       wp_register_style(
+          'm_theme',
+          'get_theme_file_uri('assets/public/index.css')       
+        );
+     ...
+```
+Now can see the URL remained unmodified (the version query paramter is not applied)
+`https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
+
+
   --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
