@@ -2015,7 +2015,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
   When add our files to this queue, they will get loaded.   
 
   There are 2 steps for queuing a file:    
-    - we need to __register__ the file:    
+  ❗️ we need to __register__ the file:    
     it  means we're telling WP the existence of a file: telling WP where to find the file with other details.
 
    - after registering the file, we can add it to the queue 
