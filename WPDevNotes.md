@@ -2341,7 +2341,7 @@ __functions.php__
 <br>
 
 The last step is to output the tags back in the HTML documents.
-We copy the following `<linkt>` tags
+We copy the following `<link>` tags     
 __index.html__
 ```
 ...
