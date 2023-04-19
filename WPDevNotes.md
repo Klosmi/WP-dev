@@ -2372,7 +2372,8 @@ The tags are now added to the <head> but they load after the google fonts loadðŸ
 Therefore we have to add a 3rd argument in the `functions.php`'s `add_action('wp_head', 'm_head')`.    
 [Priorities in WP](https://learn.wordpress.org/tutorial/wordpress-action-hooks/#:~:text=Because%20WordPress%20Core%20registers%20any,callback%20functions%20have%20been%20completed.) are numberd behind the sence, up to 10. the lower the number the higher its priority.
 
-*We add 5 as a 3rd argument, to change the `wp_head` action hooks loading it's priority*
+*We add 5 as a 3rd argument, to change the `wp_head` action hook's priority*
+*Now it's closer to the beginning of <head>, so it loads before the google fonts lead.*        
 __function.php__  
 ```
   <?php 
