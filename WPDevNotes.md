@@ -2414,7 +2414,7 @@ Start with __header__ and __footer__
 <br>
 
 __Temaplte parts__ :      
-a template part is an HTML file representing a section of a templates by themselves.
+a template part is an HTML file representing a section of a template by themselves.
 
 To create template parts, first we need to create a __folder__ named __`parts`__ ❗️
 
