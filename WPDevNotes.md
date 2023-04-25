@@ -2403,7 +2403,7 @@ __function.php__
 
 ## [Template Part: header and footer](https://fullsiteediting.com/lessons/templates-and-template-parts/#h-creating-your-first-template-parts)
 
-First, we have to split our template into multiple files.
+First, we have to split our index.html into multiple files.
 
 At the `templates` folder we have an `index.html` file, which is very long (500 lines) → break it into smallpeces. It allows us to create reusable part. → these are template parts.   
 
