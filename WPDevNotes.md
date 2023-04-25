@@ -2407,7 +2407,7 @@ First, we have to split our index.html into multiple files.
 
 At the `templates` folder we have an `index.html` file, which is very long (500 lines) → break it into smaller peces. It allows us to create reusable parts → these will be our template parts.   
 
-We have toi identify which sections should be placed in a separate file.
+We have to identify which sections should be placed in a separate file.
 
 Start with __header__ and __footer__ → usuallythey look the same in every page in our site.
 
