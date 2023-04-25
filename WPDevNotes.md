@@ -2398,3 +2398,91 @@ __function.php__
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+# [Templates](https://developer.wordpress.org/themes/block-themes/)
+
+## [Template Part: header and footer](https://fullsiteediting.com/lessons/templates-and-template-parts/#h-creating-your-first-template-parts)
+
+First, we have to split our template into multiple files.
+
+At the `templates` folder we have an `index.html` file, which is very long (500 lines) → break it into smallpeces. It allows us to create reusable part. → these are template parts.   
+
+We have toi identify which sections should be placed in a separate file.
+
+Start with __header__ and __footer__ → usuallythey look the same in every page in our site.
+
+<br>
+
+__Temaplte parts__ :      
+a template part is an HTML file representing a section of a templates by themselves.
+
+To create template parts, first we need to create a __folder__ named __`parts`__ ❗️
+
+In __parts__ folder we create 2 files:
+  - header.html
+  - footer.html
+
+*(file name for template parts are flexible)*
+
+We can create blocks with or without WP's editor.   
+Here we use WP's FSE editor.
+
+Open WP's editor:   
+- click on the __edit site__ (we are on our index site)
+we see a very long few 100 lines of HTML: empty out the html block.
+
+- we add 2 more HTML blocks (so we'll have total 3 blocks empty)    
+*click on the `+` button and add `html`*
+
+- switch back to our `index.html` file where we get our lines:   
+*(between the tags we have all the necessary lines - it's just shown shortly here for clarity)*  
+__index.html__
+```
+<header class="shadow">...
+</header>
+
+<main class="container !mx-auto my-16 grid grid-cols-3 gap-16">...
+</main>
+
+<footer class="bg-gray-700 p-16">...
+</footer>
+```
+
+Now we copy the `<header>` part to the `header.html`, the `<main>` to the `index.html` and the `<footer>` to the `footer.html`
+
+- we jsut have to lead these template parts. *(By default Template parts are not loaded into a template → breaks the site)*
+
+- if we go to the WP site editor, we can see the te index.html is missing the header and footer tags.
+
+- we insert below and above HTML block (click on the `+` button on the right) : insert `template part`
+
+- the template part block is capable of loading a template part
+
+- click on the `choose` button → WP found our template parts. We can select and load them.
+
+- on the `List View` we select the header block and copy it into the index.html file *(from WP we copy to our code editor)*      
+
+
+*this is the block header and footer we got by coping the block from WP: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`*  
+
+__index.html__
+```
+<!-- wp:template-part {"slug":"header","theme":"test"} /-->
+
+<!-- wp:html -->
+<!-- Main Content -->
+<main class="container !mx-auto my-16 grid grid-cols-3 gap-16">...
+</main>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"footer","theme":"test"} /-->
+```
+
+By this code: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
+WP detects that we're loading a template block.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+
+<br>
