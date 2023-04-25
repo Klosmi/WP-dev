@@ -44,4 +44,5 @@
 - 5. [Registering styles](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#registering-styles)   
 - 6. [Enqueuing styles](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#enqueuing-styles)
 - 7. [Loading Additional Head tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loading-additional-head-tags)
+15. [Templates](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#templates)    
 
