@@ -2409,7 +2409,7 @@ At the `templates` folder we have an `index.html` file, which is very long (500 
 
 We have to identify which sections should be placed in a separate file.
 
-Start with __header__ and __footer__ → usuallythey look the same in every page in our site.
+Start with __header__ and __footer__    
 
 <br>
 
