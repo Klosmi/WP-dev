@@ -2463,7 +2463,7 @@ Now we copy the `<header>` part to the `header.html`, the `<main>` to the `index
 - on the `List View` we select the header block and copy it into the index.html file *(from WP we copy to our code editor)*      
 
 
-*this is the block header and footer we got by coping the block from WP: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`*  
+*the block header and footer we got by copying the block from WP: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`*  
 
 __index.html__
 ```
