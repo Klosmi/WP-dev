@@ -419,7 +419,7 @@ If we add something after the `return` it will never going to be executed, becau
 ---
 # WP Theme in the perspective of PHP
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -471,7 +471,7 @@ define('WP_DISABLE_FATAL_ERROR_HANDLER', true);
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -503,7 +503,7 @@ Not recommended to edit files outside of this directory (because WP may override
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -561,7 +561,7 @@ When we visit the site it's empty, because we haven't created a template yet.
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -603,7 +603,7 @@ Also, we can set an __image of our theme__, WP search for `screenshot.png` in ou
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -628,7 +628,7 @@ The main drawback of full site editing is the development experience.
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -671,7 +671,7 @@ Building a site involves converting a regular HTML file into blocks.
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
@@ -730,7 +730,7 @@ If WordPress can't find an indexed HTML file, it'll fall back to the indexed PHP
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#wp-theme-development-with-php)
 
 <br>
 
