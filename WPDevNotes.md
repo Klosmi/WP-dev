@@ -1037,7 +1037,7 @@ Here is [the docs for the schema](https://developer.wordpress.org/block-editor/h
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>  
 
@@ -1106,6 +1106,10 @@ List of names for the `blocks` property are [here](https://www.udemy.com/course/
   }
 }
 ```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1189,6 +1193,10 @@ Inside the `"block"` we add the `"palette"` property.
 }
 ```
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
 <br>
 
 ### Color palette or CSS properties
@@ -1247,6 +1255,10 @@ For the block setting make the link property available by setting it true in the
 ```   
 Setting the background and text properties to true is overkill for our theme.
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
 <br>
 
 ### Custom colors
@@ -1277,7 +1289,11 @@ Adding the  `"custom" : false` to the `"color"` object can disable the color pic
   },
 ...
 ```
+--- 
 
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
+<br>
 
 ### [Duotone colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-how-to-add-duotone-colors)   
 
@@ -1331,6 +1347,10 @@ Add duotone for a single block
 ...
 ```
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
 <br>
 
 ### [Gradient colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-gradients) 
@@ -1380,6 +1400,11 @@ If a user has gradients and switches themes, the original gradients will survive
       }
     }
   ```
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
+<br>
 
   ### [Applying colors](https://fullsiteediting.com/lessons/theme-json-color-options/#h-applying-colors-with-theme-json)   
   Here are some practical examples of applying colors in the styles section of `theme.json`.
@@ -1430,6 +1455,10 @@ If a user has gradients and switches themes, the original gradients will survive
       } 
     }
     ```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1488,7 +1517,7 @@ We add our object to the `"blocks"` object with the name `" core/pullquote"`. He
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1538,6 +1567,10 @@ theme.json
 ```
   (* We haven't loaded the font into our theme, so it won't change at the moment.*)
   
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
 <br>
 
 ### [Font Size](https://fullsiteediting.com/lessons/theme-json-typography-options/#h-font-size)
@@ -1583,6 +1616,10 @@ Font sizes can be recommended on a global level or block specific level.
 - --wp--preset--font-size--x-large: 42px;     
 
 *Useful resource is the: [about the font size topic](https://richtabor.com/standardizing-theme-json-font-sizes/)*
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1652,6 +1689,10 @@ The underlines and strike through can be enabled by adding the `"textDecoration"
 ```
 These settings can be modified on a block level too.
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
 <br>
 
 ### [Applying typography styles](https://fullsiteediting.com/lessons/theme-json-typography-font-styles/#h-applying-typography-styles-with-theme-json)  
@@ -1686,9 +1727,10 @@ Inside the `"blocks"` section, we update the `"core/site-title"` object and the 
   }
 }
 ```
+
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1729,7 +1771,7 @@ So, the __content width__ sets the maximum width of our posts, while the __wide 
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1777,7 +1819,7 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1809,7 +1851,11 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
  }
  ```
 
- <br>
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
+
+<br>
 
  ## [Block Gaps](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/#h-blockgap)
  A block gap refers to the space between blocks that are aligned side by side.   
@@ -1837,7 +1883,7 @@ If we want to give more breathing room to our columns, we can set it in the `"st
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
 
@@ -1853,9 +1899,10 @@ It give complete freedom to the users.
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#13-global-styles)
 
 <br>
+
 <br>
 <br>
 
