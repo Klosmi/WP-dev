@@ -28,7 +28,7 @@
 11. [Body tag](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#body-tag)     
 12. [Documentation and sources](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#documentation-and-sources)    
 13. [Global Styles](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#global-styles)     
-## -  1. [JSON Schema](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#json-schema)    
+-  1. [JSON Schema](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#json-schema)    
 -  2. [Changing WP Default Settings (eg.: the color palette)](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#changing-wp-default-settings-eg-the-color-palette)
 -  3. [Typography](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#wp-typography---font-settings)     
 -  4. [Content width](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#content-width)      
