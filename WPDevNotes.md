@@ -1932,7 +1932,7 @@ To add the CSS, we __avoid__ hard coded paths (because our content file's name c
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -1956,7 +1956,7 @@ We use the `functions.php` file to store the hooks. (We have to create this file
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -1975,7 +1975,7 @@ __`index.php`__ : is responsible for displaying the content, __unless__ an `inde
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -2050,9 +2050,9 @@ To keep things organized, it is recommended dedicating a directory for the logic
   ```
   In this file, we're telling WP we would like to run a function during the `wp_enqueue_scripts` hook, here WordPress will run the `m_enqueue` function.
   
-  --- 
+--- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -2181,9 +2181,9 @@ our theme.css file needs the icon file. The icon file can be considered a depend
 ```
 If the theme file gets enqueued, the bootstrap icons file will get enqueued too.
 
-  --- 
+--- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -2305,9 +2305,9 @@ Now can see the URL remained unmodified (the version query paramter is not appli
 `https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap`
 
 
-  --- 
+--- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -2381,9 +2381,9 @@ __functions.php__
     add_action('wp_head', 'u_head');
 ```
 
-  --- 
+--- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
@@ -2440,9 +2440,9 @@ __function.php__
 
 ```
 
-  --- 
+--- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev#14-managing-asset-files)
 
 <br>
 
