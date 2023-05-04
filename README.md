@@ -46,4 +46,5 @@
 - 7. [Loading Additional Head tags](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#loading-additional-head-tags)
 15. [Templates](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#templates)    
 - 1. [Template parts: `header` and `footer`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#template-part-header-and-footer)
+- 2. [Anatomy of a block]()
 
