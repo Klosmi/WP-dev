@@ -2483,7 +2483,7 @@ WP detects that we're loading a template block.
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
 
@@ -2532,3 +2532,9 @@ __index.html__
     `{"slug":"header","theme":"test"}`   
     (WP parses this object before presenting the content)   
     (It can be difficult to alter these settings through an HTML comment.)
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
