@@ -2487,7 +2487,7 @@ WP detects that we're loading a template block.
 
 <br>
 
-[Anatomy of a block](https://fullsiteediting.com/blocks/)
+## [Anatomy of a block](https://fullsiteediting.com/blocks/)
 
 A brief overview of blocks.
 
