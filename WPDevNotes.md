@@ -2486,3 +2486,49 @@ WP detects that we're loading a template block.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#wp-theme-development-with-php)
 
 <br>
+
+[Anatomy of a block](https://fullsiteediting.com/blocks/)
+
+A brief overview of blocks.
+
+Let's check out our `index.html` file:
+here we have 3 __blocks__:  
+
+__index.html__
+```
+<!-- wp:template-part {"slug":"header","theme":"test"} /-->
+
+<!-- Main Content -->
+<main class="container !mx-auto my-16 grid grid-cols-3 gap-16">
+...
+</main>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"header","theme":"test"} /-->
+```
+
+- __The HTML block__:   
+  - The comments (see below) lets WP knows where a blocks starts and ends.     
+  It has:   
+  has opening  
+  `<!-- wp:html -->`   
+  and closing tags  
+  `<!-- /wp:html -->` 
+
+  - The comments (opening/closing) contain the name of the block: here the name is `wp:html`
+
+  - inside the `<!-- wp:html -->` & `<!-- /wp:html -->` is the __contents__ of the block which is rendered on the page.
+
+- __The template block__:
+  - unlike the HTML block, the template part block does not have inner content, nor does it have a closing HTML comment.
+
+  - __template blocks can be selfclosing__:   
+  note the __` /--> `__ in the    
+  `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
+
+  - the template part block is an example of a block that __renders content through PHP__
+
+  -  after the name of the block there is JSON   
+    `{"slug":"header","theme":"test"}`   
+    (WP parses this object before presenting the content)   
+    (It can be difficult to alter these settings through an HTML comment.)
