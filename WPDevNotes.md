@@ -2589,8 +2589,8 @@ __index.html__
 
  ## [Header-footer optimization](https://www.wpzoom.com/docs/how-to-customize-the-header-in-wordpress-full-site-editor/)
 
-  WP default blocks can generate additional markup.
-  eg.:   
+  WP default blocks can generate additional markup.    
+  eg.:    
   *Our header in the dev tool is between additional `<div>` tags.*   
   ```
   ► <div class="wp-site-blocks">
