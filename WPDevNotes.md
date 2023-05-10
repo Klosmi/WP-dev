@@ -847,7 +847,7 @@ In most cases, developers call the `wp_head()` function at the end of the `<head
 
 <br>
 
-### addig [scripts](https://developer.wordpress.org/reference/functions/wp_footer/)
+### adding [scripts](https://developer.wordpress.org/reference/functions/wp_footer/)
 
 WP does not automatically inject scripts into our documents.    
 We need to provide a location for loading scripts before the closing body tag.
