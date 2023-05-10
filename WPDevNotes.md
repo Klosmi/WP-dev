@@ -2640,3 +2640,33 @@ We replace our header block with the new copy:
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Dummy content in WP](https://wordpress.org/plugins/fakerpress/)
+Dummy text helps us to test our theme.
+We use a plugon called [fakerpress](https://wordpress.org/plugins/fakerpress/).  
+
+We start by creating some *terms*.   
+(*terms* are the *categories* and *tags* associated with a *post*)
+
+on the dashboard left sidebar click: FakerPress/Terms    
+here we can set up our dummy texts paramters → click to *generate*   
+
+We can also generate *posts* by going to the FakerPress/Posts   
+here wen can set a bunch paramteres:
+ - the quantity eg.: 20 and 30
+ - the date option eg.: last 15 days
+ - the post type field: it should include posts and pages
+ - the author fields should be set to whatever account 
+ - the Taxonomy Field Rules section:   
+ here we can add categories and tags to a post under the rates field.
+ - we can also configure the images generated for a post.
+
+→ clcik to generate
+
+After we can deactivate teh plugin.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
