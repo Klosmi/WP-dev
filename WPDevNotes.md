@@ -2643,7 +2643,7 @@ We replace our header block with the new copy:
 
 ## [Dummy content in WP](https://wordpress.org/plugins/fakerpress/)
 Dummy text helps us to test our theme.
-We use a plugon called [fakerpress](https://wordpress.org/plugins/fakerpress/).  
+We use a plugin called [fakerpress](https://wordpress.org/plugins/fakerpress/).  
 
 We start by creating some *terms*.   
 (*terms* are the *categories* and *tags* associated with a *post*)
