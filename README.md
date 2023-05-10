@@ -48,4 +48,5 @@
 - 1. [Template parts: `header` and `footer`](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#template-part-header-and-footer)
 - 2. [Anatomy of a block](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#anatomy-of-a-block)
 - 3. [Header & Footer optimization](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#header-footer-optimization)
+- 4. [Dummy content in WP](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dummy-content-in-wp)
 
