@@ -2687,7 +2687,7 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
  - next step is to begin adding blocks
  - the top part of our header (top-bar) can be considered as a row of blocks
  → click on the `+` and add a `row` block to the top of our template (move it above the `custom html`)   
- This lock is going to act as the overall container for the top bar.
+ This block is going to act as the overall container for the top bar.
  - the top bar element is the root div element
  - we can configure the properties either with CSS or with block settings. 
  
