@@ -2691,7 +2691,7 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
  - the top bar element is the root div element
  - we can configure the properties either with CSS or with block settings. 
  
- Let's look how to configure properties with block settings (with the way users can modify easier the styles with the Gutenmberg editor. With CSS they need a CSS knowledge.) 
+ Let's look how to configure properties with block settings (with the way users can modify easier the styles with the Gutenberg editor. With CSS they need a CSS knowledge.) 
 
  - changing the background color of the row block: bar on the right/Block/Layout/Styles(◉)/Color
  - setting the font size
