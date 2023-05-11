@@ -2683,7 +2683,7 @@ By using template parts, we can tell the editor to focus on a specific template 
 Open the site-editor (edit site): we can see our parts (header, index, footer).   
  - On the left sidebar select `template parts`
  - select the `header` template part   
- (On the header template part, we can focus on the headers __blocks__)
+ (On the header template part, we can focus on the header's __blocks__)
  - next step is to begin adding blocks
  - the top part of our header (top-bar) can be considered as a row of blocks
  → click on the `+` and add a `row` block to the top of our template (move it above the `custom html`)   
