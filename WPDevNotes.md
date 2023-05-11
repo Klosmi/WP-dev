@@ -2670,3 +2670,42 @@ After we can deactivate teh plugin.
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Making a top-bar](https://wordpress.com/support/site-editor/customize-your-header/)
+
+The `<header>` should be grouped → we can move the header into different places. (💡template part)
+
+Let's suppose our header contains 3 parts (3 rows: a top, a middle  and a bottom).   
+We are going to create them as blocks.   
+
+By using template parts, we can tell the editor to focus on a specific template part.
+
+Open the site-editor (edit site): we can see our parts (header, index, footer).   
+ - On the left sidebar select `template parts`
+ - select the `header` template part   
+ (On the header template part, we can focus on the headers __blocks__)
+ - next step is to begin adding blocks
+ - the top part of our header (top-bar) can be considered as a row of blocks
+ → click on the `+` and add a `row` block to the top of our template (move it above the `custom html`)   
+ This lock is going to act as the overall container for the top bar.
+ - the top bar element is the root div element
+ - we can configure the properties either with CSS or with block settings. 
+ 
+ Let's look how to configure properties with block settings (with the way users can modify easier the styles with the Gutenmberg editor. With CSS they need a CSS knowledge.) 
+
+ - changing the background color of the row block: bar on the right/Block/Layout/Styles(◉)/Color
+ - setting the font size
+ - setting padding
+ - Save the changes
+
+1. Add a block
+2. Add styles:    
+*apply styles through the blocks settings*
+3. Add classes:    
+*add classes for styles that can't be applied through a block settings*
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
