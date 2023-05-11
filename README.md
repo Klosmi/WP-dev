@@ -49,4 +49,5 @@
 - 2. [Anatomy of a block](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#anatomy-of-a-block)
 - 3. [Header & Footer optimization](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#header-footer-optimization)
 - 4. [Dummy content in WP](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dummy-content-in-wp)
+- 5. [Making a top-bar](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#making-a-top-bar)
 
