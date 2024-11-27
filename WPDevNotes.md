@@ -2663,7 +2663,7 @@ here wen can set a bunch paramteres:
 
 → clcik to generate
 
-After we can deactivate teh plugin.
+After we can deactivate the plugin.
 
 --- 
 
