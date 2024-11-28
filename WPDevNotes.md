@@ -2744,7 +2744,7 @@ Creating a UI with multiple nested group blocks for icons, font sizes, and backg
 
 Eg. we want an avatar, username and login button as 1 block. We open the HTML block in the Gutnberg editor and we write a code, like
 ```
-    <div class="wp-block-whatervernameyouwant-plus-header-tools">
+    <div class="wp-block-something-plus-header-tools">
       <!-- Signin Modal Link -->
       <a class="signin-link open-modal" href="#signin-modal">
         <div class="signin-icon">
