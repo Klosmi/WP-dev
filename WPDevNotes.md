@@ -2737,3 +2737,7 @@ In the `setup.php` we write the following code to modify the editor's style: <br
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Use HTML block to create a custom look](https://wordpress.org/documentation/article/custom-html/)
+
+Creating a UI with multiple nested group blocks for icons, font sizes, and background colors can be challenging in WordPress. It often becomes difficult to manage and maintain. In such cases, using an **HTML block** in the Gutenberg editor or referencing **custom HTML from a file** (like parts/header.html) is often a better approach for a streamlined custom look.
