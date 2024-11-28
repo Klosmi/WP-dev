@@ -2760,7 +2760,7 @@ Eg. we want an avatar, username and login button as 1 block. We open the HTML bl
 
 You must create a separate file for handling the editor's markup to ensure a consistent and manageable structure.
 <br>
-In our setup.php we include an `editor.css` file from the `assets` folder.
+In our `setup.php` we include an `editor.css` file from the `assets` folder.
 ```
 <?php
 function a_setup_theme(){
