@@ -624,7 +624,7 @@ There are downsides of page builders, price, licencig, no standardisation and ot
 it is WP's own FSE    
 WordPress's Full Site Editing (FSE) using Gutenberg requires JavaScript and React expertise, making development complex. <br> 
 A key drawback is the editing experience: block editors must provide a UI for content editing, leading to elements appearing differently in edit mode compared to the front end. <br>
-Another issue is that custom HTML often differs from the generated HTML, as Gutenberg wraps elements like unordered lists in multiple <div> tags.
+Another issue is that custom HTML often differs from Gutenberg's generated HTML. For example, unordered lists written in standard HTML may be transformed by WordPress into structures wrapped in multiple `<div>` tags.
 
 --- 
 
