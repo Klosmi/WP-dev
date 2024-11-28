@@ -2711,7 +2711,7 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 <br>
 
 ## [Modifiny the editor's style by code](https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/)
-
+#### [bonus link](https://codex.wordpress.org/Editor_Style)
 We create an include folder and in it a `setup.php` file. In the `functions.php` we include the `setup.php`: <br>
 `include(get_theme_file_path('/includes/setup.php'));` <br>
 
