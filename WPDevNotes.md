@@ -2785,21 +2785,6 @@ Example: If we want to hide the *search form in the header* (just for example), 
 ```
 This will hide the search label and button while editing in the Gutenberg editor.
 
-#### where do we include teh `setup.php` file?
-We include the `setup.php` file in the `functions.php` file.
-```
-<?php	
-	// Includes
-	include(get_theme_file_path('/includes/front/enqueue.php'));
-	include(get_theme_file_path('/includes/front/head.php'));
-	include(get_theme_file_path('/includes/setup.php'));
-	
-	// Hooks
-	add_action('wp_enqueue_scripts', 'a_enqueue');
-	add_action('wp_head', 'a_head', 5);
-	add_action('after_setup_theme', 'a_setup_theme');
-```
-
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
