@@ -2712,21 +2712,24 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 
 ## [Modifiny the editor's style by code]
 
-We create an include folder and in it a 'setup.php' file. In the 'functions.php' we include the 'setup.php': <br>
-'include(get_theme_file_path('/includes/setup.php'));' <br>
+We create an include folder and in it a `setup.php` file. In the `functions.php` we include the `setup.php`: <br>
+`include(get_theme_file_path('/includes/setup.php'));` <br>
 
-In the 'setup.php' we write the following code to modify the editor's style: <br>
+In the `setup.php` we write the following code to modify the editor's style: <br>
 '''
-function name-your-function_setup_theme(){
-  add_theme_support('editor-styles');
 
-// here adding the styles
-  add_editor_style([
-    'this can be for example a google fonts link',
-    'assets/bootstrap-icons/bootstrap-icons.css',
-    'assets/public/index.css'
-  ]);
-}
+	function name-your-function_setup_theme(){
+	  add_theme_support('editor-styles');
+	
+	// add_editor_style is a shortcut to add styles to the gutenberg edotir
+ 	// here adding the styles
+	  add_editor_style([
+	    'this can be for example a google fonts link',
+	    'assets/bootstrap-icons/bootstrap-icons.css',
+	    'assets/public/index.css'
+	  ]);
+	}
+
 '''
 
 --- 
