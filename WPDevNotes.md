@@ -2758,9 +2758,37 @@ Eg. we want an avatar, username and login button as 1 block. We open the HTML bl
     </div>
 ```
 
+You must create a separate file for handling the editor's markup to ensure a consistent and manageable structure.
+<br>
+In our setup.php we include an `editor.css` file from the `assets` folder.
+```
+<?php
+function a_setup_theme(){
+  add_theme_support('editor-styles');
+
+  add_editor_style([
+    'https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300;400;500;700&display=swap',
+    'assets/bootstrap-icons/bootstrap-icons.css',
+    'assets/public/index.css',
+    'assets/editor.css'
+  ]);
+}
+```
+The `editor.css` file contains CSS that modifies or styles your content within the Gutenberg editor. This ensures that what you see when editing matches your design intentions and prevents discrepancies between the editor and the front end.
+<br>
+Example: If we want to hide the *search form in the header* (just for example), we can add the following CSS in `editor.css`:
+```
+.header-search-form .wp-block-search__label,
+.header-search-form .wp-block-search__button {
+  display: none;
+}
+```
+This will hide the search label and button while editing in the Gutenberg editor.
+
 
 --- 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
