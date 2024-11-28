@@ -2709,3 +2709,28 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Modifiny the editor's style by code]
+
+We create an include folder and in it a 'setup.php' file. In the 'functions.php' we include the 'setup.php': <br>
+'include(get_theme_file_path('/includes/setup.php'));' <br>
+
+In the 'setup.php' we write the following code to modify the editor's style: <br>
+'''
+function name-your-function_setup_theme(){
+  add_theme_support('editor-styles');
+
+// here adding the styles
+  add_editor_style([
+    'this can be for example a google fonts link',
+    'assets/bootstrap-icons/bootstrap-icons.css',
+    'assets/public/index.css'
+  ]);
+}
+'''
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
