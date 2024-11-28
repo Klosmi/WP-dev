@@ -2741,3 +2741,26 @@ In the `setup.php` we write the following code to modify the editor's style: <br
 ## [Use HTML block to create a custom look](https://wordpress.org/documentation/article/custom-html/)
 
 Creating a UI with multiple nested group blocks for icons, font sizes, and background colors can be challenging in WordPress. It often becomes difficult to manage and maintain. In such cases, using an **HTML block** in the Gutenberg editor or referencing **custom HTML from a file** (like parts/header.html) is often a better approach for a streamlined custom look.
+
+Eg. we want an avatar, username and login button as 1 block. We open the HTML block in the Gutnberg editor and we write a code, like
+```
+    <div class="wp-block-whatervernameyouwant-plus-header-tools">
+      <!-- Signin Modal Link -->
+      <a class="signin-link open-modal" href="#signin-modal">
+        <div class="signin-icon">
+          <i class="bi bi-person-circle"></i>
+        </div>
+        <div class="signin-text">
+          <small>Hello, Sign in</small>
+          My Account
+        </div>
+      </a>
+    </div>
+```
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
