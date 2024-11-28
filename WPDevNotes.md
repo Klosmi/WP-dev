@@ -2710,7 +2710,7 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 
 <br>
 
-## [Modifiny the editor's style by code]
+## [Modifiny the editor's style by code](https://developer.wordpress.org/reference/functions/add_theme_support/)
 
 We create an include folder and in it a `setup.php` file. In the `functions.php` we include the `setup.php`: <br>
 `include(get_theme_file_path('/includes/setup.php'));` <br>
