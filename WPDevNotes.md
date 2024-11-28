@@ -2710,12 +2710,12 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 
 <br>
 
-## [Modifiny the editor's style by code](https://developer.wordpress.org/reference/functions/add_theme_support/)
+## [Modifiny the editor's style by code](https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/)
 
 We create an include folder and in it a `setup.php` file. In the `functions.php` we include the `setup.php`: <br>
 `include(get_theme_file_path('/includes/setup.php'));` <br>
 
-In the `setup.php` we write the following code to modify the editor's style: <br>
+In the `setup.php` we write the following code to [modify the editor's style](https://developer.wordpress.org/reference/functions/add_theme_support/): <br>
 '''
 
 	function name-your-function_setup_theme(){
