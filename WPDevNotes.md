@@ -2793,7 +2793,25 @@ This will hide the search label and button while editing in the Gutenberg editor
 
 ## [Formatting Main Content - Columns](https://learn.wordpress.org/lesson/designing-with-the-columns-block/)
 
-The key point is that we can create pages by combining the Gutenberg editor with our own code. Here, we design the main content area below the header, utilizing Gutenberg's column blocks together with our custom index.html file.
+The key point is combining the Gutenberg editor with custom code to create pages. For example, in the main content area below the header, we use Gutenberg's Columns block alongside a custom templates/index.html file.
+
+Example Template
+(Note: Styling uses Bootstrap for brevity, though plain CSS is preferred for better performance.)
+We can simplify by omitting unnecessary classes since the Columns block provides similar functionality. Only container and auto classes are used to center the content:
+
+`templates/index.html`
+```
+<!-- Main Content -->
+<main class="container !mx-auto my-16 grid grid-cols-3 gap-16">
+  <div class="col-span-2">
+    Column 1
+  </div>
+  <div>
+    Column 2
+  </div>
+</main>
+```
+The `<main>` contains two `<div>` tags that separate column content. The col-span-2 class sets the first column to 70% width, but this can be omitted as column widths are adjustable in WordPress block settings.
 
 --- 
 
