@@ -2812,7 +2812,10 @@ We can simplify by omitting unnecessary classes since the Columns block provides
 </main>
 ```
 The `<main>` element contains 2 `<div>` tags for column content. The col-span-2 class sets the first column to 70% width, but this can be skipped since column widths are adjustable in the WordPress block settings. The design choice is up to us. <br>
-In the Gutenberg editor, we add a column block under the header. There is an option to create a 2/3 - 1/3 column layout.
+In the Gutenberg editor, we add a column block under the header. There is an option to create a 2/3 - 1/3 column layout
+<br>
+We select the 'parent' column and, in the Advanced settings (bottom right), add the CSS classes from the `<main class="container !mx-auto"...>`. The remaining classes will be handled by WP Gutenberg. <br>
+Paddings, margins and other styles can be added in the editor. Above the Advanced settings, there is the Dimensions section, where we can add paddings.
 
 --- 
 
