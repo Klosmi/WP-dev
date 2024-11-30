@@ -2811,7 +2811,8 @@ We can simplify by omitting unnecessary classes since the Columns block provides
   </div>
 </main>
 ```
-The `<main>` contains two `<div>` tags that separate column content. The col-span-2 class sets the first column to 70% width, but this can be omitted as column widths are adjustable in WordPress block settings.
+The `<main>` element contains 2 `<div>` tags for column content. The col-span-2 class sets the first column to 70% width, but this can be skipped since column widths are adjustable in the WordPress block settings. The design choice is up to us. <br>
+In the Gutenberg editor, we add a column block under the header. There is an option to create a 2/3 - 1/3 column layout.
 
 --- 
 
