@@ -2791,5 +2791,12 @@ This will hide the search label and button while editing in the Gutenberg editor
 
 <br>
 
+## [Formatting Main Content - Columns](https://learn.wordpress.org/lesson/designing-with-the-columns-block/)
 
+The key point is that we can create pages by combining the Gutenberg editor with our own code. Here, we design the main content area below the header, utilizing Gutenberg's column blocks together with our custom index.html file.
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
