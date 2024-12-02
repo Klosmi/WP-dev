@@ -2659,11 +2659,17 @@ When a page is rendered, WordPress looks at the theme files (like `index.html`) 
 
 4. **Editing and Syncing**:  
 Copying a block’s code from Gutenberg into `index.html` makes it part of the default template. However, any future edits to that block in Gutenberg won’t update the template—changes are saved in the database instead.   
-<br>
-*This is an image of copying a block*    <br> 
-![copying](https://github.com/user-attachments/assets/74b6c05e-5a99-494c-83d3-8290e1bdb450)    
-<br>    
-*After this, we can paste it into our `templates/index.html`*
+
+	<br>
+	
+	*This is an image of copying a block*
+	<br>
+	
+	![copying](https://github.com/user-attachments/assets/74b6c05e-5a99-494c-83d3-8290e1bdb450)    
+	
+	<br>    
+	
+	*After this, we can paste it into our `templates/index.html`*
 
 **Key Takeaways**      
 - *Does index.html Always Load?*    
