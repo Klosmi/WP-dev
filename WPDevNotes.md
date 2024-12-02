@@ -2680,8 +2680,9 @@ Example: If a page's template is edited, the saved version is loaded.
 If no saved layout exists, the system falls back to theme templates like index.html.
 Copying blocks into `index.html` updates the fallback layout, which takes effect unless superseded by saved content.
 
-#### [link 01]([https://wordpress.org/plugins/templateberg/](https://developer.wordpress.org/block-editor/)
-#### [link 02](https://wordpress.org/plugins/templateberg/)
+##### [link 01](https://developer.wordpress.org/block-editor/)   
+
+##### [link 02](https://wordpress.org/plugins/templateberg/)   
 
 --- 
 
