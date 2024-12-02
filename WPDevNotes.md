@@ -2827,18 +2827,17 @@ Paddings, margins and other styles can be added in the editor. Above the Advance
 
 This query loop block fetches posts from the database, displays them, and adds pagination. It allows filtering by post type, taxonomies, etc. <br>
 When adding the block, WordPress suggests various layouts. If your design requires a layout different from the defaults, choose the "Start Blank" option to begin with a basic template. (Here, we can choose options like sorting by date or title, allowing WordPress to display our posts accordingly.) 
-<br> If correctly configured, the Query Loop block displays posts or custom post types pulled from the database, according to the specified filters (e.g., category, tag, or author).
-<br> <br>
-The Query Loop block is not meant to function independently. It needs to be paired with other blocks to display content properly. For example:   <br>
- - Post Title Block: To display the title of the posts in the query.   
- - Post Excerpt Block: To show a short excerpt from the post.   
- - Post Featured Image Block: To include the featured image.   
- - Post Date Block: To display the publishing date.   
- - Read More Block: To add a "Read More" link to each post.
-     
-The Query Loop block acts as the container for these child blocks, fetching the data, while the other blocks handle how the data is displayed. Without these supplementary blocks, the Query Loop block will not provide much visible output.
+<br> 
+The Query Loop block is responsible for retrieving posts based on the specified criteria (e.g., post type, taxonomy, etc.). However, rendering the content of each post within the Query Loop is handled by the blocks inside the Query Loop, such as the Post Template block and its child blocks.   
+The Query Loop block fetches the data and stores it in an array. The Post Template block then iterates through this array to render each post, so it loops through the array with PHP, but in FSE work can be handled by WordPress core blocks.
+
+<br>
+
+In WordPress, a query is a request for data from the database, which is why the block is called the Query Loop. The query is based on the current URL, prompting WordPress to retrieve and display posts that match the URL context. For example, on the home page, the query will select the latest posts. On a search page, it will retrieve posts matching the search term.
+<br>
+By choosing the "Custom" option, we can create a custom query. This means the Query Loop block won't generate a new query but will instead use WordPress's existing query for the page.   
 
 
-
+![Custom  option](https://github.com/user-attachments/assets/6e3c777c-bdb5-4c18-885e-e515733c3a4f)
 
 
