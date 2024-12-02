@@ -2822,3 +2822,23 @@ Paddings, margins and other styles can be added in the editor. Above the Advance
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Rendering posts with the Query Loop Block](https://wordpress.org/documentation/article/query-loop-block/)
+
+This query loop block fetches posts from the database, displays them, and adds pagination. It allows filtering by post type, taxonomies, etc. <br>
+When adding the block, WordPress suggests various layouts. If your design requires a layout different from the defaults, choose the "Start Blank" option to begin with a basic template. (Here, we can choose options like sorting by date or title, allowing WordPress to display our posts accordingly.) 
+<br> If correctly configured, the Query Loop block displays posts or custom post types pulled from the database, according to the specified filters (e.g., category, tag, or author).
+<br> <br>
+The Query Loop block is not meant to function independently. It needs to be paired with other blocks to display content properly. For example:   <br>
+ - Post Title Block: To display the title of the posts in the query.   
+ - Post Excerpt Block: To show a short excerpt from the post.   
+ - Post Featured Image Block: To include the featured image.   
+ - Post Date Block: To display the publishing date.   
+ - Read More Block: To add a "Read More" link to each post.
+     
+The Query Loop block acts as the container for these child blocks, fetching the data, while the other blocks handle how the data is displayed. Without these supplementary blocks, the Query Loop block will not provide much visible output.
+
+
+
+
+
