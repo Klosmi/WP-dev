@@ -2641,6 +2641,55 @@ We replace our header block with the new copy:
 
 <br>
 
+## [Integrating Custom Templates (templates/index.html) with Gutenberg Editor](https://developer.wordpress.org/block-editor/) 
+WordPress themes combine static templates (e.g., `index.html`) with the dynamic Gutenberg block editor. Here's how they work together.   
+<br>
+__Here's how it works__:
+<br>
+1. **Template Loading**:
+When a page is rendered, WordPress looks at the theme files (like `index.html`) for structure. The blocks defined in Gutenberg are inserted into the corresponding areas dynamically.
+
+3. **Using Gutenberg Blocks in Templates**:
+   - Blocks created with the Gutenberg editor (like the header or footer blocks) are saved as part of the site's database.
+   - These blocks can be referenced in your template files using comments like:
+     ```html
+     <!-- wp:template-part {"slug":"header","theme":"test"} /-->
+     ```
+     This tells WordPress to insert the appropriate block (in this case, the "header" block).
+
+4. **Editing and Syncing**:  
+Copying a block’s code from Gutenberg into `index.html` makes it part of the default template. However, any future edits to that block in Gutenberg won’t update the template—changes are saved in the database instead.   
+*This is an image of a copying from a Block*    ![copying](https://github.com/user-attachments/assets/74b6c05e-5a99-494c-83d3-8290e1bdb450)     
+*after this copy we can paste it to our `templates/index.html`
+
+**Key Takeaways**      
+- *Does index.html Always Load?*    
+Not always. WordPress prioritizes layouts saved in the database if a page has been edited in Gutenberg. If no saved layout exists, it falls back to index.html.
+<br>
+- *Why Do Copied Blocks Work?*    
+Blocks added to index.html become part of the theme’s default structure. They appear when the template loads but aren’t connected to the editor for future updates.
+
+6. **Best Practices**:  
+   - Use index.html for default layouts and static content.
+   - Use Gutenberg for content and layout customization on individual pages/posts.
+   - Avoid mixing editing methods to prevent conflicts between the editor and templates. 
+
+7. WordPress Rendering Process**
+WordPress prioritizes layouts saved in the database for edited pages or posts.
+Example: If a page's template is edited, the saved version is loaded.
+If no saved layout exists, the system falls back to theme templates like index.html.
+Copying blocks into `index.html` updates the fallback layout, which takes effect unless superseded by saved content.
+
+#### [link 01]([https://wordpress.org/plugins/templateberg/](https://developer.wordpress.org/block-editor/)
+#### [link 02](https://wordpress.org/plugins/templateberg/)
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
+
+
 ## [Dummy content in WP](https://wordpress.org/plugins/fakerpress/)
 Dummy text helps us to test our theme.
 We use a plugin called [fakerpress](https://wordpress.org/plugins/fakerpress/).  
