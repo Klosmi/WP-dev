@@ -52,5 +52,6 @@
 - 5. [Making a top-bar](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#making-a-top-bar)
 - 6. [Modifiny the editor's style by code](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#modifiny-the-editors-style-by-code)
 - 7. [Use HTML block to create a custom look](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#use-html-block-to-create-a-custom-look)
-- 8. [Formatting Main Content - Columns](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#formatting-main-content---columns)
+- 8. [Formatting Main Content - Columns](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#formatting-main-content---columns)   
+- 9. [Rendering posts with the Query Loop Block](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#rendering-posts-with-the-query-loop-block)
 
