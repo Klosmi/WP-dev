@@ -51,7 +51,7 @@
 - 4. [Integrating Custom Templates (templates/index.html) with Gutenberg Editor](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#integrating-custom-templates-templatesindexhtml-with-gutenberg-editor)   
 - 5. [Dummy content in WP](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dummy-content-in-wp)
 - 6. [Making a top-bar](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#making-a-top-bar)
-- 76. [Modifiny the editor's style by code](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#modifiny-the-editors-style-by-code)
+- 7. [Modifiny the editor's style by code](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#modifiny-the-editors-style-by-code)
 - 8. [Use HTML block to create a custom look](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#use-html-block-to-create-a-custom-look)
 - 9. [Formatting Main Content - Columns](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#formatting-main-content---columns)   
 - 10. [Rendering posts with the Query Loop Block](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#rendering-posts-with-the-query-loop-block)
