@@ -2837,7 +2837,15 @@ In WordPress, a query is a request for data from the database, which is why the 
 <br>
 By choosing the "Custom" option, we can create a custom query. This means the Query Loop block won't generate a new query but will instead use WordPress's existing query for the page.   
 
+<br>
 
 ![Custom  option](https://github.com/user-attachments/assets/6e3c777c-bdb5-4c18-885e-e515733c3a4f)
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
 
 
