@@ -2975,7 +2975,7 @@ For example:
 
 <br>
 
-## [Necessary tamplats: 404 (NotFound) template](https://developer.wordpress.org/themes/basics/template-hierarchy/#404-not-found)
+## [Necessary templates: 404 (NotFound) template](https://developer.wordpress.org/themes/basics/template-hierarchy/#404-not-found)
 
 
 According to the hierarchy, if no 404 template is available, WordPress falls back to the index template. However, the index template isn't ideal for displaying 404 errors, which are meant to indicate that no content was found for the requested URL.
