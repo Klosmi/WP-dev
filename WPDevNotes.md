@@ -2962,6 +2962,6 @@ For example:
 	- `/about → page-about.php`, then `page.php`, then `index.php`.    
 	- `/category/news` → `category-news.php`, then `category.php`, then `archive.php`, and so on.   \
  
-	```diff
-	+ 💡 In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.
+
+<p style="color:green;"> 💡 In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.</p>
 	```
