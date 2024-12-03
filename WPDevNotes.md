@@ -2923,4 +2923,41 @@ By choosing the "Custom" option, we can create a custom query. This means the Qu
 
 <br>
 
+## [WordPress's Template Hiearchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 
+WordPress determines the type of content to render on a page by analyzing the URL. Based on this analysis, WordPress performs a query to the database to retrieve the appropriate posts or content that should be displayed. This process aligns with the WordPress template hierarchy, which decides which template file is used to render the page.    
+
+
+**What URL Does WordPress Analyze?**   
+
+WordPress analyzes the URL segment after the domain name `(e.g., https://example.com/about focuses on /about)`. This segment is often referred to as the path.   
+
+The URL can include:    
+*Permalink structure*    
+WordPress interprets the URL based on the site's configured permalink settings `(e.g., /%postname%/, /category/post/, etc.)`.    
+*Query string*   
+If permalinks are not enabled, URLs might include query variables like `?p=123 or ?cat=5`.
+
+<br>
+
+**How Does WordPress Analyze the URL?**   
+
+- *Parsing the URL:*      
+WordPress uses the path to determine the query variables, such as `post_type`, `page_id`, or `category_name`.
+If the URL includes query strings, these variables are directly passed to the database query.   
+
+- *Routing via Query Vars:*    
+WordPress maps parts of the URL to internal query vars. For example:
+	- `/about → pagename=about`
+	- `/category/news → category_name=news`
+	- `/?p=123 → post_id=123`   
+These query vars define what kind of content to fetch, like a `page`, `post`, or `archive`.
+
+- *Running the Query:*     
+WordPress uses the query vars to create a **WP_Query object**. This object retrieves the relevant posts, pages, or taxonomy terms from the database.
+
+- *Template Hierarchy:*    
+After identifying the type of content, WordPress determines which template file to use. WordPress template hierarchy works in a fallback order.
+For example:
+	- `/about → page-about.php`, then `page.php`, then `index.php`.    
+	- `/category/news` → `category-news.php`, then `category.php`, then `archive.php`, and so on.
