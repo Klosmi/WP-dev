@@ -2633,7 +2633,7 @@ Blocks added to `index.html` become part of the theme’s default structure. The
    - Use Gutenberg for content and layout customization on individual pages/posts.
    - Avoid mixing editing methods to prevent conflicts between the editor and templates. 
 
-**WordPress Rendering Process**
+**WordPress Rendering Process**    
 WordPress prioritizes layouts saved in the database for edited pages or posts.   
 Example: If a page's template is edited, the saved version is loaded.
 If no saved layout exists, the system falls back to theme templates like index.html.
