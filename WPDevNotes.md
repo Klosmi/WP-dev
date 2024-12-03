@@ -2691,17 +2691,15 @@ here we can paste the header's `shadow` class
 We replace our header block with the new copy:   
   - old: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
   - new: `<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`
-    
-	**Template Part Block Update:**
 	
-	The updated block definition:
-	`<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`   
+	The updated block definition:   
+	`<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`     
 	specifies additional attributes, such as tagName and className. These attributes allow WordPress to render the header block with the appropriate HTML tag and class directly in the output.    
 
-	**Simplifies header.html:**    
-	By defining the class and other properties in the block comment, you don't need to hard-code them in the header.html file. This ensures consistency and reduces redundancy.
+	*Simplifies `header.html`:*   
+	By defining the class and other properties in the block comment, you don't need to hard-code them in the `header.html` file. This ensures consistency and reduces redundancy.
 
-  *We do this because we can let the template part block create the class element for us (also less lines in our header.html file)*
+  *So we do this because it is easier to let the template part block create the class element for us (also less lines in our header.html file)*
 - now switch to the `header.html` file and __remove__ the `<header class="shadow">` `</header>` tags.   
 → now we have only `<div>`s in the `header.html` file.   
 - if we check the header in the browser's dev tool we can see that the `<div>` tag changed to a `<header>` tag:    
