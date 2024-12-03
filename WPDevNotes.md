@@ -2961,13 +2961,6 @@ After identifying the type of content, WordPress determines which template file 
 For example:
 	- `/about → page-about.php`, then `page.php`, then `index.php`.    
 	- `/category/news` → `category-news.php`, then `category.php`, then `archive.php`, and so on.
-
-💡 In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.  
-
 ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
+💡 + In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.
+``` 
