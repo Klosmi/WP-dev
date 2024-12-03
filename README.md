@@ -55,5 +55,6 @@
 - 8. [Use HTML block to create a custom look](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#use-html-block-to-create-a-custom-look)
 - 9. [Formatting Main Content - Columns](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#formatting-main-content---columns)   
 - 10. [Rendering posts with the Query Loop Block](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#rendering-posts-with-the-query-loop-block)     
-- 11. [WordPress's Template Hiearchy](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#wordpresss-template-hiearchy)
+- 11. [WordPress's Template Hiearchy](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#wordpresss-template-hiearchy)    
+- 12. [Necessary templates: 404 (NotFound) template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-404-notfound-template)
 
