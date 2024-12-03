@@ -2636,7 +2636,7 @@ Blocks added to `index.html` become part of the theme’s default structure. The
 **WordPress Rendering Process**    
 WordPress prioritizes layouts saved in the database for edited pages or posts.   
 Example: If a page's template is edited, the saved version is loaded.
-If no saved layout exists, the system falls back to theme templates like index.html.
+If no saved layout exists, the system falls back to theme templates like `index.html`.
 Copying blocks into `index.html` updates the fallback layout, which takes effect unless superseded by saved content.
 
 ##### [link 01](https://developer.wordpress.org/block-editor/)   
