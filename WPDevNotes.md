@@ -3005,3 +3005,11 @@ To create a 404 page we can do the following: in the text editor we go to the `t
 	
 	<!-- wp:template-part {"slug":"main-footer","theme":"custom-theme","tagName":"footer"} /-->
 ```
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
+
+
