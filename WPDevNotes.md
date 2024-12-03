@@ -2788,7 +2788,7 @@ We create an include folder and in it a `setup.php` file. In the `functions.php`
 `include(get_theme_file_path('/includes/setup.php'));` <br>
 
 In the `setup.php` we write the following code to [modify the editor's style](https://developer.wordpress.org/reference/functions/add_theme_support/): <br>
-'''
+	```
 
 	function name-your-function_setup_theme(){
 	  add_theme_support('editor-styles');
@@ -2802,7 +2802,7 @@ In the `setup.php` we write the following code to [modify the editor's style](ht
 	  ]);
 	}
 
-'''
+	```
 
 --- 
 
