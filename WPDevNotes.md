@@ -3012,4 +3012,90 @@ To create a 404 page we can do the following: in the text editor we go to the `t
 
 <br>
 
+## [Necessary templates: Category Template](https://developer.wordpress.org/themes/basics/template-hierarchy/#category)   
+
+
+Based on the [documentation](https://developer.wordpress.org/themes/basics/template-hierarchy/#category), WordPress looks for 5 different templates in our theme, starting from the top.  
+
+*Rendering category archive index pages uses the following path in WordPress:*
+```
+  1.	category-{slug}.php – If the category’s slug is news, WordPress will look for category-news.php.
+  2.	category-{id}.php – If the category’s ID is 6, WordPress will look for category-6.php.
+  3.	category.php
+  4.	archive.php
+  5.	index.php
+```
+
+- 1. `category-{slug}.php`   
+
+It loads a template file named after the category slug. The file name might seem a bit unusual: there are curly brackets  surrounding the word slug (`category-{slug}.php`). Curly brackets indicate a placeholder.  
+A slug is a keyword that gets attached to the URL.   
+
+For example, if we have a site and want to set up a `category`, the URL structure will be consistent across all categories. It starts with the word *`category`, followed by the `slug` that identifies the specific category*.    
+
+According to the WordPress documentation, we can create a template for a specific category by using its slug. This is particularly handy if we want to give that category a unique design.    
+
+<br>
+
+- 2. `category-{id}.php`
+The next template is called Category ID. Categories are stored in a database, where most entries are assigned a unique `ID`. While `slugs` are useful, they’re not always reliable since administrators can change them. If we want to create a special template for a category without relying on its `slug`, we can use its `ID` instead. Unlike `slug`s, `ID`s are permanent and unchangeable.
+
+<br>
+
+- 3. `category.php`
+There’s also a template called `category`. This template is used for all categories by default.
+
+<br>
+
+- 4. `archive.php`     
+The archive template is a general template used for various types of pages that aren't the home page. Archives are general templates used for different types of pages that aren't the home page.
+
+<br>
+
+- 5. `index.php`
+If the other templates aren’t available, the index template will be loaded as a fallback.
+
+<br>
+
+WordPress gives theme developers a lot of flexibility when it comes to templates.    
+If we want to create a generic template for all categories, the `category.php` template is ideal for our theme.  
+Let's create a `category.html` file in the `template folder`. The category template can be quite similar to the `index.html` template, so we can simply copy the content from the `index.html` file into the `category.html` file.   
+
+We can start by adding the header at the top and creating classes to adjust the color, position, and size of the header.    
+Most of this can be recreated using blocks. However, there is one issue: WordPress doesn't have a built-in block for displaying the name of the current category on the page. Without this, our block would just show the same text.    
+
+To fix this, we have to create a custom block to display the category name. As a temporary solution, we can use the HTML block to manually add this information.    
+For example: here is a code snippet which creates a custom header block with a placeholder for the category name:
+
+```
+    <div class="wp-block-mytheme-plus-page-header">
+      <div class="inner-page-header">
+        <h1>Category: Cars</h1>
+      </div>
+    </div>
+```
+
+
+After copying the HTML for the page header into the `category.html` file, open the WP full site editor in our browser. Since WordPress doesn’t automatically detect new template files, we need to refresh the page.
+At this point, the category template should appear in the full site editor and look similar to the `index.html` template.
+Lets add to our `category.html file`the following HTML code, and place it under the `<!-- wp:template-part {"slug":"header","theme":"mytheme","tagName":"header","className":"shadow"} /-->`
+
+```
+	<!-- wp:html -->
+	<!-- Page Header -->
+	<div class="wp-block-mytheme-plus-page-header">
+	  <div class="inner-page-header">
+	    <h1>Category: Cats</h1>
+	  </div>
+	</div>
+	<!-- /wp:html -->
+```
+
+This adds the custom header to our category template.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
 
