@@ -2980,7 +2980,7 @@ For example:
 
 According to the hierarchy, if no 404 template is available, WordPress falls back to the index template. However, the index template isn't ideal for displaying 404 errors, which are meant to indicate that no content was found for the requested URL.
 
-To create a 404 page we can do the follwoing. In the text editor we go to the `templates` folder, and create a file named `404.html`. In that file we can write a very simple code, basically a heading and some texts.   
+To create a 404 page we can do the following: in the text editor we go to the `templates` folder, and create a file named `404.html`. In that file we can write a very simple code, basically a heading and some texts.   
 
 ```
 	<!-- wp:template-part {"slug":"main-header","theme":"custom-theme","tagName":"header","className":"!custom-class!"} /-->
