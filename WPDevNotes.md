@@ -2969,3 +2969,13 @@ For example:
 
 *If we examine the entire template hierarchy, all paths eventually fall back to the index template. This is why every theme must include an index template to meet WordPress's validity requirements.*
 
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
+
+## [Necessary tamplats: 404 (NotFound) template](https://developer.wordpress.org/themes/basics/template-hierarchy/#404-not-found)
+
+
+According to the hierarchy, if no 404 template is available, WordPress falls back to the index template. However, the index template isn't ideal for displaying 404 errors, which are meant to indicate that no content was found for the requested URL.
