@@ -2964,4 +2964,3 @@ For example:
  
 
 <p style="color:green;"> 💡 In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.</p>
-	```
