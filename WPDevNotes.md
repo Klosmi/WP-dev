@@ -2785,11 +2785,15 @@ Open the site-editor (edit site): we can see our parts (header, index, footer).
 ## [Modifiny the editor's style by code](https://developer.wordpress.org/block-editor/how-to-guides/enqueueing-assets-in-the-editor/)
 #### [bonus link](https://codex.wordpress.org/Editor_Style)
 We create an include folder and in it a `setup.php` file. In the `functions.php` we include the `setup.php`: <br>
-`include(get_theme_file_path('/includes/setup.php'));` <br>
+`include(get_theme_file_path('/includes/setup.php'));` 
 
-In the `setup.php` we write the following code to [modify the editor's style](https://developer.wordpress.org/reference/functions/add_theme_support/): <br>
-	```
+<br>
 
+In the `setup.php` we write the following code to [modify the editor's style](https://developer.wordpress.org/reference/functions/add_theme_support/): 
+
+<br>  
+
+```
 	function name-your-function_setup_theme(){
 	  add_theme_support('editor-styles');
 	
@@ -2801,8 +2805,7 @@ In the `setup.php` we write the following code to [modify the editor's style](ht
 	    'assets/public/index.css'
 	  ]);
 	}
-
-	```
+```
 
 --- 
 
