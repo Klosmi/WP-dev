@@ -2979,3 +2979,29 @@ For example:
 
 
 According to the hierarchy, if no 404 template is available, WordPress falls back to the index template. However, the index template isn't ideal for displaying 404 errors, which are meant to indicate that no content was found for the requested URL.
+
+To create a 404 page we can do the follwoing. In the text editor we go to the `templates` folder, and create a file named `404.html`. In that file we can write a very simple code, basically a heading and some texts.   
+
+```
+	<!-- wp:template-part {"slug":"main-header","theme":"custom-theme","tagName":"header","className":"!custom-class!"} /-->
+	
+	<!-- wp:group {"style":{"spacing":{"margin":{"top":"6rem","bottom":"6rem"}}},"className":"content-container center-align"} -->
+	<div class="wp-block-group content-container center-align" style="margin-top:6rem;margin-bottom:6rem">
+	  <!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"6rem"}},"textColor":"primary","className":"!error-title-class!"} -->
+	  <h1 class="has-text-align-center !error-title-class! has-primary-color has-text-color" id="error-404" style="font-size:6rem">404</h1>
+	  <!-- /wp:heading -->
+	  
+	  <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"1.5rem","fontStyle":"italic","fontWeight":"400"},"spacing":{"margin":{"top":"0rem","bottom":"1rem"}}}} -->
+	  <h2 class="has-text-align-center" id="not-found" style="font-size:1.5rem;font-style:italic;font-weight:400;margin-top:0rem;margin-bottom:1rem">
+	    Sorry, we can't find the page you're looking for.
+	  </h2>
+	  <!-- /wp:heading -->
+	  
+	  <!-- wp:paragraph {"align":"center","className":"!home-link-class!"} -->
+	  <p class="has-text-align-center !home-link-class!"><a href="/" target="_self" rel="noopener">Return to the homepage</a></p>
+	  <!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+	
+	<!-- wp:template-part {"slug":"main-footer","theme":"custom-theme","tagName":"footer"} /-->
+```
