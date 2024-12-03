@@ -2960,7 +2960,8 @@ WordPress uses the query vars to create a **WP_Query object**. This object retri
 After identifying the type of content, WordPress determines which template file to use. WordPress template hierarchy works in a fallback order.
 For example:
 	- `/about → page-about.php`, then `page.php`, then `index.php`.    
-	- `/category/news` → `category-news.php`, then `category.php`, then `archive.php`, and so on.
+	- `/category/news` → `category-news.php`, then `category.php`, then `archive.php`, and so on.   \
+ 
 ```diff
-💡 + In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.
-``` 
++ 💡 In these examples, the PHP file extension is used. In block themes, HTML files are used instead, but the template hierarchy is the same.
+```
