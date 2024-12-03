@@ -2965,4 +2965,7 @@ For example:
 
 💡 In these examples, the PHP file extension is used. In block themes, **HTML files** are used instead, but **the template hierarchy is the same**.
 
-![WordPress explaines it in a diagram](https://i0.wp.com/developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png?ssl=1)
+![WordPress explaines it in a diagram](https://i0.wp.com/developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png?ssl=1)    
+
+If we examine the entire template hierarchy, all paths eventually fall back to the index template. This is why every theme must include an index template to meet WordPress's validity requirements.*
+
