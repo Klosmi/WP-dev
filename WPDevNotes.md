@@ -2689,11 +2689,11 @@ here we can paste the header's `shadow` class
 - now copy the header: *Copy block*
 - go to the `index.html` and update it by pasting our header block:   
 We replace our header block with the new copy:   
-  - old: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
-  - new: `<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`
-	
-	The updated block definition:   
-	`<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`     
+  - old:    
+	`<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
+  - new (updated block definition:):    
+    	`<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`
+    
 	specifies additional attributes, such as tagName and className. These attributes allow WordPress to render the header block with the appropriate HTML tag and class directly in the output.    
 
 	*Simplifies `header.html`:*   
