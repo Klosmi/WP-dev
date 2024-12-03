@@ -2586,61 +2586,6 @@ __index.html__
 
 <br>
 
-
- ## [Header-footer optimization](https://www.wpzoom.com/docs/how-to-customize-the-header-in-wordpress-full-site-editor/)
-
-  WP default blocks can generate additional markup.    
-  eg.:    
-  *Our header in the dev tool is between additional `<div>` tags.*   
-  ```
-  ► <div class="wp-site-blocks">
-     <!-- Header -->
-      <header class="shadow">...</header>
-  ```
-  We can optimize the generated HTML with the block settings.
-
- If a block can generate the same HTML as our static template, than we will let the block generate the HTML. If it can't, than we'll use an HTML block.
-
- *💡 WP's is HTML may not always match our static templates HTML.*
-
- (This part what we are going to do with the header is also relevant/same for the footer.)
- Let's switch to the full site editor:   
- - here we can see the header, the main (custom html), and the footer.   
-
- - select the header template. On the right-side bar select the __advance__ panel.   
-
- - here go to `HTML element`. We have the option of changing the default `<div>` tag setting to a different element. Let's change the tag to `<header>` (instead of `<div>`) by sleceting it from the list.
-
- -  next step: let's open the `header.html` file     
- *Here we have a class named "shadow"*     
-    __header.html__
-    ```
-    <!-- wp:html -->
-    <!-- Header -->
-    <header class="shadow">
-      <!-- Topbar -->
-    ```
-- back in the browser, in the *site-editor* mode, on the right side, Advanced/ADDITIONAL CSS CLASS(ES):   
-here we can paste the header's `shadow` class    
-→ WP merges its classes with our classes.
-- now copy the header: *Copy block*
-- go to the `index.html` and update it by pasting our header block:   
-We replace our header block with the new copy:   
-  - old: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
-  - new: `<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`  
-
-  *We do this because we can let the template part block create the class element for us (also less lines in our header.html file)*
-- now switch to the `header.html` file and __remove__ the `<header class="shadow">` `</header>` tags.   
-→ now we have only `<div>`s in the `header.html` file.   
-- if we check the header in the browser's dev tool we can see that the `<div>` tag changed to a `<header>` tag:    
- *`<header class="shadow wp-block-template-part">`* 
-
---- 
-
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
-
-<br>
-
 ## [Integrating Custom Templates (templates/index.html) with Gutenberg Editor](https://developer.wordpress.org/block-editor/) 
 WordPress themes combine static templates (e.g., `index.html`) with the dynamic Gutenberg block editor. Here's how they work together.   
 <br>
@@ -2692,6 +2637,61 @@ Copying blocks into `index.html` updates the fallback layout, which takes effect
 ##### [link 01](https://developer.wordpress.org/block-editor/)   
 
 ##### [link 02](https://wordpress.org/plugins/templateberg/)   
+ 
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
+
+## [Header-footer optimization](https://www.wpzoom.com/docs/how-to-customize-the-header-in-wordpress-full-site-editor/)
+
+  WP default blocks can generate additional markup.    
+  eg.:    
+  *Our header in the dev tool is between additional `<div>` tags.*   
+  ```
+  ► <div class="wp-site-blocks">
+     <!-- Header -->
+      <header class="shadow">...</header>
+  ```
+  We can optimize the generated HTML with the block settings.
+
+ If a block can generate the same HTML as our static template, than we will let the block generate the HTML. If it can't, than we'll use an HTML block.
+
+ *💡 WP's is HTML may not always match our static templates HTML.*
+
+ (This part what we are going to do with the header is also relevant/same for the footer.)
+ Let's switch to the full site editor:   
+ - here we can see the header, the main (custom html), and the footer.   
+
+ - select the header template. On the right-side bar select the __advance__ panel.   
+
+ - here go to `HTML element`. We have the option of changing the default `<div>` tag setting to a different element. Let's change the tag to `<header>` (instead of `<div>`) by sleceting it from the list.
+
+ -  next step: let's open the `header.html` file     
+ *Here we have a class named "shadow"*     
+    __header.html__
+    ```
+    <!-- wp:html -->
+    <!-- Header -->
+    <header class="shadow">
+      <!-- Topbar -->
+    ```
+- back in the browser, in the *site-editor* mode, on the right side, Advanced/ADDITIONAL CSS CLASS(ES):   
+here we can paste the header's `shadow` class    
+→ WP merges its classes with our classes.
+- now copy the header: *Copy block*
+- go to the `index.html` and update it by pasting our header block:   
+We replace our header block with the new copy:   
+  - old: `<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
+  - new: `<!-- wp:template-part {"slug":"header","theme":"test","tagName":"header","className":"shadow"} /-->`  
+
+  *We do this because we can let the template part block create the class element for us (also less lines in our header.html file)*
+- now switch to the `header.html` file and __remove__ the `<header class="shadow">` `</header>` tags.   
+→ now we have only `<div>`s in the `header.html` file.   
+- if we check the header in the browser's dev tool we can see that the `<div>` tag changed to a `<header>` tag:    
+ *`<header class="shadow wp-block-template-part">`* 
 
 --- 
 
