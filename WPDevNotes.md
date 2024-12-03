@@ -2704,7 +2704,7 @@ We replace our header block with the new copy:
 - if we check the header in the browser's dev tool we can see that the `<div>` tag changed to a `<header>` tag:    
  *`<header class="shadow wp-block-template-part">`*
   
-Why we have removed the `class="shadow"`from our 'header.html` file? Because this ensures the `<header>` element with the `class="shadow"` is rendered automatically, without needing the static definition in `header.html`. Since WP is capable of generating the necessary markup dynamically, including attributes like className and tagName → This streamlines the code and reduces redundancy in our templates.
+	Why we have removed the `class="shadow"`from our `header.html` file? Because this ensures the `<header>` element with the `class="shadow"` is rendered automatically, without needing the static definition in `header.html`. Since WP is capable of generating the necessary markup dynamically, including attributes like className and tagName → This streamlines the code and reduces redundancy in our templates.
 
 --- 
 
