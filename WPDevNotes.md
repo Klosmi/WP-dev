@@ -2603,7 +2603,12 @@ When a page is rendered, WordPress looks at the theme files (like `index.html`) 
      This tells WordPress to insert the appropriate block (in this case, the "header" block).
 
 4. **Editing and Syncing**:  
-Copying a block’s code from Gutenberg into `index.html` makes it part of the default template. However, any future edits to that block in Gutenberg won’t update the template—changes are saved in the database instead.   
+Copying a block’s code from Gutenberg into index.html makes it part of the default template. However, any future edits made to that block in Gutenberg will not update the index.html file. The changes are saved in the database instead.   
+<br>
+To explain better, the Gutenberg edits are saved in the database:    
+  - When we make changes to a block through the Gutenberg editor, WordPress stores those changes in the database, specifically for the page or post we are editing. This ensures that the customized layout for that page is preserved.
+
+  - Templates like `index.html` serve as **fallbacks**: The `index.html` file in our theme is a static template. When WordPress renders a page, it first checks if a customized layout is saved in the database. If a layout exists (because we've edited it in Gutenberg), WordPress uses that layout and not the `index.html` (fallback file).
 
 	<br>
 	
