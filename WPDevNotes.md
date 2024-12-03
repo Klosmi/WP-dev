@@ -2794,7 +2794,7 @@ In the `setup.php` we write the following code to [modify the editor's style](ht
 <br>  
 
 ```
-	function name-your-function_setup_theme(){
+	function name_my_function_setup_theme(){
 	  add_theme_support('editor-styles');
 	
 	// add_editor_style is a shortcut to add styles to the gutenberg edotir
