@@ -2622,19 +2622,19 @@ Copying a block’s code from Gutenberg into index.html makes it part of the def
 *After this, we can paste it into our `templates/index.html`*
 
 **Key Takeaways**      
-- *Does index.html Always Load?*    
-Not always. WordPress prioritizes layouts saved in the database if a page has been edited in Gutenberg. If no saved layout exists, it falls back to index.html.
+- *Does `index.html` Always Load?*    
+Not always. WordPress prioritizes layouts saved in the database if a page has been edited in Gutenberg. If no saved layout exists, it falls back to `index.html`.
 
 - *Why Do Copied Blocks Work?*    
-Blocks added to index.html become part of the theme’s default structure. They appear when the template loads but aren’t connected to the editor for future updates.
+Blocks added to `index.html` become part of the theme’s default structure. They appear when the template loads but aren’t connected to the editor for future updates.    
 
-6. **Best Practices**:  
-   - Use index.html for default layouts and static content.
+**Best Practices**:  
+   - Use `index.html` for default layouts and static content.
    - Use Gutenberg for content and layout customization on individual pages/posts.
    - Avoid mixing editing methods to prevent conflicts between the editor and templates. 
 
-7. WordPress Rendering Process**
-WordPress prioritizes layouts saved in the database for edited pages or posts.
+**WordPress Rendering Process**
+WordPress prioritizes layouts saved in the database for edited pages or posts.   
 Example: If a page's template is edited, the saved version is loaded.
 If no saved layout exists, the system falls back to theme templates like index.html.
 Copying blocks into `index.html` updates the fallback layout, which takes effect unless superseded by saved content.
