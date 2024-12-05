@@ -3099,3 +3099,38 @@ This adds the custom header to our category template.
 
 <br>
 
+## [Necessary templates: Single Post Template](https://developer.wordpress.org/themes/template-files-section/post-template-files/#single-php)
+
+Adding this template to our theme is super important. It's what shows the content for a single post or custom post type.
+We can’t fully rely on the index template for this since single posts usually need a unique design. However, we can reuse some elements from the index template in our single post template. <br>
+
+For the correct file name, refer to the [documentation](https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post).   
+If we want a "generic" template that works for all posts, the `single.html` template is a great choice. Let’s create a file named `single.html` in the template folder.    
+
+Once we’ve created the `single.html` file, we switch to the WordPress editor. We should see "Single Posts" listed under *Edit Site > Templates > All Templates*. Let’s open it and start adding and customizing blocks to create the design we want.
+
+In single posts, we don’t need a Query Loop block (learn more [here](https://wordpress.org/documentation/article/query-loop-block/)) since the content is already specific to that single post. Blocks that pull post data can do so without a Query Loop block. The single post page is designed to display only one post, so any content blocks will automatically show the relevant post content.
+
+If we built the template without using any loops, the blocks will still render the content correctly, as they inherently know they are displaying data for a single post.    
+
+<br>
+
+To display the entire post content, we can insert a block called "Post Content." This block will automatically pull and display the full content of the current post.     
+
+<br>
+
+If we want to add links to the previous and next posts (as a kind of pagination), we can create a "Row" block and place the "Previous Post" and "Next Post" blocks inside it. We can use custom styles to style these blocks, as they don’t offer many built-in styling options. These blocks will automatically generate links to the previous and next posts.
+
+To create a comment section for our single post template, it’s a good idea to add a heading that says "Comments" to help visitors identify the section. Under the heading, we can add a "Post Comments" block. WordPress includes a block for building a UI for comments, though the form isn’t easily customizable. This block will perform two actions:   
+
+ - It will display existing comments for the post.
+ - It will include a form for submitting a new comment.
+
+A common method to create our `single.html` file is to select all the blocks in the list view panel, copy them, and paste them into the `single.html` file. Then, in WordPress, go to *All Templates > Single Post*. Instead of opening it, click the *options/edit button and select Reset*. In the browser, we should see that the Single Post page is working.
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
