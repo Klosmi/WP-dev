@@ -59,4 +59,5 @@
 - 12. [Necessary templates: 404 (NotFound) template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-404-notfound-template)
 - 13. [Necessary templates: Category Template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-category-template)
 - 14. [Necessary templates: Single Post Template](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-single-post-template)
+- 15. [Necessary templates: Single Page Temaplate](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-single-page-temaplate)
 
