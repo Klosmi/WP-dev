@@ -3113,11 +3113,7 @@ In single posts, we don’t need a Query Loop block (learn more [here](https://w
 
 If we built the template without using any loops, the blocks will still render the content correctly, as they inherently know they are displaying data for a single post.    
 
-<br>
-
 To display the entire post content, we can insert a block called "Post Content." This block will automatically pull and display the full content of the current post.     
-
-<br>
 
 If we want to add links to the previous and next posts (as a kind of pagination), we can create a "Row" block and place the "Previous Post" and "Next Post" blocks inside it. We can use custom styles to style these blocks, as they don’t offer many built-in styling options. These blocks will automatically generate links to the previous and next posts.
 
