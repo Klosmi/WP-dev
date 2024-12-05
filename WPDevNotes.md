@@ -3130,3 +3130,22 @@ A common method to create our `single.html` file is to select all the blocks in 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
 
 <br>
+
+## [Necessary templates: Single Page Temaplate](https://developer.wordpress.org/themes/template-files-section/page-template-files/)
+
+The page template is quite similar to the single post template. It’s the template file used to render a static page. Unlike posts, pages won’t include elements like the author’s name, post date, comment count, tags, or links to other posts. Essentially, it will be a simplified version of the single template.   
+
+To create a generic template for all pages, we need to create a file called page.html in the templates directory (see the [documentation](The template file used to render a static page) for details).   
+
+Since the structure is similar to the single.html template, we can copy the content from single.html to page.html. Next, let’s go back to WordPress and, from the All Templates section, select the Pages (or Page) template. Here, we can remove the elements we don’t need—such as the author, date, comment count, and tags. Afterward, we can select all the blocks (from the list view), copy them, and paste them into the page.html file.   
+So that's it—our page template is done.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
+
+
+
+
