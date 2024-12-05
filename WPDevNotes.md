@@ -3146,6 +3146,67 @@ So that's it—our page template is done.
 
 <br>
 
+## [Necessary templates: Custom Page Temaplate](https://developer.wordpress.org/themes/template-files-section/page-template-files/#creating-custom-page-templates-for-global-use)    
 
+Custom templates are similar to the Page template, but they allow for more flexibility and unique options that might not be covered by the standard template hierarchy.   
+For instance, we might want to create a template for a full-width page. Custom templates can provide this functionality, giving us more control over the layout and design of specific pages.
+
+WordPress allows users to select custom templates for pages, which is explained in detail in the page template [documentation](https://developer.wordpress.org/themes/basics/template-hierarchy/#single-page). 
+The 1st section of the documentation covers custom template files and how they have the highest priority when selecting templates for pages.   
+*`custom template file` – The page template assigned to the page. See get_page_templates().*    
+
+To make our custom templates available, we need to register a theme. This can be done through the `theme.json` file in our code editor. The `theme.json` file is useful for registering custom templates at the bottom of the object in an array called `customTemplates`.    
+```
+	{
+	 "$schema": "https://schemas.wp.org/trunk/theme.json",
+	  "version": 2,
+	  "settings": {・・・
+	  },
+	"styles": {・・・
+	  },
+➤	"customTemplates": [
+	    {
+	      "name": "full-width-page",
+	      "title": "Full Width Page",
+      	      "postTypes" : [
+        	"page"
+              ]
+	    }
+	  ]
+	}
+```
+
+This array accepts objects, with each object representing a single template.    
+To register a custom template, lets add it as an object inside this array with a *name property* (`"name" " "my-name"`).
+
+The name property should be *set to the file name of the custom template without the extension* (e.g., `full-width-page`). If a custom template is specified, WordPress will prioritize this template over the default templates.
+
+With this registration, WordPress will use the custom template whenever it's selected, giving us full control over how specific pages are displayed.   
+
+The next property we need is called "title". This property should be a human-readable name for the template, which will be displayed to users on the front end. For example, we can set the title property to "Full Width Page."
+
+The last property is "postTypes". This property is an array that specifies which post types the template can be applied to. It allows us to restrict the template to specific post types, including custom post types.
+Eg. we can pass in the *page post type* to apply this custom template to pages only.
+
+For more details on custom templates in theme.json, [see the it here]((https://developer.wordpress.org/block-editor/how-to-guides/themes/global-settings-and-styles/#customtemplates).    
+
+<br> 
+
+Inside the template folder, let's create a new custom template file called full-width-page.html. The name of this file should match the value we set for the name property in the `theme.json` file.
+
+After that, we can copy the content from `page.html` into `full-width-page.html`. The *full-width page template* will be similar to the *standard page template*, but we’ll remove any elements we don’t want to appear, such as the sidebar.
+
+To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width Page* and select the Use *Pattern option* to open the template editor. Edit the template by removing unnecessary elements. Once we’ve made the changes, we can select everything in the list view panel, copy it, and paste it `into full-width-page.html`.
+
+*Custom templates don’t get applied automatically; they need to be manually selected by the user.* For this reason, we'll go to the *WordPress Admin dashboard* and open one of the pages. After it open in our browser, on the *right sidebar*, find the **Templates panel**. WordPress will show an option to change the template. Select our custom template from the list and save the page.
+
+![sidebar](https://github.com/user-attachments/assets/231363b6-f59a-4112-b53a-9c02c903203d)
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
 
 
