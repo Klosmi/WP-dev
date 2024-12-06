@@ -64,7 +64,7 @@
 
 <br>
 
-# Plugin Development with JS and React
+# [Plugin Development with JS and React](https://developer.wordpress.org/news/2024/03/26/how-to-use-wordpress-react-components-for-plugin-pages/)
 
-1. [Intro to JS](https://github.com/Klosmi/html-basics?tab=readme-ov-file#javascript--basics)      
-*For a solid understanding of JavaScript fundamentals, I recommend checking out my JS fundamentals course at the link above.*
+1. [Intro to JS](https://learn.wordpress.org/lesson/javascript/)
+*For a solid understanding of JavaScript fundamentals, I recommend checking out my JS fundamentals use [this link](https://github.com/Klosmi/html-basics?tab=readme-ov-file#javascript--basics).*
