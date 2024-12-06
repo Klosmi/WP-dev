@@ -3211,6 +3211,26 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 
 # Plugin Development with JS and React
 
-## Intro to JS(
+## Intro to JS(https://learn.wordpress.org/lesson/javascript/)    
+
+*PHP vs. JavaScript: Key Differences and Similarities*   
+
+*What They Do?*    
+- PHP: Runs on the server and creates the initial content of a webpage. Once the page loads, PHP’s job is done until a new request is made.   
+- JavaScript: Runs in the browser and makes the page interactive. It can update content, validate forms, and handle media without reloading the page.
+
+*Main Differences*  
+- Execution: PHP is server-side, JavaScript is client-side.   
+- Page Control: PHP generates static content; JavaScript can change elements on the page in real-time.   
+- Updates: PHP needs a new request for changes; JavaScript can update content without a reload.   
+- Capabilities: PHP deals with server-side tasks like databases, while JavaScript handles browser-side interactions and dynamic effects.
+  
+*What They Have in Common?*   
+- Purpose: Both are essential for modern web development—PHP for the back end, JavaScript for the front end.   
+- Programming Concepts: Variables, functions, loops, and conditionals are present in both.   
+- Extensibility: Both have libraries and frameworks (e.g., PHP’s Laravel, JS’s React).   
+
+*WordPress Example*   
+WordPress uses PHP to create pages, manage databases, and handle server tasks. JavaScript adds interactivity, like sliders and pop-ups, and helps with client-side form validation.
 
 
