@@ -3211,7 +3211,7 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 
 # Plugin Development with JS and React
 
-## Intro to JS(https://learn.wordpress.org/lesson/javascript/)    
+## [Intro to JS](https://learn.wordpress.org/lesson/javascript/)    
 
 *PHP vs. JavaScript: Key Differences and Similarities*   
 
