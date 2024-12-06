@@ -3230,7 +3230,8 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 - Programming Concepts: Variables, functions, loops, and conditionals are present in both.   
 - Extensibility: Both have libraries and frameworks (e.g., PHP’s Laravel, JS’s React).   
 
-*WordPress Example*   
-WordPress uses PHP to create pages, manage databases, and handle server tasks. JavaScript adds interactivity, like sliders and pop-ups, and helps with client-side form validation.
+*WordPress Example:*      
+- WordPress uses PHP to create pages, manage databases, and handle server tasks.   
+- JavaScript adds interactivity, like sliders and pop-ups, and helps with client-side form validation.
 
 
