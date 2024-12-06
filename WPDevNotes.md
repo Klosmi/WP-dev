@@ -3234,4 +3234,16 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 - WordPress uses PHP to create pages, manage databases, and handle server tasks.   
 - JavaScript adds interactivity, like sliders and pop-ups, and helps with client-side form validation.
 
+**Using the Browser Console for JavaScript**   
+
+*The Console*
+- Quick Test Runs: The browser console is great for running one or two lines of code quickly. You can open it up, type some JavaScript, and see it run right away.
+
+*The Sources Panel*
+- More Complex Coding: If you need to write and test more than a couple of lines of code, the Sources panel is where you go.
+- What It Does:   
+The Sources panel shows all the files loaded on your site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of your site.
+- Debugging and Editing:    
+The Sources panel lets you inspect, modify, and even create files directly in the browser. It’s a powerful tool for debugging your code.
+
 
