@@ -62,3 +62,6 @@
 - 15. [Necessary templates: Single Page Temaplate](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-single-page-temaplate)
 - 16. [Necessary templates: Custom Page Temaplate](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#necessary-templates-custom-page-temaplate)
 
+<br>
+
+# Plugin Development with JS and React
