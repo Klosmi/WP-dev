@@ -3224,6 +3224,7 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 - Page Control: PHP generates static content; JavaScript can change elements on the page in real-time.   
 - Updates: PHP needs a new request for changes; JavaScript can update content without a reload.   
 - Capabilities: PHP deals with server-side tasks like databases, while JavaScript handles browser-side interactions and dynamic effects.
+- Semicolons are optional in JavaScript, whereas in Php it gives an error if we miss it out
   
 *What They Have in Common?*   
 - Purpose: Both are essential for modern web development—PHP for the back end, JavaScript for the front end.   
@@ -3239,13 +3240,32 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 **Using the Browser Console for JavaScript**   
 
 *The Console*
-- Quick Test Runs: The browser console is great for running one or two lines of code quickly. You can open it up, type some JavaScript, and see it run right away.
+- Quick Test Runs: The browser console is great for running 1-2 lines of code quickly. We can open it up, type some JavaScript, and see it run right away.
 
 *The Sources Panel*
-- More Complex Coding: If you need to write and test more than a couple of lines of code, the Sources panel is where you go.
+- More Complex Coding: If we need to write and test more than a couple of lines of code, the Sources panel is where you go.
 - What It Does:   
-The Sources panel shows all the files loaded on your site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of your site.
+The Sources panel shows all the files loaded on your site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of our site.
 - Debugging and Editing:    
-The Sources panel lets you inspect, modify, and even create files directly in the browser. It’s a powerful tool for debugging your code.
+The Sources panel lets us inspect, modify, and even create files directly in the browser. It’s a powerful tool for debugging our code. It's a great tool for quickly debugging a site without modifying the original code.
 
+<br>
+
+**Using Snippets in the Sources Panel**   
+*What Are Snippets?*   
+Snippets are perfect for writing and running JavaScript with multiple lines of code. They make it easy to test and debug larger pieces of code without creating a full script file.
+
+*Accessing Snippets*    
+To access snippets, click on the double chevron (>>) in the Sources panel. This will open the panel where you can find and manage your snippets.
+
+![snippets](https://github.com/user-attachments/assets/4500409f-dded-4b24-91ff-615b6cc253ea)
+
+  
+*Creating and Running a Snippet*   
+- Add a New Snippet: Click the New snippet button and name it (e.g., Index.js). The file name can be anything as long as it ends with the .js extension.   
+- Write Your Code: Inside the snippet, write your JavaScript code. For example, test out an alert function:
+- 
+```
+	alert('Hello, this is a test!');
+```
 
