@@ -65,3 +65,6 @@
 <br>
 
 # Plugin Development with JS and React
+
+1. [Intro to JS](https://github.com/Klosmi/html-basics?tab=readme-ov-file#javascript--basics)      
+*For a solid understanding of JavaScript fundamentals, I recommend checking out my JS fundamentals course at the link above.*
