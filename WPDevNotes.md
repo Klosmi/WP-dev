@@ -3273,4 +3273,8 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 
 ![test in snippets](https://github.com/user-attachments/assets/b932759d-1672-4d56-a48d-3e218640582c)
 
+--- 
 
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+
+<br>
