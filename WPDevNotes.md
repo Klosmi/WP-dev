@@ -3275,6 +3275,6 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 
 --- 
 
-[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#15-templates)
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
 
 <br>
