@@ -3264,8 +3264,13 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 *Creating and Running a Snippet*   
 - Add a New Snippet: Click the New snippet button and name it (e.g., Index.js). The file name can be anything as long as it ends with the .js extension.   
 - Write Your Code: Inside the snippet, write your JavaScript code. For example, test out an alert function:
-- 
+  
 ```
 	alert('Hello, this is a test!');
 ```
+
+*To run the code click on the play buttonn or press command + enter*   
+
+![test in snippets](https://github.com/user-attachments/assets/b932759d-1672-4d56-a48d-3e218640582c)
+
 
