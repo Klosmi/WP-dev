@@ -3266,12 +3266,13 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 - Write Your Code: Inside the snippet, write your JavaScript code. For example, test out an alert function:
   
 ```
-	alert('Hello, this is a test!');
+	alert('This is a test!');
 ```
 
-*To run the code click on the play buttonn or press command + enter*   
+*To run the code click on the play button or press "⌘ + enter"*   
 
-![test in snippets](https://github.com/user-attachments/assets/b932759d-1672-4d56-a48d-3e218640582c)
+![test in snippets](https://github.com/user-attachments/assets/454db131-437f-48c3-9857-da0805fc41c6)
+
 
 --- 
 
