@@ -3234,6 +3234,8 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 - WordPress uses PHP to create pages, manage databases, and handle server tasks.   
 - JavaScript adds interactivity, like sliders and pop-ups, and helps with client-side form validation.
 
+<br>
+
 **Using the Browser Console for JavaScript**   
 
 *The Console*
