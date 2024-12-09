@@ -3256,7 +3256,7 @@ The Sources panel lets us inspect, modify, and even create files directly in the
 Snippets are perfect for writing and running JavaScript with multiple lines of code. They make it easy to test and debug larger pieces of code without creating a full script file.
 
 *Accessing Snippets*    
-To access snippets, click on the double chevron (>>) in the Sources panel. This will open the panel where you can find and manage your snippets.
+To access snippets, click on the double chevron (>>) in the Sources panel. This will open the panel where we can find and manage your snippets.
 
 ![snippets](https://github.com/user-attachments/assets/4500409f-dded-4b24-91ff-615b6cc253ea)
 
