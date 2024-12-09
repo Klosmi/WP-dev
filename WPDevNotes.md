@@ -3243,7 +3243,7 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 - Quick Test Runs: The browser console is great for running 1-2 lines of code quickly. We can open it up, type some JavaScript, and see it run right away.
 
 *The Sources Panel*
-- More Complex Coding: If we need to write and test more than a couple of lines of code, the Sources panel is where you go.
+- More Complex Coding: If we need to write and test more than a couple of lines of code, the Sources panel is where we go.
 - What It Does:   
 The Sources panel shows all the files loaded on your site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of our site.
 - Debugging and Editing:    
