@@ -3245,7 +3245,7 @@ To do this, we can use the *Full Site Editor*. Go to *All Templates > Full Width
 *The Sources Panel*
 - More Complex Coding: If we need to write and test more than a couple of lines of code, the Sources panel is where we go.
 - What It Does:   
-The Sources panel shows all the files loaded on your site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of our site.
+The Sources panel shows all the files loaded on our site. This is similar to the Network panel, which lists files but focuses on network activity—like tracking requests going in and out of our site.
 - Debugging and Editing:    
 The Sources panel lets us inspect, modify, and even create files directly in the browser. It’s a powerful tool for debugging our code. It's a great tool for quickly debugging a site without modifying the original code.
 
