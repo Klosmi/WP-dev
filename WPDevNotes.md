@@ -3363,5 +3363,21 @@ Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), w
 Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), the official site for uploading and downloading third-party libraries. To install packages, list them in the dependencies or devDependencies object, and use a package manager like npm or [yarn](https://yarnpkg.com/getting-started) to download them.
 
 Note: React is itself a package and is installed via npm or yarn.
- **Finding and Installing Packages**
 
+**The `public` directory**   
+Here we have the `index.html` file.   
+The content of the `index.html` file may not directly reflect what we see on the preview because it serves as the static template for the React app. React dynamically generates the content displayed in the browser.
+
+<br>
+
+****The `src` (source) directory**      
+In most projects, it’s a best practice to have a `src` (source) directory to store your application code. This helps keep the app's logic separate from configuration files like `package.json`.   
+
+Within the `src` directory, you'll typically find files such as:   
+  - `App.js`: The main component for your application.
+  - `style.css`: The CSS file for styling your app.
+  - `index.js`: The entry point that renders the React application.
+
+
+* **`index.js`explanation**
+	This file renders the React app into the root element of public/index.html and manages what appears in the browser.
