@@ -3370,14 +3370,15 @@ The content of the `index.html` file may not directly reflect what we see on the
 
 <br>
 
-****The `src` (source) directory**      
-In most projects, it’s a best practice to have a `src` (source) directory to store your application code. This helps keep the app's logic separate from configuration files like `package.json`.   
+****The `src` (source) directory**          
+In most projects, it’s a best practice to have a `src` (source) directory to store your application code. This helps keep the app's logic separate from configuration files like `package.json`.      
 
 Within the `src` directory, you'll typically find files such as:   
-	  - `App.js`: The main component for your application.
-	  - `style.css`: The CSS file for styling your app.
-	  - `index.js`: The entry point that renders the React application.
+	  - `App.js`: The main component for your application.    
+	  - `style.css`: The CSS file for styling your app.    
+	  - `index.js`: The entry point that renders the React application.    
 
+<br> 
 
 * **`index.js`explanation**
 	This file renders the React app into the root element of public/index.html and manages what appears in the browser.
