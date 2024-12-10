@@ -3314,11 +3314,11 @@ Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), w
 
 *  **Key properties in package.json include:**   
 
-The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)** file is to describe our project.   
-- `"name"`: The name of the project.
-- `"version"`: The current version of the project.
-- `"dependencies"` and `"devDependencies"`: Lists of packages used in the project.
-- `"scripts"`: Custom scripts for running, building, and testing the project.
+	The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)** file is to describe our project.   
+	- `"name"`: The name of the project.
+	- `"version"`: The current version of the project.
+	- `"dependencies"` and `"devDependencies"`: Lists of packages used in the project.
+	- `"scripts"`: Custom scripts for running, building, and testing the project.
   
 ```
 	{
@@ -3342,10 +3342,10 @@ The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-
 ```
 
 * **dependencies** and **devDependencies**
-- `"dependencies"`:
-    Contains packages required for the app to run in production. Each package is listed as a property with its version number (e.g., `"react": "^18.1.0"`).
-- `"devDependencies"`:
-    Contains packages used for development purposes only, such as build tools and testing libraries. These are not included in the production build.
+	- `"dependencies"`:
+	    Contains packages required for the app to run in production. Each package is listed as a property with its version number (e.g., `"react": "^18.1.0"`).
+	- `"devDependencies"`:
+	    Contains packages used for development purposes only, such as build tools and testing libraries. These are not included in the production build.
 	eg.:
 	```
 		"dependencies": {
