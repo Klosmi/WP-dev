@@ -3280,7 +3280,7 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 
 <br>   
 
-## [Intro to REACT]([https://learn.wordpress.org/lesson/javascript/](https://react.dev/learn)    
+## [Intro to REACT](https://learn.wordpress.org/lesson/javascript/](https://react.dev/learn)    
 
 React is a JavaScript library for building user interfaces.   
 To make matters better, WordPress has immense support for React.
