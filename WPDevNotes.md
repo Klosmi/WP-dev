@@ -3278,4 +3278,88 @@ To access snippets, click on the double chevron (>>) in the Sources panel. This 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
 
+<br>   
+
+## [Intro to REACT]([https://learn.wordpress.org/lesson/javascript/](https://react.dev/learn)    
+
+React is a JavaScript library for building user interfaces.   
+To make matters better, WordPress has immense support for React.
+to get started with React Node must be installed.   
+
+JavaScript files can get big, so size does matters.   
+**Optimizing Code for Production**
+To ensure optimal performance, our HTML, CSS, and JavaScript code should be production-ready. One common method to reduce file size is to compress the code into a single line and remove whitespace, which, while effective, can make the code hard to read. Fortunately, React provides tools to optimize JavaScript code for production.
+
+<br> 
+
+**Getting Started with React**
+To start using React without setting up a local environment, we can use an online tool like [StackBlitz](https://stackblitz.com/edit/react-3p3e9ngy?file=src%2FApp.js). This platform is ideal for testing new libraries and frameworks.
+
 <br>
+
+**React Project Structure**
+A basic React project includes the following files and folders:
+ - `public/index.html`
+ - `src/App.js`, `src/index.js`, `src/style.css`
+ - `package.json`
+
+<br>
+
+**Understanding`package.json`**   
+The `package.json` file is essential for managing a React project. It describes the project and its dependencies, ensuring consistency and proper version control.  
+Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), which is the official site for uploading and downloading third-party libraries.  
+
+<br>
+*  **Key properties in package.json include:**   
+
+The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)** file is to describe our project.   
+- `"name"`: The name of the project.
+- `"version"`: The current version of the project.
+- `"dependencies"` and `"devDependencies"`: Lists of packages used in the project.
+- `"scripts"`: Custom scripts for running, building, and testing the project.
+  
+```
+	{
+	  "name": "react",
+	  "version": "0.0.0",
+	  "private": true,
+	  "dependencies": {
+	    "react": "^18.1.0",
+	    "react-dom": "^18.1.0"
+	  },
+	  "scripts": {
+	    "start": "react-scripts start",
+	    "build": "react-scripts build",
+	    "test": "react-scripts test --env=jsdom",
+	    "eject": "react-scripts eject"
+	  },
+	  "devDependencies": {
+	    "react-scripts": "latest"
+	  }
+	}
+```
+
+* **dependencies** and **devDependencies**
+- `"dependencies"`:
+    Contains packages required for the app to run in production. Each package is listed as a property with its version number (e.g., `"react": "^18.1.0"`).
+- `"devDependencies"`:
+    Contains packages used for development purposes only, such as build tools and testing libraries. These are not included in the production build.
+	eg.:
+	```
+		"dependencies": {
+		  "react": "^18.1.0",
+		  "react-dom": "^18.1.0"
+		},
+		"devDependencies": {
+		  "react-scripts": "latest"
+		}
+	```
+ <br> 
+
+**Finding and Installing Packages**
+
+Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), the official site for uploading and downloading third-party libraries. To install packages, list them in the dependencies or devDependencies object, and use a package manager like npm or [yarn](https://yarnpkg.com/getting-started) to download them.
+
+Note: React is itself a package and is installed via npm or yarn.
+ **Finding and Installing Packages**
+
