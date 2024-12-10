@@ -3370,7 +3370,7 @@ The content of the `index.html` file may not directly reflect what we see on the
 
 <br>
 
-****The `src` (source) directory**          
+**The `src` (source) directory**          
 In most projects, it’s a best practice to have a `src` (source) directory to store your application code. This helps keep the app's logic separate from configuration files like `package.json`.      
 
 Within the `src` directory, you'll typically find files such as:   
