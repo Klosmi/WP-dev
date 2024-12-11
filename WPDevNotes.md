@@ -3414,7 +3414,7 @@ Let’s break down the code `import React from 'react'`:
 
 We can find functions in React's API ([find it here](https://legacy.reactjs.org/docs/react-api.html)). This page provides a complete list of functions, examples, and descriptions for the package. While React offers many functions, we'll only need one for now.
 
-After our import line letss create a variable called `h1`:
+After the import statement, let's create a variable called `h1`:
 
 ```
 import React from 'react';
