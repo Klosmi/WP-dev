@@ -3390,3 +3390,23 @@ Within the `src` directory, you'll typically find files such as:
 <br>   
 
 ## [Creating a React app - discovering the `index.js` file](https://codeburst.io/reactjs-components-basics-e94b29b57de)
+
+In the src folder, you'll find the index.js file.  This is where we start by importing React using the following line of code:   
+`import React from 'react'`   
+
+This is similar to PHP's `include` function, which lets us share and reuse code across files, helping to keep projects organized.   
+
+In JavaScript, splitting an application into multiple files is achieved through a system called **modules**.    
+*Modules* allow us to share and reuse code between files. Unlike PHP’s simpler `include` function, *JavaScript modules* provide a more advanced and flexible approach, offering better control and scalability for larger projects.
+
+Let’s break down the code `import React from 'react'`:
+
+- `import` statement:    
+	This is used to bring in functions or variables from one file into another. In this case, we're importing React from the react library so we can use it in our file.
+
+- `React`:     
+	When we import something, we need to specify a name for it (like a variable). In this example, React is the name of what we are importing. Unlike languages like PHP, JavaScript exposes functions from other files through variables. This means we can use the React variable to access functions and features from the React library.
+
+- `from 'react'`:   
+	Here, we tell JavaScript where to find the file we're importing. Instead of specifying a path, we just give the name of the package, react. This tells JavaScript to look for a package named react, which is defined in the package.json file. Node.js will automatically find the package for us.
+
