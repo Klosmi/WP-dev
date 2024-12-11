@@ -3442,11 +3442,12 @@ const h1 = React.createElement(
   	This is the content inside the element. Here, we add the text `'Hello World!'`.
 
 So, we've successfully created an `h1` element with the text `"Hello World!"` using.    
-However, this element does not appear on the page. React doesn't automatically insert the element into the page. The element is only created in the memory. It is a good thing because we don't want react to start inserting content wherever it pleases. The element must be manually inserted into the document.
+However, this element does not appear on the page. React doesn't automatically insert the element into the page. The element is only created in the memory. It is a good thing because we don't want react to start inserting content wherever it wants. The element must be manually inserted into the document.
 
 <br>
 
-Now that we've created our `h1` element, we need to insert it into the document. To do this, we first need to import ReactDOM: 
+Now that we've created our `h1` element, we need to insert it into the document.    
+To do this, we first need to import `ReactDOM`: 
 
 ```
 import React from 'react';
