@@ -3422,7 +3422,7 @@ import React from 'react';
 const h1 = React.createElement()
 ```
 
-The value of `const h1` is the `React.createElement` function. We're using this function to create an element that can be */displayed in the document**.    
+The value of `const h1` is the `React.createElement` function. We're using this function to create an element that can be **displayed in the document**.    
 The `createElement` function takes 3 arguments:   
 
 ```
