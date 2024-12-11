@@ -3572,7 +3572,7 @@ root.render(div);
 
 When we save and run this code, the page should reflect the changes by rendering the div containing the h1 and the two p elements.
 
-<img width="1282" alt="indexJS" src="https://github.com/user-attachments/assets/57c35dcf-bb56-4e87-9d9f-f30d45e7358e">
+<img width="1297" alt="indexjs" src="https://github.com/user-attachments/assets/bd0ca726-3757-48e0-9cff-dbfa3cee6663">
 
 <br>
 
