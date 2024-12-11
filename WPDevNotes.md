@@ -3483,25 +3483,14 @@ Now, we’ve selected the root element, and we’re ready to render our `h1` ele
 
 Next, we need to tell React to treat the selected element as the **root element** of our application (the `<div id="root">`). To do this, create a variable called `root`. This variable will store the result of calling `ReactDOM.createRoot`, which takes the `rootEl` (the DOM element we selected earlier) as an argument: 
 `const root = ReactDOM.createRoot(rootEl);`
+
+  <br> 
   
-Now, let's start rendering the page.    
-To do this, call the `render()` function on the `root` variable. The `render()` function displays an element on the page. *It accepts 1 argument — the element we want to render.* In our case, we pass in the `h1` element we created earlier.   
+Time to start rendering the page.   
+Our `root` variable runs a function called `root.render()`. The `render` function is responsible for displaying an element on the page. *It accepts 1 argument — the element created by React*. Let’s pass in the `h1` variable.    
+Now, the text `"Hello World!"` will be rendered on the page.   
 
-Here’s the full code:   
-
-```
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-const h1 = React.createElement(
-  'h1', null, 'Hello Wordl!'
-);
-const rootEl = document.querySelector('#root');
-const root = ReactDOM.createRoot(rootEl);
-```
-
-Time to start rendering the page.
-Our variable runs a function called `root.render()`. The `render` function is responsible for displaying an element on the page. It has one argument which is the element created by React: Let's pass in the `h1` variable. Our text has been rendered on the page.
+Here’s the full code:
 
 ```
 import React from 'react';
@@ -3519,7 +3508,6 @@ const root = ReactDOM.createRoot(rootEl);
 // Render the h1 element inside the root element
 root.render(h1);
 ```
-
 With this, we’ve successfully created and rendered the simplest React application!
 
 
