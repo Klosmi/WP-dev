@@ -3389,4 +3389,4 @@ Within the `src` directory, you'll typically find files such as:
 
 <br>   
 
-## Creating a React app - discovering the `index.js` file
+## [Creating a React app - discovering the `index.js` file](https://codeburst.io/reactjs-components-basics-e94b29b57de)
