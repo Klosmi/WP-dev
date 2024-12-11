@@ -3410,3 +3410,120 @@ Let’s break down the code `import React from 'react'`:
 - `from 'react'`:   
 	Here, we tell JavaScript where to find the file we're importing. Instead of specifying a path, we just give the name of the package, react. This tells JavaScript to look for a package named react, which is defined in the package.json file. Node.js will automatically find the package for us.
 
+<br> 
+
+we can find function in the React's API ([find it here](https://legacy.reactjs.org/docs/react-api.html)). This page will have a complete list of functions, examples and descriptions for this package. React offers various functions, but we're only going to need one.
+
+After our import line letss create a variable called `h1`:
+
+```
+import React from 'react';
+
+const h1 = React.createElement()
+```
+
+The value of `const h1` is the `React.createElement` function. We're using this function to create an element that can be */displayed in the document**.    
+The `createElement` function takes 3 arguments:   
+
+```
+import React from 'react';
+
+const h1 = React.createElement(
+  'h1', null, 'Hello Wordl!'
+);
+```
+- 1st argument:
+  	This is the type of the element we want to create. Since we want to create a heading, we use `'h1'`.
+
+- 2nd argument:
+	This is where we specify the properties or attributes for the element (like `className`, `id`, etc.). In this case, we don't want any attributes, so we pass `null`.
+
+- 3rd argument:
+  	This is the content inside the element. Here, we add the text `'Hello World!'`.
+
+So, we've successfully created an h1 element with the text "Hello World!" using.    
+However, this element does not appear on the page. React doesn't automatically insert the element into the page. The element is only created in the memory. It is a good thing because we don't want react to start inserting content wherever it pleases. The element must be manually inserted into the document.
+
+<br>
+
+Now that we've created our h1 element, we need to insert it into the document. To do this, we first need to import ReactDOM: 
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const h1 = React.createElement(
+  'h1', null, 'Hello Wordl!'
+);
+```
+In React, the `React package` helps us manage elements, but it doesn't actually display them on the web page. To show React elements on the page, we need to use the `ReactDOM package`. This package provides functions to interact with the browser and render elements on the screen. So, for this example, both `React` and `ReactDOM` are required.    
+ 
+Next, we need to define a root element, a variable called `rootEl` (*the root element, which is the main container where our React app will be rendered*) to specify where we want to render our element. Before rendering, we need to select a location in the DOM.    
+
+We’ll use `document.querySelector` to select the element that will serve as the root of our application.   
+For example, if our HTML file has a `<div>` with an `id` of `root`, we can select it like this:    
+`<div id="root"></div>`
+
+In our JavaScript, we refer to this element with #root:   
+`const rootEl = document.querySelector('#root');`
+So now, our updated code looks like this:
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const h1 = React.createElement(
+  'h1', null, 'Hello Wordl!'
+);
+const rootEl = document.querySelector('#root')
+```
+
+Now, we’ve selected the root element, and we’re ready to render our `h1` element inside it.
+
+<br>
+
+Next, we need to tell React to treat the selected element as the **root element** of our application (the `<div id="root">`). To do this, create a variable called `root`. This variable will store the result of calling `ReactDOM.createRoot`, which takes the `rootEl` (the DOM element we selected earlier) as an argument: 
+`const root = ReactDOM.createRoot(rootEl);`
+  
+Now, let's start rendering the page.    
+To do this, call the `render()` function on the `root` variable. The `render()` function displays an element on the page. *It accepts 1 argument — the element we want to render.* In our case, we pass in the `h1` element we created earlier.   
+
+Here’s the full code:   
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const h1 = React.createElement(
+  'h1', null, 'Hello Wordl!'
+);
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+```
+
+Time to start rendering the page.
+Our variable runs a function called `root.render()`. The `render` function is responsible for displaying an element on the page. It has one argument which is the element created by React: Let's pass in the `h1` variable. Our text has been rendered on the page.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Create a React element (an h1 tag with text "Hello World!")
+const h1 = React.createElement('h1', null, 'Hello World!');
+
+// Select the root element in the HTML (the div with id="root")
+const rootEl = document.querySelector('#root');
+
+// Create the root React DOM container
+const root = ReactDOM.createRoot(rootEl);
+
+// Render the h1 element inside the root element
+root.render(h1);
+```
+
+With this, we’ve successfully created and rendered the simplest React application!
+
+
+
+
+
+
