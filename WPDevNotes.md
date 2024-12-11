@@ -3382,3 +3382,11 @@ Within the `src` directory, you'll typically find files such as:
 
 * **`index.js`explanation**
 	This file renders the React app into the root element of public/index.html and manages what appears in the browser.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br>   
+
+## Creating a React app - discovering the `index.js` file
