@@ -3446,7 +3446,8 @@ However, this element does not appear on the page. React doesn't automatically i
 
 <br>
 
-Now that we've created our h1 element, we need to insert it into the document. To do this, we first need to import ReactDOM: 
+Now that we've created our `h1` element, we need to insert it into the document. To do this, we first need to import ReactDOM: 
+
 ```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -3455,16 +3456,21 @@ const h1 = React.createElement(
   'h1', null, 'Hello Wordl!'
 );
 ```
-In React, the `React package` helps us manage elements, but it doesn't actually display them on the web page. To show React elements on the page, we need to use the `ReactDOM package`. This package provides functions to interact with the browser and render elements on the screen. So, for this example, both `React` and `ReactDOM` are required.    
+
+In React, the `React package` helps us manage elements, but it doesn't actually display them on the web page. **To show React elements on the page, we need to use the `ReactDOM package`**.    
+This package provides functions to interact with the browser and render elements on the screen. So, for this example, both `React` and `ReactDOM` are required.    
+
+ <br> 
  
-Next, we need to define a root element, a variable called `rootEl` (*the root element, which is the main container where our React app will be rendered*) to specify where we want to render our element. Before rendering, we need to select a location in the DOM.    
+Next, **we need to define a root element, a variable called** `rootEl` ***(the main container where our React app will be rendered)***, **to specify where we want to render our element**.
+Before rendering, we need to select a location in the DOM. The location is the element with `id="root"`, which we usually define in the HTML file like this: 
 
-We’ll use `document.querySelector` to select the element that will serve as the root of our application.   
-For example, if our HTML file has a `<div>` with an `id` of `root`, we can select it like this:    
-`<div id="root"></div>`
+`<div id="root"></div>`    
+  
+We’ll use `document.querySelector` to select this location in the DOM. The `#root` selector refers to the `<div id="root">` element. (React needs to know where to render the app, because it doesn’t automatically know the specific location in the DOM.)
 
-In our JavaScript, we refer to this element with #root:   
-`const rootEl = document.querySelector('#root');`
+`const rootEl = document.querySelector('#root');`   
+
 So now, our updated code looks like this:
 
 ```
@@ -3477,19 +3483,19 @@ const h1 = React.createElement(
 const rootEl = document.querySelector('#root')
 ```
 
-Now, we’ve selected the root element, and we’re ready to render our `h1` element inside it.
+Now, since we’ve selected the root element, we’re ready to render our `h1` element inside it.
 
 <br>
 
-Next, we need to tell React to treat the selected element as the **root element** of our application (the `<div id="root">`). To do this, create a variable called `root`. This variable will store the result of calling `ReactDOM.createRoot`, which takes the `rootEl` (the DOM element we selected earlier) as an argument: 
+Next, we need to tell React to treat the selected element as the **root element** of our application (the `<div id="root">`). To do this, we create a variable called `root`. This variable will store the result of calling `ReactDOM.createRoot`, which takes the `rootEl` (the DOM element we selected earlier) as an argument: 
 `const root = ReactDOM.createRoot(rootEl);`
 
   <br> 
   
 Time to start rendering the page.   
-Our `root` variable runs a function called `root.render()`. The `render` function is responsible for displaying an element on the page. *It accepts 1 argument — the element created by React*. Let’s pass in the `h1` variable.    
+Our `root` variable runs a function called `root.render()`. The `render` function is responsible for displaying an element on the page. *It accepts 1 argument — the element created by React*.    
+Let’s pass in the `h1` variable.      
 Now, the text `"Hello World!"` will be rendered on the page.   
-
 Here’s the full code:
 
 ```
