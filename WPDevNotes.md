@@ -3516,8 +3516,70 @@ root.render(h1);
 ```
 With this, we’ve successfully created and rendered the simplest React application!
 
+<br>
 
+To render multiple elements in React, we use the `createElement` function, just like we discussed before. For example, creating an `h1` element looks like this: `const h1 = React.createElement('h1', null, 'Hello World!');`    
 
+**Elements with Children:**   
 
+React elements can have child elements. These child elements can be inserted by passing them as an array in the third argument. Let’s see how to convert the third argument into an array.
 
+Here’s how we can do it:
+Let's convert the 3rd argument into an array `[]`:   
+`const h1 = React.createElement('div', null, [ ]);`
+After let's change the `h1` element to a  `div` tag:    
+`const div = React.createElement('div', null, []);`     
+The variable name will be updated se we need to update the variable name inside the render function:    
+`root.render(div);`
+
+**Adding More Elements:**    
+
+Let’s run the React.createElement function a couple more times. We are going to create:
+- 1 heading (h1) element.
+- 2 paragraph (p) elements.  
+
+Each element will use `null` as the 2nd argument to indicate no attributes.    
+For the 3rd argument, we will add text content for each element.
+Here’s the full code:  
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Creating a div that contains a heading and two paragraphs
+const div = React.createElement('div', null, [
+  React.createElement('h1', null, 'Hi'), // h1 element
+  React.createElement('p', null, 'Bonjour'), // First p element
+  React.createElement('p', null, 'Szia'), // Second p element
+]);
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+// Rendering the div with all child elements
+root.render(div);
+```
+<br>
+
+**Explanation:**  
+- `React.createElement('div', null, [...])`:   
+	This creates a div element, with the array `[React.createElement('h1', null, 'Hi'), React.createElement('p', null, 'Bonjour'), React.createElement('p', null, 'Szia')]` as its children.
+- `React.createElement('h1', null, 'Hi')`:
+	This creates an `h1` element with the text `"Hi"`.   
+- `React.createElement('p', null, 'Bonjour')` and `React.createElement('p', null, 'Szia')`:    
+	These create 2 `p` elements with the texts `"Bonjour"` and `"Szia"`.
+
+When we save and run this code, the page should reflect the changes by rendering the div containing the h1 and the two p elements.
+
+<img width="1282" alt="indexJS" src="https://github.com/user-attachments/assets/57c35dcf-bb56-4e87-9d9f-f30d45e7358e">
+
+<br>
+
+The main advantage of using React is its effectiveness in rendering dynamic content.
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br>   
 
