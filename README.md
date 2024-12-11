@@ -69,4 +69,4 @@
 1. [Intro to JS](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#intro-to-js)        
 *For a solid understanding of JavaScript fundamentals, I recommend checking out my JS fundamentals use [this link](https://github.com/Klosmi/html-basics?tab=readme-ov-file#javascript--basics).*
 2. [Start with React](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#intro-to-react)
-3. [Create a React app]()
+3. [Create a React app - discovering the `index.js` file](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#creating-a-react-app---discovering-the-indexjs-file)
