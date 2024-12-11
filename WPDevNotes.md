@@ -3391,7 +3391,7 @@ Within the `src` directory, you'll typically find files such as:
 
 ## [Creating a React app - discovering the `index.js` file](https://codeburst.io/reactjs-components-basics-e94b29b57de)
 
-In the src folder, you'll find the index.js file.  This is where we start by importing React using the following line of code:   
+In the src folder, we can find the index.js file.  This is where we start by importing React using the following line of code:   
 `import React from 'react'`   
 
 This is similar to PHP's `include` function, which lets us share and reuse code across files, helping to keep projects organized.   
