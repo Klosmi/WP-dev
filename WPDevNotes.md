@@ -3441,7 +3441,7 @@ const h1 = React.createElement(
 - 3rd argument:
   	This is the content inside the element. Here, we add the text `'Hello World!'`.
 
-So, we've successfully created an h1 element with the text "Hello World!" using.    
+So, we've successfully created an `h1` element with the text `"Hello World!"` using.    
 However, this element does not appear on the page. React doesn't automatically insert the element into the page. The element is only created in the memory. It is a good thing because we don't want react to start inserting content wherever it pleases. The element must be manually inserted into the document.
 
 <br>
