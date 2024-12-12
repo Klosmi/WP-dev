@@ -3616,11 +3616,13 @@ if(someCondition) {
 
 Now, the form is generated inside the `loginForm()` function, which is called only when needed. Once the form is rendered and no longer necessary, the memory used by the element is freed up automatically. This approach ensures we don’t store unnecessary elements in memory, keeping our app more efficient.
 
-**Converting our variables to Functions**    
+<br>
 
-Let’s take our previous example and improve it by converting the elements into functions.    
+**Converting our variables to Functions** 
+
+Improve our code by converting the elements into functions.    
 This will help us avoid memory leaks and improve performance.     
-Here’s the original example:   
+Here’s the original example (with memory leaks):   
 
 ```
 import React from 'react';
@@ -3638,7 +3640,7 @@ const root = ReactDOM.createRoot(rootEl);
 root.render(div);
 ```
 
-In the original code, we store the content in a div variable, which works, but it’s not ideal for dynamic content and could lead to memory leaks. To improve this, we can avoid storing elements in variables and instead place them inside a function. Let’s define a function called Page() that will directly return the div elements.   
+In the original code, we store the content in a `div` variable, which works, but it’s not ideal for dynamic content and could lead to memory leaks. To improve this, we can avoid storing elements in variables and instead place them inside a function. Let’s define a function called Page() that will directly return the div elements.   
 
 We’ll replace the variable assignment (`const div = React.createElement('div', null, [...])`) with a return statement (`return React.createElement('div', null, [...])`). Afterward, we can update the `render` function to call `Page()` instead of referencing the variable directly (`root.render(Page());`).    
 This approach ensures the page remains clean, and we’re dynamically rendering the content only when needed.   
@@ -3735,4 +3737,11 @@ To keep the time updated on the page, we should move the render function inside 
 
 **What happens under the hood?**    
 
-Under the hood, React is smart about updates. If an element doesn't need to change, it won’t be re-rendered. React detects that only the time is being updated, so it will only re-render the `h1` element with the new time. The rest of the content, like the paragraphs `p`, stays the same and remains untouched, which makes the update process more efficient.
+Under the hood, React is smart about updates. If an element doesn't need to change, it won’t be re-rendered. React detects that only the time is being updated, so it will only re-render the `h1` element with the new time. The rest of the content, like the paragraphs `p`, stays the same and remains untouched, which makes the update process more efficient.   
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br>   
