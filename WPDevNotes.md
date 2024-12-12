@@ -3584,3 +3584,155 @@ The main advantage of using React is its effectiveness in rendering dynamic cont
 
 <br>   
 
+## [Dynamic Content with React]()
+
+Let’s enhance our solution by storing elements inside a function instead of a variable. This is generally a good practice in React, as it helps avoid memory leaks.
+
+**Why Avoid Memory Leaks?**   
+Memory leaks happen when an application uses up memory but doesn't release it when it's no longer needed. This can lead to performance issues, especially in larger applications. One common cause of memory leaks in React is storing elements in variables and not clearing them when they are no longer needed.   
+
+Let’s look at a simple example. Imagine we have a login form in our app. We want to check if the user is logged in, and if not, render the `loginForm`. If the form is stored in a variable, it will occupy memory even if the user doesn't need it. This is where a memory leak can occur.
+```
+const loginForm = React.createElement('form')
+
+if(someCondition) {
+  ReactDOM.render(loginForm, document.querySelector("#root"))
+}
+```
+In this example, the `loginForm` element is stored in memory as a variable. Even if it's not needed, it continues to take up space in memory. This isn’t ideal because if the form is no longer needed, we should clear it from memory to prevent unnecessary resource usage.
+
+**Better Approach: Using Functions**   
+To avoid memory leaks, it's a good practice to store elements inside functions rather than variables. By doing this, elements are only created when needed, and they don't persist in memory when they are no longer required.   
+Here’s an updated version of the login form example using a function:
+
+```
+function loginForm() {
+  return React.createElement('form')
+}
+if(someCondition) {
+  ReactDOM.render(loginForm(), document.querySelector("#root"))
+}
+```
+
+Now, the form is generated inside the `loginForm()` function, which is called only when needed. Once the form is rendered and no longer necessary, the memory used by the element is freed up automatically. This approach ensures we don’t store unnecessary elements in memory, keeping our app more efficient.
+
+**Converting our variables to Functions**    
+
+Let’s take our previous example and improve it by converting the elements into functions.    
+This will help us avoid memory leaks and improve performance.     
+Here’s the original example:   
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+const div = React.createElement('div', null, [
+  React.createElement('h1', null, 'Hi'),
+  React.createElement('p', null, 'Bonjour'),
+  React.createElement('p', null, 'Szia'),
+]);
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+root.render(div);
+```
+
+In the original code, we store the content in a div variable, which works, but it’s not ideal for dynamic content and could lead to memory leaks. To improve this, we can avoid storing elements in variables and instead place them inside a function. Let’s define a function called Page() that will directly return the div elements.   
+
+We’ll replace the variable assignment (`const div = React.createElement('div', null, [...])`) with a return statement (`return React.createElement('div', null, [...])`). Afterward, we can update the `render` function to call `Page()` instead of referencing the variable directly (`root.render(Page());`).    
+This approach ensures the page remains clean, and we’re dynamically rendering the content only when needed.   
+Here’s the refactored code:
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return React.createElement('div', null, [
+    React.createElement('h1', null, 'Hi'),
+    React.createElement('p', null, 'Bonjour'),
+    React.createElement('p', null, 'Szia'),
+  ]);
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+root.render(Page());
+```
+
+Now, we’re using a function instead of a variable, which ensures that the elements are created only when the Page() function is called. This is more efficient and reduces the chances of memory leaks.
+
+<br>
+
+**Adding Dynamic Content**
+
+Let’s take this a step further and make the content dynamic. For example, we could display the current time like a clock. Since JavaScript has built-in date objects, we can use `Date()` and its `toLocaleString()` method to display the current time.
+
+Here’s how we can do that inside our `h1` tag using a *[template literal](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-template-literals-template-strings)*.   
+So, we should convert the 3rd argument to a template litera( `React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),`   
+The date function is defined by the JavaScript language, it's automatically available to us.
+Here's how to refactor the code:
+  
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return React.createElement('div', null, [
+    React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),
+    React.createElement('p', null, 'Bonjour'),
+    React.createElement('p', null, 'Szia'),
+  ]);
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+root.render(Page());
+```
+
+In this updated version, the current date and time will be displayed in the `h1` tag. We're using a template literal to dynamically inject the time returned by `Date().toLocaleString()`.   
+
+**Updating the Time Every Second**   
+
+It would be even cooler if the time updated every second. To achieve this, we can use JavaScript’s `setInterval()` function, which allows us to run a block of code at regular intervals.
+Let's run a function called `setInterval()`.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return React.createElement('div', null, [
+    React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),
+    React.createElement('p', null, 'Bonjour'),
+    React.createElement('p', null, 'Szia'),
+  ]);
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+Your version is clear and to the point, but here's a slightly polished version while maintaining your style:
+
+The setInterval function is built into JavaScript. It’s used to run a function at specified intervals.
+
+It takes two arguments:   
+- The 1st argument is the function you want to execute repeatedly. We can pass a regular function here, as **it’s completely valid to pass a function to a function**.    
+- The 2nd argument is the interval, specified in milliseconds, which determines how often the function will run.   
+ 
+To keep the time updated on the page, we should move the render function inside the setInterval. This way, the page is re-rendered every second.
+
+<img width="1291" alt="tolocaltime" src="https://github.com/user-attachments/assets/b7bf4eb1-02c9-4e68-a7b9-a114373363d4">
+
+
+**What happens under the hood?**    
+
+Under the hood, React is smart about updates. If an element doesn't need to change, it won’t be re-rendered. React detects that only the time is being updated, so it will only re-render the `h1` element with the new time. The rest of the content, like the paragraphs `p`, stays the same and remains untouched, which makes the update process more efficient.
