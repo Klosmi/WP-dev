@@ -3729,7 +3729,8 @@ The `setInterval` function is built into JavaScript. It’s used to run a functi
 
 It takes two arguments:   
 - The 1st argument is the function we want to execute repeatedly. We can pass a regular function here, as **it’s completely valid to pass a function to a function**.
-	  ``` function() {
+	```
+	function() {
 	  root.render(Page());
 	}  
 	```
