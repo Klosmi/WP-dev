@@ -3878,7 +3878,7 @@ When we inspect the page in the browser, the DOM will look like this:
 
 In JSX, we can apply CSS classes to elements, but instead of using the standard class attribute, we need to use className. This is because class is a reserved keyword in JavaScript, which can cause conflicts.      
 
-For example, if we want to add a CSS class called green to an <h1> tag, we would write: `<h1 className="green">Hello World!</h1>` .    
+For example, if we want to add a CSS class called green to an `<h1>` tag, we would write: `<h1 className="green">Hello World!</h1>` .    
 
 Using className ensures there’s no confusion with JavaScript’s class keyword, and it works seamlessly with your CSS.    
 
