@@ -3734,9 +3734,7 @@ It takes two arguments:
 	  root.render(Page());
 	}  
 	```
-- The 2nd argument is the interval, specified in milliseconds, which determines how often the function will run.   
- 
-To keep the time updated on the page, we should move the render function inside the `setInterval`. This way, the page is re-rendered every second. 
+- The 2nd argument is the interval, specified in milliseconds, which determines how often the function will run. To keep the time updated on the page, we should move the render function inside the `setInterval`. This way, the page is re-rendered every second. 
 	```
 	 (1000)
 	```
