@@ -4040,7 +4040,7 @@ Back in the `Page` component, we can include the `Header` component by adding a 
 
 **Dynamic components**    
 
-Let's add a clock to our `Header()` component to display the current time, just like we did in the previous example (link to that).   
+Let's add a clock to our `Header()` component to display the current time, just like we did in the [previous example](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dynamic-content-with-react).   
 
 To do this, we create a variable called `const clock`, which stores the result of `Date().toLocaleString()`. This will give us the current date and time.
 
