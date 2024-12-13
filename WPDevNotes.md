@@ -2686,9 +2686,9 @@ Copying blocks into `index.html` updates the fallback layout, which takes effect
 - back in the browser, in the *site-editor* mode, on the right side, Advanced/ADDITIONAL CSS CLASS(ES):   
 here we can paste the header's `shadow` class    
 → WP merges its classes with our classes.
-- now copy the header: *Copy block*
-- go to the `index.html` and update it by pasting our header block:   
-We replace our header block with the new copy:   
+- now copy the header: *Copy block*   
+- go to the `index.html` and update it by pasting our header block:     
+We replace our header block with the new copy:    
   - old:    
 	`<!-- wp:template-part {"slug":"header","theme":"test"} /-->`
   - new (updated block definition:):    
@@ -3914,12 +3914,13 @@ Let's add a CSS class to make the `<h1>` tag green:
   color: green;
 }
 ```
+
 However, this CSS file is not automatically loaded into our application. We have 2 options to include it:  
 
 1. **Link it in the HTML file**   
 	Add a `<link>` tag in the `<head>` section of the HTML file to load the CSS.
 2. **Import it directly in our JavaScript file**
-	Importing the CSS file into our JavaScript file is usually the better choice because Webpack can process CSS alongside JavaScript. To do this, simply add the following line to your file: `import './style.css'` .     
+	Importing the CSS file into our JavaScript file is usually the better choice because Webpack can process CSS alongside JavaScript. To do this, simply add the following line to your file: `import './style.css'`.    
 
 With this approach, Webpack will handle the CSS, bundling and optimizing it for production.    
 It’s a clean and efficient way to manage your styles in a React project.  
