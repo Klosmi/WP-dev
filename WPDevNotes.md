@@ -4106,8 +4106,9 @@ Similar to components **Props can have custom names**.
 <br>
 
 **Extending Components with Props**    
-Let's extend our Header component by passing it a prop.    
-Writing props is similar to adding attributes in HTML. For example, to pass a name prop, we write: `<Header name="John" />`. Props can have custom names, so you could rename `name` to `identity` and still achieve the same result: `<Header identity="John" />`.    
+Let's extend our `Header` component by passing it a `prop`.    
+Writing props is similar to adding attributes in HTML. For example, to pass a `name` prop, we write: `<Header name="John" />`. Props can have custom names, so we could rename `name` to `identity` and still achieve the same result: `<Header identity="John" />`.    
+
 Here's how it looks in code:   
 
 ```
