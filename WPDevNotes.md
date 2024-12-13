@@ -3663,7 +3663,8 @@ const root = ReactDOM.createRoot(rootEl);
 
 root.render(Page());
 ```
-We’ll replace the variable assignment `const div = React.createElement('div', null, [...])` with a return statement `return React.createElement('div', null, [...])`. Afterward, we can update the `render` function to call `Page()` instead of referencing the variable directly `root.render(Page());`.    
+We’ll replace the variable assignment `const div = React.createElement('div', null, [...])` with a return statement return `React.createElement('div', null, [...])`.    
+Instead of assigning the `div` element to a variable, we can update the render function to directly call `root.render(Page());` instead of passing the variable.   
 This approach ensures the page remains clean, and we’re dynamically rendering the content only when needed.   
 
 Now, we’re using a function instead of a variable, which ensures that the elements are created only when the `Page()` function is called. This is more efficient and reduces the chances of memory leaks.
