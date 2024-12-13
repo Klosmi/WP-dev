@@ -3599,7 +3599,7 @@ if(someCondition) {
   ReactDOM.render(loginForm, document.querySelector("#root"))
 }
 ```
-In this example, the `loginForm` element is stored in memory as a variable. Even if it's not needed, it continues to take up space in memory. This isn’t ideal because if the form is no longer needed, we should clear it from memory to prevent unnecessary resource usage.
+If the user is not logged in, `loginForm` is rendered inside the `#root` element. However, the `loginForm` element is stored in memory as a variable, even if it’s not needed later. This can lead to unnecessary resource usage, especially if the form is no longer required. To avoid this, it's better to only create and render the form when necessary, and clear it from memory when it's no longer needed, preventing potential memory leaks.   
 
 **Better Approach: Using Functions**   
 To avoid memory leaks, it's a good practice to store elements inside functions rather than variables. By doing this, elements are only created when needed, and they don't persist in memory when they are no longer required.   
