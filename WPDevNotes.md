@@ -3840,7 +3840,7 @@ This is because JSX doesn't allow multiple sibling elements at the top level of 
 
 Sometimes, adding a `<div>` tag just to wrap multiple elements can cause issues, such as breaking our CSS. Fortunately, React offers a solution: **fragments**.   
 
-Fragments are elements that let you group multiple elements without adding an extra tag to the DOM. Written as empty tags,` <> </>`, they help keep your HTML cleaner and avoid unnecessary wrapper elements.
+Fragments are elements that let us group multiple elements without adding an extra tag to the DOM. Written as empty tags,` <> </>`, they help keep our HTML cleaner and avoid unnecessary wrapper elements.
 
 ```
 import React from 'react';
