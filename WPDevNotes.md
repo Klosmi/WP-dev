@@ -3965,7 +3965,7 @@ A **component** is like creating new, custom HTML tags. While browsers already k
 For example, we can create a `<LoginForm>` component that displays a login form. These components are fully customizable, allowing us to control both how they look and how they behave.   
 This approach makes it easier to build and manage complex web pages, as we can reuse components wherever we need them.
 
-**How components are created?***   
+**How components are created?**   
 
 Components in React are created using functions.   
 The only rule is that the function **must return JSX**. Other than that, React will treat the function as a component.  
