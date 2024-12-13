@@ -4119,12 +4119,14 @@ Here's how it looks in code:
 	import React from 'react';
 	import ReactDOM from 'react-dom/client';
 	import './style.css'
-	
+
+	// header component
 	function Header() {
 	  const clock = Date().toLocaleString();
 	  return <h1 className="green">Hello World {clock}</h1>
 	}
-	
+
+	// Page component
 	function Page() {
 	  return (
 	    <>
@@ -4164,9 +4166,9 @@ Here’s how we update the `Header()` function:
 	function Page() {
 	  return (
 	    <>
-➤       <Header name="John"/>
-	      <p>Hi</p>
-	      <p>Bonjour</p>
+➤            <Header name="John"/>
+             <p>Hi</p>
+             <p>Bonjour</p>
 	    </>
 	  )
 	}
