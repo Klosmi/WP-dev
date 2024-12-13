@@ -4253,7 +4253,7 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 3. **Why Use Variables?**    
 	By using variables like `name`, we make our components more flexible. The `Header` component now dynamically displays the value passed through the `name` prop.
 
- On the page, you’ll see the name rendered in the heading. This approach allows React components to behave dynamically, adjusting their behavior or appearance based on the data you provide.
+ On the page, we’ll see the name rendered in the heading. This approach allows React components to behave dynamically, adjusting their behavior or appearance based on the data we provide.
 
 <br>
 
