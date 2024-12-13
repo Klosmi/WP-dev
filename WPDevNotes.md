@@ -4095,4 +4095,168 @@ setInterval(function() {
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
 
-<br>   
+<br> 
+
+## [Props](https://react.dev/learn/passing-props-to-a-component)
+
+React supports custom attributes on components, known as props (short for properties). Just like HTML elements have attributes— e.g., an `<img>` tag has width and height, or an `<a>` tag has href — React components can accept **props** to make them more dynamic.
+
+Similar to components **Props can have custom names**.   
+
+<br>
+
+**Extending Components with Props**    
+Let's extend our Header component by passing it a prop.    
+Writing props is similar to adding attributes in HTML. For example, to pass a name prop, we write: `<Header name="John" />`. Props can have custom names, so you could rename `name` to `identity` and still achieve the same result: `<Header identity="John" />`.    
+Here's how it looks in code:   
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './style.css'
+
+function Header() {
+  const clock = Date().toLocaleString();
+  return <h1 className="green">Hello World {clock}</h1>
+}
+
+function Page() {
+  return (
+    <>
+      <Header name="John"/>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(<Page />);
+}, 1000)
+```
+
+<br> 
+
+**Accessing Props in a Component**    
+
+To use the `name` prop inside the `Header` component, we need to tell the `Header()` function to accept props. **Think of props as a special object that holds all the data we pass to a component.**   
+
+**We do this by adding a parameter to the `Header()` function, usually called props. This lets us access the values passed as props.** 
+While we can name this parameter anything, props is the standard convention in React, making our code more readable and consistent.   
+
+Here’s how you update the Header function:  
+
+```
+...
+➤	function Header(prop) {
+	  const clock = Date().toLocaleString();
+	  return <h1 className="green">Hello World {clock}</h1>
+	}
+	
+	function Page() {
+	  return (
+	    <>
+➤       <Header name="John"/>
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  )
+	}
+...
+```
+
+We can use a specific `prop` by its name. For example, if we want to use the name prop inside the `Header` component, we can access it as `props.name`.   
+
+Let’s replace the word `"World"` in the heading with `{props.name}` to dynamically display the name passed to the `Header` component.   
+
+Now, when `<Header name="John" />` is rendered, the value of `props.name`, which is `"John"`, will appear in the heading.
+  
+Here’s the complete code:  
+
+```
+	import React from 'react';
+	import ReactDOM from 'react-dom/client';
+	import './style.css';
+	
+	function Header(props) {
+	  const clock = Date().toLocaleString();
+➤	  return <h1 className="green">Hello {props.name} {clock}</h1>;
+	}
+	
+	function Page() {
+	  return (
+	    <>
+	      <Header name="John" />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  );
+	}
+	
+	const rootEl = document.querySelector('#root');
+	const root = ReactDOM.createRoot(rootEl);
+	
+	setInterval(function () {
+	  root.render(<Page />);
+	}, 1000);
+```
+
+<img width="1289" alt="props-name" src="https://github.com/user-attachments/assets/4e3b477c-3b90-4872-ac03-b8ecc3cd3d6a">
+
+<br>
+
+**Passing a variable**   
+
+Let’s make our solution more dynamic by passing a variable instead of a hardcoded value.   
+
+1. **Create a Variable:**    
+	Inside the `Page` component, create a variable called `name` and set its value to `'John'.`
+	For example: `const name = 'John';`   
+
+2. **Update the JSX:**    
+	To pass the `name` variable to the `Header` component, update the JSX. Replace the hardcoded value with curly brackets `{}` to include the variable. In JSX, curly brackets allow us to insert variables or expressions.
+The goal is to pass on the name variable to the Header component.   
+	`<Header name={name} />`
+
+```
+...
+	function Header(prop) {
+	  const clock = Date().toLocaleString();
+	  return <h1 className="green">Hello {prop.name} {clock}</h1>
+	}
+	
+	function Page() {
+➤	  const name = 'John';
+	
+	  return (
+	    <>
+➤	      <Header name={name}/>
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  )
+	}
+...
+```
+Lets pass in the name variable `{}` → `{name}`. So ` <Header name={name}/>`   
+
+3. **Why Use Variables?**    
+	By using variables like `name`, we make our components more flexible. The `Header` component now dynamically displays the value passed through the `name` prop.
+
+ On the page, you’ll see the name rendered in the heading. This approach allows React components to behave dynamically, adjusting their behavior or appearance based on the data you provide.
+
+<br>
+
+**Key Points:**   
+	- Variables or expressions can be passed as props by enclosing them in curly brackets `{}`.
+	- This approach makes components reusable and adaptable based on the data provided.
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br> 
