@@ -4115,31 +4115,31 @@ Props can have custom names, so we could rename `name` to `identity` and still a
 Here's how it looks in code:   
 
 ```
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './style.css'
-
-function Header() {
-  const clock = Date().toLocaleString();
-  return <h1 className="green">Hello World {clock}</h1>
-}
-
-function Page() {
-  return (
-    <>
-      <Header name="John"/>
-      <p>Hi</p>
-      <p>Bonjour</p>
-    </>
-  )
-}
-
-const rootEl = document.querySelector('#root');
-const root = ReactDOM.createRoot(rootEl);
-
-setInterval(function() {
-  root.render(<Page />);
-}, 1000)
+	import React from 'react';
+	import ReactDOM from 'react-dom/client';
+	import './style.css'
+	
+	function Header() {
+	  const clock = Date().toLocaleString();
+	  return <h1 className="green">Hello World {clock}</h1>
+	}
+	
+	function Page() {
+	  return (
+	    <>
+➤	      <Header name="John"/>
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  )
+	}
+	
+	const rootEl = document.querySelector('#root');
+	const root = ReactDOM.createRoot(rootEl);
+	
+	setInterval(function() {
+	  root.render(<Page />);
+	}, 1000)
 ```
 
 <br> 
