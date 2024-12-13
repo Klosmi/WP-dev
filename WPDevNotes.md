@@ -4226,7 +4226,7 @@ Let’s make our solution more dynamic by passing a variable instead of a hardco
 2. **Update the JSX:**    
 	To pass the `name` variable to the `Header` component, update the JSX.     
 Replace the hardcoded value with curly brackets `{}` to include the variable. In JSX, curly brackets allow us to insert variables or expressions.     
-The goal is to pass on the `name` variable to the `Header` component.     
+The goal is to pass on the `name` variable to the `Header` component: pass in the `name` variable betwenn the curly brackets `{}` → `{name}`, so the result is:          
 	**`<Header name={name} />`**
 
 ```
@@ -4249,7 +4249,6 @@ The goal is to pass on the `name` variable to the `Header` component.
 	}
 ...
 ```
-Lets pass in the name variable `{}` → `{name}`. So ` <Header name={name}/>`   
 
 3. **Why Use Variables?**    
 	By using variables like `name`, we make our components more flexible. The `Header` component now dynamically displays the value passed through the `name` prop.
