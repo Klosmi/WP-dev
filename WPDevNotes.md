@@ -3673,7 +3673,7 @@ Now, we’re using a function instead of a variable, which ensures that the elem
 Let’s take this a step further and make the content dynamic. For example, we could display the current time like a clock. Since JavaScript has built-in date objects, we can use `Date()` and its `toLocaleString()` method to display the current time.
 
 Here’s how we can do that inside our `h1` tag using a *[template literal](https://github.com/Klosmi/html-basics/blob/master/JS-basic.md#js-template-literals-template-strings)*.   
-So, we should convert the 3rd argument to a template litera( `React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),`   
+So, we should convert the 3rd argument to a template litera(``` `React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),```   
 The date function is defined by the JavaScript language, it's automatically available to us.
 Here's how to refactor the code:
   
