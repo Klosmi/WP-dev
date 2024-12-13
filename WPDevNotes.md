@@ -3642,7 +3642,7 @@ root.render(div);
 
 In the original code, we store the content in a `div` variable, which works, but it’s not ideal for dynamic content and could lead to memory leaks. To improve this, we can avoid storing elements in variables and instead place them inside a function. Let’s define a function called `Page()` that will directly return the div elements.   
 
-We’ll replace the variable assignment (`const div = React.createElement('div', null, [...])`) with a return statement (`return React.createElement('div', null, [...])`). Afterward, we can update the `render` function to call `Page()` instead of referencing the variable directly (`root.render(Page());`).    
+We’ll replace the variable assignment `const div = React.createElement('div', null, [...])` with a return statement `return React.createElement('div', null, [...])`. Afterward, we can update the `render` function to call `Page()` instead of referencing the variable directly `root.render(Page());`.    
 This approach ensures the page remains clean, and we’re dynamically rendering the content only when needed.   
 Here’s the refactored code:
 
