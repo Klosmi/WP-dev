@@ -3956,3 +3956,132 @@ setInterval(function() {
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
 
 <br>   
+
+## [Components with React](https://react.dev/learn/your-first-component)   
+
+HTML wasn't built to be easily scalable, so you can't split a single page into separate files. React solves this problem with components.   
+A **component** is like creating new, custom HTML tags. While browsers already know tags like `<p>` for paragraphs or `<video>` for videos, React lets us define our own tags.   
+
+For example, we can create a `<LoginForm>` component that displays a login form. These components are fully customizable, allowing us to control both how they look and how they behave.   
+This approach makes it easier to build and manage complex web pages, as we can reuse components wherever we need them.
+
+**How components are created?***   
+
+Components in React are created using functions.   
+The only rule is that the function **must return JSX**. Other than that, React will treat the function as a component.  
+
+To demonstrate, let’s update the render function. Instead of calling the `Page()` function, we'll use a self-closing tag: `<Page />`. If we check the app, we'll see it's still fully functional.   
+
+React automatically recognizes that we're using a custom component. It will look for a function with the same name, execute it, and render the returned JSX.    
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './style.css'
+
+function Page() {
+  return (
+    <>
+      <h1 className="green">Hello World!</h1>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(<Page />);
+}, 1000)
+```
+
+<br>
+
+**Creating More Components**   
+
+React allows us to create almost unlimited components. Let’s create another one!   
+
+We’ll define a function called `Header()`. It's standard practice to capitalize the name of a component. This helps differentiate custom components from regular HTML elements, which are always lowercase.   
+
+The `Header()` component will be responsible for rendering the `<h1>` tag. We'll move the `<h1>` from the Page component into `Header()` and return it there. If the component only returns one element, we can write it in a single line, which avoids the need for parentheses.    
+
+Back in the `Page` component, we can include the `Header` component by adding a self-closing tag: `<Header />`.
+
+```
+	import React from 'react';
+	import ReactDOM from 'react-dom/client';
+	import './style.css'
+	
+➤	function Header() {
+	  return <h1 className="green">Hello World!</h1>
+	}
+	
+	function Page() {
+	  return (
+	    <>
+➤	      <Header />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  )
+	}
+	
+	const rootEl = document.querySelector('#root');
+	const root = ReactDOM.createRoot(rootEl);
+	
+	setInterval(function() {
+	  root.render(<Page />);
+	}, 1000)
+```
+
+<br>
+
+**Dynamic components**    
+
+Let's add a clock to our `Header()` component to display the current time, just like we did in the previous example (link to that).   
+
+To do this, we create a variable called `const clock`, which stores the result of `Date().toLocaleString()`. This will give us the current date and time.
+
+Now, how do we add this dynamic value to the `<h1>` tag?    
+We simply insert the `clock` variable inside the curly brackets `{}`. **In JSX, curly brackets are used to embed JavaScript expressions inside HTML-like code**.
+Here’s how we do it: `return <h1 className="green">Hello {clock}</h1>`  
+
+The `{clock}` part will display the current time inside the `<h1>` tag. The clock will automatically update whenever the component re-renders.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './style.css'
+
+function Header() {
+  const clock = Date().toLocaleString();
+  return <h1 className="green">Hello {clock}</h1>
+}
+
+function Page() {
+  return (
+    <>
+      <Header />
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(<Page />);
+}, 1000)
+```
+
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br>   
