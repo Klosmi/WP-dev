@@ -4213,6 +4213,8 @@ Here’s the complete code:
 
 <br>
 
+<br>
+
 **Passing a variable**   
 
 Let’s make our solution more dynamic by passing a variable instead of a hardcoded value.   
