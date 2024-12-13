@@ -3934,7 +3934,7 @@ However, this CSS file is not automatically loaded into our application. We have
 	Importing the CSS file into our JavaScript file is usually the better choice because Webpack can process CSS alongside JavaScript. To do this, simply we can add the following line to our file: `import './style.css'`.    
 
 With this approach, Webpack will handle the CSS, bundling and optimizing it for production.    
-It’s a clean and efficient way to manage your styles in a React project.  
+It’s a clean and efficient way to manage our styles in a React project.  
 
 ```
 import React from 'react';
