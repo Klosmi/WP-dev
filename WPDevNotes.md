@@ -3757,13 +3757,19 @@ Under the hood, React is smart about updates. If an element doesn't need to chan
 
 In our file, we currently use the `React.createElement` function to create elements, which can be unintuitive and hard to read. JSX simplifies this by allowing us to write HTML-like syntax directly in a JavaScript file.
 
-### Webpack and JSX
+<br>
+
+**Webpack and JSX**
 Before our files are delivered to the browser, they go through a tool called **Webpack**, which bundles and optimizes the code for production. One of Webpack's tasks is to convert JSX into `React.createElement` calls. For example, `<h1>Example</h1>` becomes `React.createElement('h1', null, 'Example')`.
 
-### What is JSX?
+<br>
+
+**What is JSX?**
 JSX is an extension of JavaScript that allows us to write HTML-like code in JavaScript files. It’s not actual HTML, though, so some differences exist. For example, not all HTML attributes are directly usable in JSX.
 
-### Writing JSX
+<br>
+
+**Writing JSX**
 Here's the original code we are working with:
 
 ```javascript
@@ -3906,6 +3912,8 @@ setInterval(function() {
   root.render(Page());
 }, 1000)
 ```
+
+<br>
 
 **Apply Styles**    
 
