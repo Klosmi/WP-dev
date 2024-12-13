@@ -3752,3 +3752,206 @@ Under the hood, React is smart about updates. If an element doesn't need to chan
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
 
 <br>   
+
+## [Intro to JSX](https://www.geeksforgeeks.org/reactjs-jsx-introduction/)
+
+In our file, we currently use the `React.createElement` function to create elements, which can be unintuitive and hard to read. JSX simplifies this by allowing us to write HTML-like syntax directly in a JavaScript file.
+
+### Webpack and JSX
+Before our files are delivered to the browser, they go through a tool called **Webpack**, which bundles and optimizes the code for production. One of Webpack's tasks is to convert JSX into `React.createElement` calls. For example, `<h1>Example</h1>` becomes `React.createElement('h1', null, 'Example')`.
+
+### What is JSX?
+JSX is an extension of JavaScript that allows us to write HTML-like code in JavaScript files. It’s not actual HTML, though, so some differences exist. For example, not all HTML attributes are directly usable in JSX.
+
+### Writing JSX
+Here's the original code we are working with:
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return React.createElement('div', null, [
+    React.createElement('h1', null, `Hi ${Date().toLocaleString()}`),
+    React.createElement('p', null, 'Bonjour'),
+    React.createElement('p', null, 'Szia'),
+  ]);
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000);
+```
+
+First, we will completely replace the return value with a pair of parentheses. Multi-line JSX is supported, However, it must be wrapped with a pair of parentheses.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return (
+
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+We can replace the `React.createElement` calls with JSX syntax. First, wrap the return content in parentheses. Multi-line JSX must be enclosed in parentheses:
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </div>
+  );
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+JSX makes templates more readable and intuitive. However, JSX requires a single root element. If we remove the <div>, React throws an error: *"JSX expressions must have one root element."*  
+
+So far it's starting to look like HTML JS makes writing templates feel intuitive. However, there are some differences.    Firstly, we're not allowed to return multiple root elements> example if we removeg the `<div>` tag, the page will throw an error. It states the following *"JSX expressions must have one root element"*.     
+
+**Fragments**  
+
+Sometimes, adding a <div> tag just to wrap multiple elements can cause issues, such as breaking your CSS. Fortunately, React offers a solution: **fragments**.   
+
+Fragments are elements that let you group multiple elements without adding an extra tag to the DOM. Written as empty tags,` <> </>`, they help keep your HTML cleaner and avoid unnecessary wrapper elements.
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return (
+    <>
+      <h1>Hello World!</h1>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+By using fragments, we can keep our documents clean and avoid unnecessary tags.   
+When we inspect the page in the browser, the DOM will look like this:  
+
+```
+<div id="root">
+  <h1>Hello World!</h1>
+  <p>Hi</p>
+  <p>Bonjour</p>
+</div>
+```
+
+<br>
+
+**className**   
+
+In JSX, we can apply CSS classes to elements, but instead of using the standard class attribute, we need to use className. This is because class is a reserved keyword in JavaScript, which can cause conflicts.      
+
+For example, if we want to add a CSS class called green to an <h1> tag, we would write: `<h1 className="green">Hello World!</h1>` .    
+
+Using className ensures there’s no confusion with JavaScript’s class keyword, and it works seamlessly with your CSS.    
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Page() {
+  return (
+    <>
+      <h1 className="green">Hello World!</h1>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+**Apply Styles**    
+
+To style our React components, we can create a CSS file, for example, `src/style.css`.    
+Let's add a CSS class to make the `<h1>` tag green:  
+
+```
+.green {
+  color: green;
+}
+```
+However, this CSS file is not automatically loaded into our application. We have 2 options to include it:  
+
+1. **Link it in the HTML file**   
+	Add a `<link>` tag in the `<head>` section of the HTML file to load the CSS.
+2. **Import it directly in our JavaScript file**
+	Importing the CSS file into our JavaScript file is usually the better choice because Webpack can process CSS alongside JavaScript. To do this, simply add the following line to your file: `import './style.css'` .     
+
+With this approach, Webpack will handle the CSS, bundling and optimizing it for production.    
+It’s a clean and efficient way to manage your styles in a React project.  
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './style.css'
+
+function Page() {
+  return (
+    <>
+      <h1 className="green">Hello World!</h1>
+      <p>Hi</p>
+      <p>Bonjour</p>
+    </>
+  )
+}
+
+const rootEl = document.querySelector('#root');
+const root = ReactDOM.createRoot(rootEl);
+
+setInterval(function() {
+  root.render(Page());
+}, 1000)
+```
+
+<img width="1074" alt="JSX" src="https://github.com/user-attachments/assets/7effa0bc-d1fd-482b-8be8-d2e87fa18757">
+
+
+--- 
+
+[⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
+
+<br>   
