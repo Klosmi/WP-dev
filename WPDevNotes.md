@@ -4258,8 +4258,8 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 <br>
 
 **Key Points:**   
-Variables or expressions can be passed as props by enclosing them in curly brackets `{}`.
-	- This approach makes components reusable and adaptable based on the data provided.
+- Variables or expressions can be passed as props by enclosing them in curly brackets `{}`.    
+- This approach makes components reusable and adaptable based on the data provided.
 
 
 --- 
