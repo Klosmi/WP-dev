@@ -3725,8 +3725,6 @@ setInterval(function() {
 }, 1000)
 ```
 
-Your version is clear and to the point, but here's a slightly polished version while maintaining your style:
-
 The `setInterval` function is built into JavaScript. It’s used to run a function at specified intervals.
 
 It takes two arguments:   
