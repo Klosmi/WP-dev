@@ -4151,7 +4151,7 @@ To use the `name` prop inside the `Header` component, we need to tell the `Heade
 **We do this by adding a parameter to the `Header()` function, usually called props. This lets us access the values passed as props.** 
 While we can name this parameter anything, props is the standard convention in React, making our code more readable and consistent.   
 
-Here’s how you update the Header function:  
+Here’s how we update the `Header()` function:  
 
 ```
 ...
