@@ -3759,17 +3759,17 @@ In our file, we currently use the `React.createElement` function to create eleme
 
 <br>
 
-**Webpack and JSX**
+**Webpack and JSX**   
 Before our files are delivered to the browser, they go through a tool called **Webpack**, which bundles and optimizes the code for production. One of Webpack's tasks is to convert JSX into `React.createElement` calls. For example, `<h1>Example</h1>` becomes `React.createElement('h1', null, 'Example')`.
 
 <br>
 
-**What is JSX?**
+**What is JSX?**    
 JSX is an extension of JavaScript that allows us to write HTML-like code in JavaScript files. It’s not actual HTML, though, so some differences exist. For example, not all HTML attributes are directly usable in JSX.
 
 <br>
 
-**Writing JSX**
+**Writing JSX**    
 Here's the original code we are working with:
 
 ```javascript
@@ -3842,7 +3842,7 @@ This is because JSX doesn't allow multiple sibling elements at the top level of 
 
 <br>
 
-**Fragments**  
+**Fragments**      
 
 Sometimes, adding a `<div>` tag just to wrap multiple elements can cause issues, such as breaking our CSS. Fortunately, React offers a solution: **fragments**.   
 
@@ -3883,7 +3883,7 @@ When we inspect the page in the browser, the DOM will look like this:
 
 <br>
 
-**className**   
+**className**      
 
 In JSX, we can apply CSS classes to elements, but instead of using the standard class attribute, we need to use className. This is because class is a reserved keyword in JavaScript, which can cause conflicts.      
 
@@ -3915,7 +3915,7 @@ setInterval(function() {
 
 <br>
 
-**Apply Styles**    
+**Apply Styles**       
 
 To style our React components, we can create a CSS file, for example, `src/style.css`.    
 Let's add a CSS class to make the `<h1>` tag green:  
