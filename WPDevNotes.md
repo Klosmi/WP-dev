@@ -3728,10 +3728,17 @@ setInterval(function() {
 The `setInterval` function is built into JavaScript. It’s used to run a function at specified intervals.
 
 It takes two arguments:   
-- The 1st argument is the function we want to execute repeatedly. We can pass a regular function here, as **it’s completely valid to pass a function to a function**.    
+- The 1st argument is the function we want to execute repeatedly. We can pass a regular function here, as **it’s completely valid to pass a function to a function**.
+	  ``` function() {
+	  root.render(Page());
+	}  
+	```
 - The 2nd argument is the interval, specified in milliseconds, which determines how often the function will run.   
  
-To keep the time updated on the page, we should move the render function inside the `setInterval`. This way, the page is re-rendered every second.
+To keep the time updated on the page, we should move the render function inside the `setInterval`. This way, the page is re-rendered every second. 
+	```
+	 (1000)
+	```
 
 <img width="1291" alt="tolocaltime" src="https://github.com/user-attachments/assets/b7bf4eb1-02c9-4e68-a7b9-a114373363d4">
 
