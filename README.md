@@ -72,3 +72,4 @@
 3. [Create a React app - discovering the `index.js` file](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#creating-a-react-app---discovering-the-indexjs-file)
 4. [Dynamic Content with React](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dynamic-content-with-react)
 5. [Intro to JSX](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#intro-to-jsx)
+6. [Components with React](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#components-with-react)    
