@@ -3786,7 +3786,7 @@ setInterval(function() {
 }, 1000);
 ```
 
-First, we will completely replace the return value with a pair of parentheses. Multi-line JSX is supported, However, it must be wrapped with a pair of parentheses.
+First, we will completely replace the return value with a pair of parentheses. Multi-line JSX is supported, however, it must be wrapped with a pair of parentheses.
 
 ```
 import React from 'react';
