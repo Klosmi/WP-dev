@@ -4189,9 +4189,9 @@ Here’s the complete code:
 	import ReactDOM from 'react-dom/client';
 	import './style.css';
 	
-	function Header(props) {
+	function Header(prop) {
 	  const clock = Date().toLocaleString();
-➤	  return <h1 className="green">Hello {props.name} {clock}</h1>;
+➤	  return <h1 className="green">Hello {prop.name} {clock}</h1>;
 	}
 	
 	function Page() {
