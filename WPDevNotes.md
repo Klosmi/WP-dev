@@ -4212,7 +4212,8 @@ Here’s the complete code:
 	}, 1000);
 ```
 
-<img width="1289" alt="props-name" src="https://github.com/user-attachments/assets/4e3b477c-3b90-4872-ac03-b8ecc3cd3d6a">
+<img width="1287" alt="props-name" src="https://github.com/user-attachments/assets/77fc0461-4392-4973-8184-a4668989c8a8" />
+
 
 <br>
 
