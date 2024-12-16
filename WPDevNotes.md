@@ -4107,8 +4107,8 @@ Similar to components **Props can have custom names**.
 
 **Extending Components with Props**    
 
-Let's extend our `Header` component by passing it a `prop`.    
-Writing props is similar to adding attributes in HTML. For example, to pass a `name` prop, we write:     
+Let's extend our `Header` component by passing it a `props`.    
+Writing props is similar to adding attributes in HTML. For example, to pass a `name` props, we write:     
 `<Header name="John" />`.    
 Props can have custom names, so we could rename `name` to `identity` and still achieve the same result:    
 `<Header identity="John" />`.    
@@ -4149,7 +4149,7 @@ Here's how it looks in code:
 
 **Accessing Props in a Component**    
 
-To use the `name` prop inside the `Header` component, we need to tell the `Header()` function to accept props. **Think of props as a special object that holds all the data we pass to a component.**   
+To use the `name` props inside the `Header` component, we need to tell the `Header()` function to accept props. **Think of props as a special object that holds all the data we pass to a component.**   
 
 **We do this by adding a parameter to the `Header()` function, usually called props. This lets us access the values passed as props.** 
 While we can name this parameter anything, props is the standard convention in React, making our code more readable and consistent.   
@@ -4158,7 +4158,7 @@ Here’s how we update the `Header()` function:
 
 ```
 ...
-➤	function Header(prop) {
+➤	function Header(props) {
 	  const clock = Date().toLocaleString();
 	  return <h1 className="green">Hello World {clock}</h1>
 	}
@@ -4175,8 +4175,8 @@ Here’s how we update the `Header()` function:
 ...
 ```
 
-**We can use a specific `prop` by its name.**    
-For example, if we want to use the name prop inside the `Header` component, we can access it as `props.name`.   
+**We can use a specific `props` by its name.**    
+For example, if we want to use the name props inside the `Header` component, we can access it as `props.name`.   
 
 Let’s replace the word `"World"` in the heading with `{props.name}` to dynamically display the name passed to the `Header` component.   
 
@@ -4189,7 +4189,7 @@ Here’s the complete code:
 	import ReactDOM from 'react-dom/client';
 	import './style.css';
 	
-	function Header(prop) {
+	function Header(props) {
 	  const clock = Date().toLocaleString();
 ➤	  return <h1 className="green">Hello {prop.name} {clock}</h1>;
 	}
@@ -4234,7 +4234,7 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 
 ```
 ...
-	function Header(prop) {
+	function Header(props) {
 	  const clock = Date().toLocaleString();
 	  return <h1 className="green">Hello {prop.name} {clock}</h1>
 	}
@@ -4254,7 +4254,7 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 ```
 
 3. **Why Use Variables?**    
-	By using variables like `name`, we make our components more flexible. The `Header` component now dynamically displays the value passed through the `name` prop.
+	By using variables like `name`, we make our components more flexible. The `Header` component now dynamically displays the value passed through the `name` props.
 
  On the page, we’ll see the name rendered in the heading. This approach allows React components to behave dynamically, adjusting their behavior or appearance based on the data we provide.
 
