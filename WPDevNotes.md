@@ -4099,7 +4099,7 @@ setInterval(function() {
 
 ## [Props](https://react.dev/learn/passing-props-to-a-component)
 
-React supports custom attributes on components, known as props (short for properties). Just like HTML elements have attributes— e.g., an `<img>` tag has width and height, or an `<a>` tag has href — React components can accept **props** to make them more dynamic.
+React supports custom attributes on components, known as props (short for properties). Just like HTML elements have attributes— e.g., an `<img>` tag has width and height, or an `<a>` tag has `href` — React components can accept **props** to make them more dynamic.
 
 Similar to components **Props can have custom names**.   
 
