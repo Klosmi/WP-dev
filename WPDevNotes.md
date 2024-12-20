@@ -4286,7 +4286,29 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 ## [ES6 Modules](https://www.freecodecamp.org/news/how-to-use-es6-javascript-features-in-react/)
 
 Let's organize our project by splitting the functions into separate files. This will make the code easier to manage and maintain.   
-To start, let's create 2 new files in the `source` directory. Here, we create 2 files, `Page.js` and `Header.js`.
+To start, let's create 2 new files in the `source` directory. Here, we create 2 files, `Page.js` and `Header.js`.    
+
+We move the `Header(props)` function to the `Header.js` file, and the `Page()` function to the `Page.js` file. We have to imppert the Header and Page functions, but first we have to export the compontnents.    
+
+In the `Page.js` file add the keyword before the function: `export default`.    
+So the code look like this:    
+
+```
+👉	export default function Page() {
+	  return (
+	    <>
+	      <Header name="John" />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  );
+	}
+```
+**Explaining the 1export default` keywords**:      
+	- export: the data is confined to its file by default. We use the `export` keyword to make it accessible in other files. Here, we're exporting the Page function.    
+	- default: the `default` keyword helps us organize code by creating a **namespace**, which is like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize variables and functions in different namespaces.    
+Sometimes, we may only need 1 function from a file, and that's what *default* helps with. Files can export multiple values, each in its own namespace.  
+Think of a namespace as a virtual "container" or "organizer" for code.
 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
