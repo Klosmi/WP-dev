@@ -4305,11 +4305,12 @@ So the code look like this:
 	}
 ```
 
-**Explaining the `export default` keywords**:      
-	- export: the data is confined to its file by default. We use the `export` keyword to make it accessible in other files. Here, we're exporting the Page function.    
-	- default: the `default` keyword helps us organize code by creating a **namespace**, which is like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize variables and functions in different namespaces.    
-Sometimes, we may only need 1 function from a file, and that's what *default* helps with. Files can export multiple values, each in its own namespace.  
-Think of a namespace as a virtual "container" or "organizer" for code.
+**Explaining `export default`**:  
+
+	- `export` keyword: By default, data is only available in the file it’s in. We use export to make it accessible in other files. For example, we're exporting the Page function here.   
+	 
+	- `default` keyword: It helps us organize code by creating a **namespace**, like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize functions and variables in different namespaces.    
+	Sometimes, we only need one function from a file, and default makes that easier. Files can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
