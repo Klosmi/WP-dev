@@ -4288,7 +4288,7 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 Let's organize our project by splitting the functions into separate files. This will make the code easier to manage and maintain.   
 To start, let's create 2 new files in the `source` directory. Here, we create 2 files, `Page.js` and `Header.js`.    
 
-We move the `Header(props)` function to the `Header.js` file, and the `Page()` function to the `Page.js` file. We have to imppert the Header and Page functions, but first we have to export the compontnents.    
+We move the `Header(props)` function to the `Header.js` file, and the `Page()` function to the `Page.js` file. We have to impprt the `Header` and `Page` functions, but first we have to *export the compontnents*.    
 
 In the `Page.js` file add the keyword before the function: `export default`.    
 So the code look like this:    
