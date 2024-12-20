@@ -4304,13 +4304,17 @@ So the code look like this:
 	  );
 	}
 ```
+*In this example, we're assigning the `Page()` function to the `default` namespace. ***The default namespace is available in every file. By using it, we don't need to give a name to the function.***   
+<br>
 
-**Explaining `export default`**:  
+**Explaining `export default` and namespace**:  
 
 - `export` keyword: By default, data is only available in the file it’s in. We use export to make it accessible in other files. For example, we're exporting the Page function here.   
 	 
 - `default` keyword: It helps us organize code by creating a **namespace**, like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize functions and variables in different namespaces.    
 	Sometimes, we only need one function from a file, and default makes that easier. Files can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
+
+
 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
