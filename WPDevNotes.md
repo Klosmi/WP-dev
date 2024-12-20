@@ -4189,27 +4189,36 @@ Here’s the complete code:
 	import ReactDOM from 'react-dom/client';
 	import './style.css';
 	
+	// Header component displays the greeting message and the current time
 	function Header(props) {
+        // Getting the current date and time as a string
 	  const clock = Date().toLocaleString();
+	  
+        // Rendering the heading with the name passed as a prop and the current time
 👉	  return <h1 className="green">Hello {props.name} {clock}</h1>;
 	}
 	
+	// Page component that renders the Header and two paragraphs
 	function Page() {
 	  return (
 	    <>
-	      <Header name="John" />
+	      <Header name="John" />  {/* Passing the 'name' prop to the Header */}
 	      <p>Hi</p>
 	      <p>Bonjour</p>
 	    </>
 	  );
 	}
 	
-	const rootEl = document.querySelector('#root');
-	const root = ReactDOM.createRoot(rootEl);
+	// rootEl is a reference to the DOM element where the React app will be rendered
+	const rootEl = document.querySelector('#root');  // Selects the HTML element with id="root"
+	
+	// root is a React root object that is responsible for managing the rendering process
+	const root = ReactDOM.createRoot(rootEl);  // Initializes React root to manage updates for rootEl
 	
 	setInterval(function () {
-	  root.render(<Page />);
-	}, 1000);
+	  root.render(<Page />);  // Re-renders the Page component inside the root element
+	}, 1000); 
+
 ```
 
 <img width="1287" alt="props-name" src="https://github.com/user-attachments/assets/77fc0461-4392-4973-8184-a4668989c8a8" />
