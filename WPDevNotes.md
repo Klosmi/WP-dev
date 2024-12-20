@@ -4178,7 +4178,7 @@ Here’s how we update the `Header()` function:
 **We can use a specific `props` by its name.**    
 For example, if we want to use the name props inside the `Header` component, we can access it as `props.name`.   
 
-Let’s replace the word `"World"` in the heading with `{props.name}` to dynamically display the name passed to the `Header` component.   
+Let’s replace the word 'World' in 'Hello World' with `{props.name}` in the heading, to dynamically display the name passed to the `Header` component.   
 
 Now, when `<Header name="John" />` is rendered, the value of `props.name`, which is `"John"`, will appear in the heading.
   
