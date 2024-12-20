@@ -4309,12 +4309,11 @@ The code should look like this:
 
 **Explaining `export default` and namespace**:  
 
-- `export` keyword:    
-	By default, data is only available in the file it’s in. We use export to make it accessible in other files. For example, we're exporting the `Page()` function here.   
-	 
-- `default` keyword:     
-	It helps us organize code by creating a **namespace**, like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize functions and variables in different namespaces.    
-	When we only need one function from a file, `default` makes that easier. A file can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
+- `export` keyword (for multiple exports):   
+	By default, data is only available within the file it’s in. We use export to make it accessible in other files. For example, we can export multiple functions or variables from a file. Think of a namespace as a virtual organizer for code.
+
+- `default` keyword (for a single export):    
+	The `default` keyword helps organize code by creating a *namespace* for a single value. It's like a folder on our computer where we store files (text, PDFs, etc.). We can store different files (or pieces of data) inside that folder. When we only need **one function or value** from a file, we use `default` to assign it to a "default container." This allows us to import it easily with any name. If we need to export multiple values, we use named exports.
 
 <br>
 
