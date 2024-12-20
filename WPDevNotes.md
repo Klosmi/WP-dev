@@ -4191,7 +4191,7 @@ Here’s the complete code:
 	
 	function Header(props) {
 	  const clock = Date().toLocaleString();
-👉	  return <h1 className="green">Hello {prop.name} {clock}</h1>;
+👉	  return <h1 className="green">Hello {props.name} {clock}</h1>;
 	}
 	
 	function Page() {
