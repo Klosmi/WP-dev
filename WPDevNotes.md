@@ -4304,7 +4304,7 @@ The code should look like this:
 	  );
 	}
 ```
-*In this example, we're assigning the `Page()` function to the `default` namespace.* ***The default namespace is available in every file. By using it, we don't need to give a name to the function.***   
+ 
 <br>
 
 **Explaining `export default` and namespace**:  
