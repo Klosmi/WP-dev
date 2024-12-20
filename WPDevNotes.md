@@ -4166,7 +4166,7 @@ Here’s how we update the `Header()` function:
 	function Page() {
 	  return (
 	    <>
-👉            <Header name="John"/>
+👉           <Header name="John"/>
              <p>Hi</p>
              <p>Bonjour</p>
 	    </>
