@@ -3164,7 +3164,7 @@ To make our custom templates available, we need to register a theme. This can be
 	  },
 	"styles": {・・・
 	  },
-➤	"customTemplates": [
+👉	"customTemplates": [
 	    {
 	      "name": "full-width-page",
 	      "title": "Full Width Page",
@@ -4025,14 +4025,14 @@ Back in the `Page` component, we can include the `Header` component by adding a 
 	import ReactDOM from 'react-dom/client';
 	import './style.css'
 	
-➤	function Header() {
+👉	function Header() {
 	  return <h1 className="green">Hello World!</h1>
 	}
 	
 	function Page() {
 	  return (
 	    <>
-➤	      <Header />
+👉	      <Header />
 	      <p>Hi</p>
 	      <p>Bonjour</p>
 	    </>
@@ -4130,7 +4130,7 @@ Here's how it looks in code:
 	function Page() {
 	  return (
 	    <>
-➤	      <Header name="John"/>
+👉	      <Header name="John"/>
 	      <p>Hi</p>
 	      <p>Bonjour</p>
 	    </>
@@ -4158,7 +4158,7 @@ Here’s how we update the `Header()` function:
 
 ```
 ...
-➤	function Header(props) {
+👉	function Header(props) {
 	  const clock = Date().toLocaleString();
 	  return <h1 className="green">Hello World {clock}</h1>
 	}
@@ -4166,7 +4166,7 @@ Here’s how we update the `Header()` function:
 	function Page() {
 	  return (
 	    <>
-➤            <Header name="John"/>
+👉            <Header name="John"/>
              <p>Hi</p>
              <p>Bonjour</p>
 	    </>
@@ -4191,7 +4191,7 @@ Here’s the complete code:
 	
 	function Header(props) {
 	  const clock = Date().toLocaleString();
-➤	  return <h1 className="green">Hello {prop.name} {clock}</h1>;
+👉	  return <h1 className="green">Hello {prop.name} {clock}</h1>;
 	}
 	
 	function Page() {
@@ -4241,11 +4241,11 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 	}
 	
 	function Page() {
-➤	  const name = 'John';
+👉	  const name = 'John';
 	
 	  return (
 	    <>
-➤	      <Header name={name}/>
+👉	      <Header name={name}/>
 	      <p>Hi</p>
 	      <p>Bonjour</p>
 	    </>
