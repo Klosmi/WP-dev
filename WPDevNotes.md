@@ -4304,7 +4304,8 @@ So the code look like this:
 	  );
 	}
 ```
-**Explaining the 1export default` keywords**:      
+
+**Explaining the `export default` keywords**:      
 	- export: the data is confined to its file by default. We use the `export` keyword to make it accessible in other files. Here, we're exporting the Page function.    
 	- default: the `default` keyword helps us organize code by creating a **namespace**, which is like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize variables and functions in different namespaces.    
 Sometimes, we may only need 1 function from a file, and that's what *default* helps with. Files can export multiple values, each in its own namespace.  
