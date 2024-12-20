@@ -4314,7 +4314,7 @@ The code should look like this:
 	 
 - `default` keyword:     
 	It helps us organize code by creating a **namespace**, like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize functions and variables in different namespaces.    
-	Sometimes, we only need one function from a file, and default makes that easier. Files can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
+	When we only need one function from a file, `default` makes that easier. A file can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
 
 <br>
 
