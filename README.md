@@ -73,4 +73,5 @@
 4. [Dynamic Content with React](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#dynamic-content-with-react)
 5. [Intro to JSX](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#intro-to-jsx)
 6. [Components with React](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#components-with-react)
-7. [Props](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#props)        
+7. [Props](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#props)
+8. [ES6 Modules](https://github.com/Klosmi/WP-dev/blob/main/WPDevNotes.md#es6-modules)         
