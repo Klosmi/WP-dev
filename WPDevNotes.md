@@ -4291,7 +4291,7 @@ To start, let's create 2 new files in the `source` directory. Here, we create 2 
 We move the `Header(props)` function to the `Header.js` file, and the `Page()` function to the `Page.js` file. We have to impprt the `Header` and `Page` functions, but first we have to *export the components*.    
 
 In the `Page.js` file add the keyword before the function: `export default`.    
-So the code look like this:    
+The code should look like this:   
 
 ```
 👉	export default function Page() {
