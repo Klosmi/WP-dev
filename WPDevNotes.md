@@ -4286,7 +4286,7 @@ The goal is to pass on the `name` variable to the `Header` component: pass in th
 ## [ES6 Modules](https://www.freecodecamp.org/news/how-to-use-es6-javascript-features-in-react/)
 
 Let's organize our project by splitting the functions into separate files. This will make the code easier to manage and maintain.   
-To start, let's create two new files in the `source` directory. Here, we create 2 files, `Page.js` and `Header.js`.
+To start, let's create 2 new files in the `source` directory. Here, we create 2 files, `Page.js` and `Header.js`.
 
 
 [⬅️ back to the table of contents](https://github.com/Klosmi/WP-dev/blob/main/README.md#plugin-development-with-js-and-react)
