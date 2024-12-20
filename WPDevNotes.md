@@ -4427,6 +4427,13 @@ But wait, what’s this `{ Header }`? Unlike the default namespace, values expor
 
 Now, the `Header` component is properly imported, and the app should work as expected!
 
+<br> 
+
+**When to Use Default or Named Exports?**   
+
+- Use default export when a file is exporting one main item (like a function or an object) and you want the flexibility to give it any name when importing.
+
+- Use named exports when you want to export multiple items (like several functions or variables) and be explicit about the names you are importing.
 
 
 
