@@ -4314,6 +4314,119 @@ So the code look like this:
 - `default` keyword: It helps us organize code by creating a **namespace**, like a folder for data. Just like we store movies, music, and photos in separate folders, we can organize functions and variables in different namespaces.    
 	Sometimes, we only need one function from a file, and default makes that easier. Files can export multiple values, each in its own namespace. Think of a namespace as a virtual organizer for code.
 
+<br>
+
+In this example, we're assigning the Page() function to the default namespace. **The default namespace is available in every file, so we don't need to give the function a name.** This means we can use an anonymous function instead.
+
+```
+👉	export default function() {
+	  return (
+	    <>
+	      <Header name="John" />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  );
+	}
+```
+
+<br>
+
+**Import the the function**:    
+
+We can import the function at the top of the `index.js` file using the `import from` keywords. **Packages are imported by their names.**      
+For local files, we provide a *relative path*. Wg.: use `./Page` refers to the `Page` file, and we can skip the file extension (like `.js`).    
+
+We need to give our import a name, which can be anything we choose. The `default` namespace allows us to assign a custom name to the imported value.  
+Sometimes, for clarity, we use the same name as the function, like `Page`. The import would look like this: `import Page from './Page';`    
+
+*`index.js` file*
+```
+	import React from 'react';
+	import ReactDOM from 'react-dom/client';
+👉	import Page from './Page';
+	import './style.css';
+	
+	
+	
+	const rootEl = document.querySelector('#root');
+	const root = ReactDOM.createRoot(rootEl);
+	
+	setInterval(function () {
+	  root.render(<Page />);
+	}, 1000);
+```
+<br>
+
+**Back to the `Page.js` file**:  
+
+Since the `react.createElement` function isn't available by default in this file, we need to import React from the react package for JSX to work. The import should look like this: `import React from 'react';`   
+
+*`Page.js` file*
+```
+👉	import React from 'react';
+	
+	export default function Page() {
+	  return (
+	    <>
+	      <Header name="John" />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  );
+	}
+```
+
+<br>
+
+**Fixing the Missing Header Component**:
+
+Because the `Header` component is not imported into `Page.js`, the app won't work.
+Let's go to the `Header.js` file, and:    
+
+- Add the `export` keyword to the `Header` function.
+- We must give the function a name if we don't use the default keyword. Without a name, an error will occur. Here the name is `Header`: `export function Header(props)`
+- We also need to import `React` for JSX to function properly, because our JSX will not work without this package being imported.: `import React from 'react';`
+
+*`Header.js`*   
+```
+👉	import React from 'react';
+
+👉	export function Header(props) {
+	  const clock = Date().toLocaleString();
+	  return (
+	    <h1 className="green">
+	      Hello {props.name} {clock}
+	    </h1>
+	  );
+	}
+```
+
+<br>
+
+**Final Step: Importing `Header` into `Page.js`:**   
+
+Now let's go to the `Page.js` file and add the `import { Header } from './Header';` statement, which imports the `Header` component from the `Header.js` file.
+But wait, what’s this `{ Header }`? Unlike the default namespace, values exported by name need to be imported using their exact name. We do this by wrapping the name in curly brackets, like `{ Header }`.
+
+*`Page.js`*   
+```
+	import React from 'react';
+👉	import { Header } from './Header';
+	
+	export default function Page() {
+	  return (
+	    <>
+	      <Header name="John" />
+	      <p>Hi</p>
+	      <p>Bonjour</p>
+	    </>
+	  );
+	}
+```
+
+Now, the `Header` component is properly imported, and the app should work as expected!
+
 
 
 
