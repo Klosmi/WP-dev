@@ -3997,7 +3997,7 @@ setInterval(function() {
 
 ## [Components with React](https://react.dev/learn/your-first-component)   
 
-HTML wasn't built to be easily scalable, so you can't split a single page into separate files. React solves this problem with components.   
+HTML wasn't built to be easily scalable, so we can't split a single page into separate files. React solves this problem with components.   
 A **component** is like creating new, custom HTML tags. While browsers already know tags like `<p>` for paragraphs or `<video>` for videos, React lets us define our own tags.   
 
 For example, we can create a `<LoginForm>` component that displays a login form. These components are fully customizable, allowing us to control both how they look and how they behave.   
