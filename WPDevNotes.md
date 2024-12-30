@@ -3898,7 +3898,6 @@ setInterval(function() {
 }, 1000)
 ```
 
-By using fragments, we can keep our documents clean and avoid unnecessary tags.   
 When we inspect the page in the browser, the DOM will look like this:  
 
 ```
