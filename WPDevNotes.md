@@ -4365,7 +4365,7 @@ In this example, we're assigning the Page() function to the default namespace. *
 **Import the the function**:    
 
 We can import the function at the top of the `index.js` file using the `import from` keywords. **Packages are imported by their names.**      
-For local files, we provide a *relative path*. Wg.: use `./Page` refers to the `Page` file, and we can skip the file extension (like `.js`).    
+For local files, we provide a *relative path*. Eg.: use `./Page` refers to the `Page` file, and we can skip the file extension (like `.js`).    
 
 We need to give our import a name, which can be anything we choose. The `default` namespace allows us to assign a custom name to the imported value.  
 Sometimes, for clarity, we use the same name as the function, like `Page`. The import would look like this: `import Page from './Page';`    
