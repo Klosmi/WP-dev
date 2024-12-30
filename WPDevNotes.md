@@ -3463,8 +3463,8 @@ This package provides functions to interact with the browser and render elements
 
  <br> 
  
-Next, **we need to define a root element, a variable called** `rootEl` ***(the main container where our React app will be rendered)***, **to specify where we want to render our element**.
-Before rendering, we need to select a location in the DOM. The location is the element with `id="root"`, which we usually define in the HTML file like this: 
+Next, **we need to define a root element by creating a variable** (we'll call it `rootEl`, but we can choose any name) ***(the main container where our React app will be rendered)***, **to specify where we want to render our element**.
+Before rendering, we need to select a location in the DOM. This variable will reference the location in the DOM, which is the element with `id="root"` typically defined in the HTML file like this:    
 
 `<div id="root"></div>`    
   
