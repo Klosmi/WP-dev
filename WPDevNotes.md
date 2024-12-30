@@ -3865,9 +3865,7 @@ setInterval(function() {
 }, 1000)
 ```
 
-JSX makes templates more readable and intuitive. However, JSX requires a single root element. If we remove the `<div>` tag, React throws an error: *"JSX expressions must have one root element."*  
-
-So far, JSX makes writing templates feel intuitive, almost like working with HTML. However, there are some key differences. For instance, JSX requires that **a component returns only 1 root element**. If we remove the `<div>` wrapper from our code, the page will throw an error saying, *"JSX expressions must have one parent element."*    
+JSX makes writing templates feel intuitive, almost like working with HTML. However, there are some key differences. For instance, JSX requires that **a component returns only 1 root element**. If we remove the `<div>` wrapper from our code, the page will throw an error saying, *"JSX expressions must have one parent element."*    
 This is because JSX doesn't allow multiple sibling elements at the top level of a component.  
 
 <br>
