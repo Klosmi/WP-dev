@@ -3491,13 +3491,10 @@ Copy code
 </html>
 ```
 **What is the root element and where is it located?**    
-The root element is the HTML element to which we "bind" our React application. Instead of using an already existing div, you create a space for your application, and this element is called the root element.    
+The root element is the HTML element to which we "bind" our React application. Instead of using an already existing div, we create a space for our application, and this element is called the root element.    
 
 **What happens exactly?**    
-Creating the HTML file: The id="root" is a simple HTML div element that you manually create in your HTML file. There is no magic; you simply say, "Here is an empty container where the React app will be displayed."    
-
-**Meaning of id="root":**    
-The id="root" is a unique identifier (ID) that you assign to the div, so you can easily find it in the DOM (Document Object Model). The React application will be rendered exactly inside this element.
+Creating the HTML file: The `id="root"` is a simple HTML div element that we manually create in your HTML file. There is no magic; we simply say, "Here is an empty container where the React app will be displayed."    
 
   <br>
   
