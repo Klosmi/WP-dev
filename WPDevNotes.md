@@ -3471,7 +3471,7 @@ Before rendering, we need to select a location in the DOM. This variable will re
 `<div id="root"></div>`   
 
 
-This is a simple HTML file where you define a div element with id="root". You decide where this div should be located.    
+This is a simple HTML file where we define a div element with `id="root"`. We decide where this div should be located.    
 For example:   
 ```
 html
