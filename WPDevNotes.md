@@ -3312,9 +3312,9 @@ Packages can be found on [npm (Node Package Manager)](https://www.npmjs.com/), w
 
 <br>
 
+The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)** file is to describe our project.    
 *  **Key properties in package.json include:**   
 
-	The purpose of the **[`package.json`](https://docs.npmjs.com/cli/v7/configuring-npm/package-json)** file is to describe our project.   
 	- `"name"`: The name of the project.
 	- `"version"`: The current version of the project.
 	- `"dependencies"` and `"devDependencies"`: Lists of packages used in the project.
