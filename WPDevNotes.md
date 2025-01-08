@@ -1095,7 +1095,7 @@ By default, "defauletPalette" property is set to true. Setting this property to 
 Let's try __enabling the default palette for the site's title block__ in the `theme.json` file. So when we click on the color palette when the `<h1>Site title</h1>` is selected, we can see the default color palette.    
 We use a prtoperty `"blocks"` which value is an object, and it can apply settings to specific blocks.   
 
-List of names for the `blocks` property are [here](https://www.udemy.com/course/wordpress-development-create-wordpress-themes-and-plugins/learn/lecture/32593150#notes).
+List of names for the `blocks` property are [here](https://wordpress.org/documentation/article/blocks-list/).
 ```
 {
   "$schema" : "https://schemas.wp.org/trunk/theme.json",
