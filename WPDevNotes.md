@@ -580,7 +580,7 @@ in our `style.css` which is in the *theme* folder, we add the following:
  - Tested up to: it lets the user know which version of WordPress the theme was tested on. (Recommended to use the latest WP version) 
  - Requires PHP: this property should be set to the minimum PHP version required for a theme to be functional.
  - License, License URI: developers use the GNU license, which is the same license used by WordPress.
- - Text domain: it is very important in regards to translations. W e can think of the text domain as a unique ID for our translations. (It's common practice to set the text domain to the same name as our folder.)
+ - Text domain: it is very important in regards to translations. We can think of the text domain as a unique ID for our translations. (It's common practice to set the text domain to the same name as our folder.)
  - last, we can add any notes, WP wont check it
 ```
 /*
@@ -599,7 +599,15 @@ License URI:
 Text domain: mytheme
 */ 
 ```
-Also, we can set an __image of our theme__, WP search for `screenshot.png` in our theme directory (recommended 1200 x 900 px).
+Also, we can set an __image of our theme__, WP search for `screenshot.png` in our theme directory (recommended 1200 x 900 px).    
+
+<br>
+
+💡 To create a **child theme**, we use a new `style.css`   
+It’s a good practice to create a child theme based on our theme (making it the parent theme).   
+To create a child theme, we start with a **new `style.css`**.   
+When customizing, we can use all WordPress functionalities [documented in the handbook](https://developer.wordpress.org/themes/advanced-topics/child-themes/#how-to-create-a-child-theme), with additional considerations to explore in upcoming sections.    
+*Highly Recommended: to check out the handbook for step-by-step instructions on child theme creation, as it covers important considerations in detail.*   
 
 --- 
 
