@@ -1114,6 +1114,7 @@ List of names for the `blocks` property are [here](https://developer.wordpress.o
   }
 }
 ```
+*In the "block: {" the `"core/ "`allows the theme to configure various settings related to **core features** such as blocks, colors, fonts, spacing, and more.*   
 
 --- 
 
