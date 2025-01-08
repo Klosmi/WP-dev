@@ -1495,7 +1495,7 @@ A border has a style, width, colour, radius.
 	```
 The value for these properties is booleans, by default, they're all false.
 
-- let's modify the border settings for the pull quote block.   
+- lets modify the border settings for the pull quote block.   
 We add our object to the `"blocks"` object with the name `" core/pullquote"`. Here we can add the styling.       
 	theme.json
 	```
