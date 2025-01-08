@@ -1030,7 +1030,7 @@ If this doesn't work, we can use the original source:
 <br>
 
 In our editor, inside our themes folder, open the __`theme.json`.__ 
-The first property in your themed JSON file should always be version, so lets add it (backward compatibility reasons).
+The first property in our themed JSON file should always be version, so lets add it (backward compatibility reasons).
 *(We are using double quotes, single quotes in json causes error)*   
 ```
 {
