@@ -1077,7 +1077,7 @@ So, with the `theme.json` file we can modify, change WP default color palette.
 }
 ```
 
-By default, "defauletPalette" property is set to true. Setting this property to true will allow WordPress to recommend colors. Lets chang it to false.
+By default, "defauletPalette" property is set to true. Setting this property to true will allow WordPress to recommend colors. Lets change it to false.
 ```
 {
   "$schema" : "https://schemas.wp.org/trunk/theme.json",
