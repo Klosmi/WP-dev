@@ -1755,7 +1755,7 @@ But we want the full site editor to have complete control of the editor, not a p
 
 <br>
 
-__content width__ refers to the width of the main content area, while __wide width__ refers to the maximum width of wider elements on your website.    
+__content width__ refers to the width of the main content area, while __wide width__ refers to the maximum width of wider elements on our website.    
 
 We can provide layout settings by using the `"layout"` object in the `"settings"`.    
   - `"contentSize"` property configures the __default width for all blocks.__    
