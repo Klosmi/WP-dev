@@ -1574,7 +1574,7 @@ theme.json
     }
   ...
 ```
-  (* We haven't loaded the font into our theme, so it won't change at the moment.*)
+  (*We haven't loaded the font into our theme, so it won't change at the moment.*)
   
 --- 
 
