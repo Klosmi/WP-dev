@@ -1792,8 +1792,7 @@ We can enable these settings on a global level and block level.
 <br>
 
 Insinde the `"settings"` we add a new property "`spacing"`.   
-By setting the "margin" and "padding" true, u
-sers will be able to configure the margin and padding for all blocks that support spacing.
+By setting `"margin": true` and `"padding": true` in the global `"spacing"` settings, users will be able to configure the margin and padding for all blocks that support spacing.    
 ```
 "settings" : {
   "spacing" : {
