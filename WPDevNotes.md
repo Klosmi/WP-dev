@@ -1884,7 +1884,7 @@ In the `"settings"` object we add the __`"blockGap"`__ property in the `"spacing
 ```
 By turning this setting on (true), users will be allowed to customize the gap.    
 
-If we want to give more breathing room to our columns, we can set it in the `"styles"` object, we have to modify the `"spacing"` property: we add the `"blockGap"` property with a size, eg. `"4rem"`.    
+Since the `styles` object lets us define the default look and feel for specific blocks, if we want to give more breathing room to our columns, we can modify the `spacing` property in the `styles` object by adding the `blockGap` property with a size, e.g., 4rem.    
 ```
 "styles" : {
   "spacing" : {
