@@ -1709,7 +1709,9 @@ These settings can be modified on a block level too.
 We can apply styles on a global level or block level.    
 Good practice to establish default values for our theme.
 
-Inside the `"styles"` object we can add the typography style by adding the `"typography"` object.      
+Inside the `"styles"` object we can add the typography style by adding the `"typography"` object. 
+This typically applies globally to our entire theme, unless specified otherwise.   
+     
 
 We can modify the font family, size, style, wight, line-height, text decoration, text transformation.
 ```
