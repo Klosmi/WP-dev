@@ -1775,10 +1775,8 @@ We can provide layout settings by using the `"layout"` object in the `"settings"
         }
     }
     ```
-The __content width__ is the maximum width of the main content area, typically the area where our blog posts or pages are displayed. This width is usually narrower than the overall width of our website, in order to make reading easier and more comfortable.    
-On the other hand, the __wide width__ is the maximum width of elements that are wider than the *content width*, such as images or video embeds. This width is often used to create full-width or wide-width sections on our website.    
-    
-So, the **content width** (`contentSize`) defines the maximum width for regular content in our posts, while the **wide width** (`wideSize`) sets the maximum width for blocks with wide alignment. In essence, both settings determine the maximum width for different types of blocks within our posts.   
+The **content width** (`contentSize`) is the maximum width for the main content of our posts, like text and regular images. It’s usually kept narrow to make reading easier.      
+The **wide width** (`wideSize`) is for elements that we want to be wider, like images or videos that stretch across the screen. These 2 settings help control how wide our content and other elements can be, depending on their type.      
 
 --- 
 
