@@ -1826,7 +1826,7 @@ Let's try adding some default styles to our theme. This is the default spacing (
 Global vs Block-level Spacing:    
 - The global settings under "spacing" (like "margin": true and "padding": true) enable users to configure margin and padding for all blocks that support these properties.    
 
-- The styles section in the "styles" object is used to set default values for specific blocks. For example, if you want to define specific margins or paddings for a particular block (like a paragraph or image), you can set them in this "styles" section.    
+- The styles section in the "styles" object is used to set default values for specific blocks. For example, if we want to define specific margins or paddings for a particular block (like a paragraph or image), we can set them in this "styles" section.    
 
 
 --- 
