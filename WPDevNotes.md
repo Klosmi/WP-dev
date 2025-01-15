@@ -1934,7 +1934,107 @@ In the theme folder we create a folder `assets`.
 - Here we create our `index.html` file (and basically everything we would have in our html static website, such as CSS, and JS files).    
 This is our __static__ template.   
 In the `index.html` in templates folder, we create the content: 
-it has a `<header>`, `<main>` and a `<footer>` section.         
+it has a `<header>`, `<main>` and a `<footer>` section.      
+The `<header>` is somthing like this:
+```
+<!-- Header -->
+<header>
+  <!-- Topbar -->
+  <div class="topbar">
+    <ul class="secondary-menu">
+      <li><a href="#">Example Link</a></li>
+      <li><a href="#">Example Link</a></li>
+      <li><a href="#">Example Link</a></li>
+    </ul>
+  </div>
+  <!-- Main Header -->
+  <div class="main-header">
+    <a href="#" class="logo">Udemy</a>
+    <form class="header-search-form">
+      <input type="text" placeholder="Search">
+    </form>
+    <a href="#signin-modal" class="signin-link">Hello, Sign in</a>
+  </div> 
+  <!-- Primary Menu -->
+  <div class="primary-menu-container">
+    <ul class="primary-menu">
+      <li><a href="#">Example Link</a></li>
+      <li><a href="#">Example Link</a></li>
+      <li><a href="#">Example Link</a></li>
+    </ul>
+  </div>
+</header>
+```
+The `<main>` is somthing like this:
+```
+<!-- Main Content -->
+<main>
+  <!-- Entry 1 -->
+  <article>
+    <div>
+      <a class="post-author" href="#"><img src="/public/author.jpg" alt="Person"> John Doe</a>
+      <h2><a href="#">Watch Demo Video</a></h2>
+      <span>Aug 15</span>
+      <a href="blog-single-sidebar.html"><img src="/public/blog-post-03.jpg" alt="Blog Post Image"></a>
+      <div>
+        <a href="#" class="blog-entry-meta-link">Travel</a>, 
+        <a href="#" class="blog-entry-meta-link">Personal finance</a>
+      </div>
+      <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <a href="#">[Read more]</a></p>
+    </div>
+  </article>
+  <!-- Entry 2 -->
+  <article>
+    <div>
+      <a class="post-author" href="#"><img src="/public/author.jpg" alt="Person"> John Doe</a>
+      <h2><a href="#">Watch Demo Video</a></h2>
+      <span>Aug 15</span>
+      <a href="blog-single-sidebar.html"><img src="/public/blog-post-03.jpg" alt="Blog Post Image"></a>
+      <div>
+        <a href="#" class="blog-entry-meta-link">Travel</a>, 
+        <a href="#" class="blog-entry-meta-link">Personal finance</a>
+      </div>
+      <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <a href="#">[Read more]</a></p>
+    </div>
+  </article>
+  
+  <!-- Pagination -->
+  <nav>
+    <a href="#">Prev Page</a>
+    <a href="#">Next Page</a>
+  </nav>
+</main>
+```
+The `<footer>` is something liek this:    
+```
+<!-- Footer -->
+<footer class="bg-gray-700 p-8">
+  <div class="grid">
+    <div>
+      <h6>Footer Column 1</h6>
+      <p>This is a footer column.</p>
+    </div>
+    <div>
+      <h6>Footer Column 2</h6>
+      <p>This is a footer column.</p>
+    </div>
+    <div>
+      <h6>Footer Column 3</h6>
+      <p>This is a footer column.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="grid">
+    <div><p>© All rights reserved.</p></div>
+    <div>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</footer>
+```
+      
 
 Now we copy the __static__ index.html contents to the __`template/index.html`__'s body.   
 
