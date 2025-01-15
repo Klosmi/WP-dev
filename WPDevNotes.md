@@ -1837,7 +1837,7 @@ Global vs Block-level Spacing:
 
 ## [Custom Units for margin and padding](https://fullsiteediting.com/lessons/theme-json-layout-and-spacing-options/)   
  
- Let's view the padding settings, and let's disable the EM unit, so user can not use it *can use REM, PX, %, etc.). To achieve this, we have to modify the `"spacing"` option in the `"settings"` object.    
+ Let's view the padding settings, and let's disable the EM unit, so user can not use it *can use REM, PX, %, etc.)*. To achieve this, we have to modify the `"spacing"` option in the `"settings"` object.    
  We add the __`"units"`__ property (which has an array of units) to the `"spacing"`.  
  ```
  "settings" : {
