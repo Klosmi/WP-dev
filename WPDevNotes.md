@@ -1802,8 +1802,7 @@ By setting `"margin": true` and `"padding": true` in the global `"spacing"` sett
 }
 ```
 
-Let's try adding some default styles to our theme. Let's reset the the "margin" and "padding".    
-In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` properties.   
+Let's try adding some default styles to our theme. This is the default spacing (margin and padding) for blocks. Let's reset the the "margin" and "padding". In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` properties.   
 ```
 "styles" : {
   "spacing" : {
@@ -1823,6 +1822,11 @@ In `"styles"` we add `"spacing"` property with the `"margin"` and `"padding"` pr
 }
 ```
 💡 If we want to apply padding on the y axis of an element we can omit the "right" and "left" properties.
+
+Global vs Block-level Spacing:    
+- The global settings under "spacing" (like "margin": true and "padding": true) enable users to configure margin and padding for all blocks that support these properties.    
+
+- The styles section in the "styles" object is used to set default values for specific blocks. For example, if you want to define specific margins or paddings for a particular block (like a paragraph or image), you can set them in this "styles" section.    
 
 
 --- 
