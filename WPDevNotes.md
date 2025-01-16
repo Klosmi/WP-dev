@@ -1935,7 +1935,7 @@ In the theme folder we create a folder `assets`.
 This is our __static__ template.   
 In the `index.html` in templates folder, we create the content: 
 it has a `<header>`, `<main>` and a `<footer>` section.      
-The `<header>` is somthing like this:
+The `<header>` is something like this:
 ```
 <!-- Header -->
 <header>
@@ -1965,7 +1965,7 @@ The `<header>` is somthing like this:
   </div>
 </header>
 ```
-The `<main>` is somthing like this:
+The `<main>` is something like this:
 ```
 <!-- Main Content -->
 <main>
