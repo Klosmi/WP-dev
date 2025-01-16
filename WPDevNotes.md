@@ -2079,7 +2079,7 @@ But the  logic is saved in the `functions.php` file.
 
 Using different files for different things , separate code into different sections is a programming principle and it is called the separation of concerns.    
 
-Outside the template folder we create a `functions.php` file (not function.php  → not the plural `s`).   
+Outside the template folder we create a `functions.php` file (not function.php  → note the plural `s`).   
 (This file completely optional, however, WP will automatically load it if defined in our theme.)
 
 __`functions.php`__ : is responsible for the logic of a theme      
