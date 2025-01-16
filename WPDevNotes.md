@@ -2197,7 +2197,7 @@ To keep things organized, it is recommended dedicating a directory for the logic
   Let's register a CSS file:    
 
   in the assets/index.html template file: we can see a lot of styles.    
-  We are going to add the the `enqueue.php` file the google fints style.
+  We are going to add the the `enqueue.php` file the google fonts style.
   *index.html*
 ```
   <!DOCTYPE html>
