@@ -2490,7 +2490,7 @@ __functions.php__
 
     // Hoooks
     add_action('wp_enqueue_scripts', 'm_enqueue');
-    add_action('wp_head', 'u_head');
+    add_action('wp_head', 'm_head');
 ```
 
 --- 
