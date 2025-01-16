@@ -2548,7 +2548,7 @@ __function.php__
     // Hoooks
 
     add_action('wp_enqueue_scripts', 'm_enqueue');
-►   add_action('wp_head', 'u_head', 5);
+►   add_action('wp_head', 'm_head', 5);
 
 ```
 
