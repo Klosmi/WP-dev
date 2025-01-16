@@ -2075,7 +2075,7 @@ We use the `functions.php` file to store the hooks. (We have to create this file
 ## [Writing hooks - `functions.php`](https://developer.wordpress.org/themes/basics/theme-functions/#:~:text=The%20functions.,modular%2C%20extensible%2C%20and%20functional.)    
 
 WordPress prioritizes the `templates/index.html` file as the template for the home page.   
-But the  loogic is saved in the `functions.php` file.   
+But the  logic is saved in the `functions.php` file.   
 
 Using different files for different things , separate code into different sections is a programming principle and it is called the separation of concerns.    
 
