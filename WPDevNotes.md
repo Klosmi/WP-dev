@@ -2963,7 +2963,7 @@ function a_setup_theme(){
 ```
 The `editor.css` file contains CSS that modifies or styles your content within the Gutenberg editor. This ensures that what you see when editing matches your design intentions and prevents discrepancies between the editor and the front end.
 <br>
-Example: If we want to hide the *search form in the header* (just for example), we can add the following CSS in `editor.css`:
+Example: suppose we have the following CSS classes below. To hide the search form in the header (as an example), we can add the following CSS to `editor.css`:
 ```
 .header-search-form .wp-block-search__label,
 .header-search-form .wp-block-search__button {
