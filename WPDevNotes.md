@@ -3067,7 +3067,7 @@ Eg. we have a WordPress website with the following pages:
 	- URL: `https://example.com/?s=beach`   
 	- Query: Fetch posts with "beach" in their content, title, or metadata.
    
-- **Custom Page with Query Loop Block**: Suppose you add a Query Loop block on a custom page to display posts of a specific type, such as "Portfolio."   
+- **Custom Page with Query Loop Block**: Suppose we add a Query Loop block on a custom page to display posts of a specific type, such as "Portfolio."   
 	- URL: `https://example.com/portfolio/`      
 	- Query (defined by the Query Loop block): Fetch posts of the "Portfolio" post type.   
 
