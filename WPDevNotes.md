@@ -3107,7 +3107,7 @@ WordPress analyzes the URL segment after the domain name e.g. `https://example.c
 
 The URL can include:    
 *Permalink structure*    
-WordPress interprets the URL based on the site's configured permalink settings `(e.g., /%postname%/, /category/post/, etc.)`.    
+WordPress interprets the URL based on the site's configured permalink settings e.g. `/%postname%/, /category/post/` etc.    
 *Query string*   
 If permalinks are not enabled, URLs might include query variables like `?p=123 or ?cat=5`.
 
