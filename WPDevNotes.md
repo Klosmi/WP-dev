@@ -3103,7 +3103,7 @@ WordPress determines the type of content to render on a page by analyzing the UR
 
 **What URL Does WordPress Analyze?**   
 
-WordPress analyzes the URL segment after the domain name `e.g., https://example.com/about` focuses on `/about`. This segment is often referred to as the path.   
+WordPress analyzes the URL segment after the domain name e.g. `https://example.com/about` focuses on `/about`. This segment is often referred to as the path.   
 
 The URL can include:    
 *Permalink structure*    
