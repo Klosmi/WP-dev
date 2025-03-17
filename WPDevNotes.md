@@ -3124,7 +3124,7 @@ WordPress maps parts of the URL to internal query vars. For example:
 	- `/about → pagename=about`
 	- `/category/news → category_name=news`
 	- `/?p=123 → post_id=123`   
-These query vars define what kind of content to fetch, like a `page`, `post`, or `archive`.
+These query defines what kind of content to fetch, like a `page`, `post`, or `archive`.
 
 - *Running the Query:*     
 WordPress uses the query vars to create a **WP_Query object**. This object retrieves the relevant posts, pages, or taxonomy terms from the database.
